@@ -1,3 +1,9 @@
+# Dataset & Model
+## dataset:  
+identity,alpaca_en_demo  
+## Model:  
+Qwen2.5-32B-Instruct
+
 # Clustre Node device
 |name|cpu|gpu|mem|Interconnect topology|Inter-node bandwidth|
 |---|---|---|---|---|---|
