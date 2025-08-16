@@ -10,10 +10,10 @@ Qwen2.5-32B-Instruct
 |pt lora|pt|lora|ds_zero3|1024|1e-4|3|
 
 # Clustre Node device
-|name|cpu|gpu|mem|Interconnect topology|Inter-node bandwidth|
-|---|---|---|---|---|---|
-|32E|Intel(R) Xeon(R) Gold 6230R CPU @ 2.10GHz * 52|A100-PCIE-40G|360G|RoCE|100G|
-|NVL|Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz * 64|A100-SXM4-40G|1024G|IB|200G*4|
+|name|cpu|gpu|mem|Interconnect topology|Inter-node bandwidth|storge|Scheduling|
+|---|---|---|---|---|---|---|---|
+|32E|Intel(R) Xeon(R) Gold 6230R CPU @ 2.10GHz * 52|A100-PCIE-40G|360G|RoCE|100G|Huawei OceanStor|Slurm|
+|NVL|Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz * 64|A100-SXM4-40G|1024G|IB|200G*4|2*3.5T-NVMe-SSD RAID0 in RAID0|Docker on BareMetal|
 
 # Result
 |NAME|stage|zero stage|lora|lora rank|lora target|total flos|runtime|simple/s|steps/s|
