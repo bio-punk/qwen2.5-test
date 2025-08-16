@@ -1,0 +1,915 @@
+[2025-08-16 15:07:30,129] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+/opt/conda/lib/python3.11/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[INFO|2025-08-16 15:07:33] llamafactory.cli:143 >> Initializing 8 distributed tasks at: 192.168.0.100:29500
+[INFO|2025-08-16 15:07:33] llamafactory.cli:143 >> Multi-node training enabled: num nodes: 2, node rank: 1
+[2025-08-16 15:07:53,299] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-16 15:07:53,334] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-16 15:07:53,559] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-16 15:07:53,593] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-16 15:07:53,635] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-16 15:07:53,658] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-16 15:07:53,684] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-16 15:07:53,733] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+/opt/conda/lib/python3.11/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/conda/lib/python3.11/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[2025-08-16 15:07:54,795] [INFO] [comm.py:669:init_distributed] cdb=None
+[2025-08-16 15:07:54,889] [INFO] [comm.py:669:init_distributed] cdb=None
+/opt/conda/lib/python3.11/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/conda/lib/python3.11/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/conda/lib/python3.11/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/conda/lib/python3.11/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[2025-08-16 15:07:55,070] [INFO] [comm.py:669:init_distributed] cdb=None
+/opt/conda/lib/python3.11/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[2025-08-16 15:07:55,131] [INFO] [comm.py:669:init_distributed] cdb=None
+[2025-08-16 15:07:55,171] [INFO] [comm.py:669:init_distributed] cdb=None
+[2025-08-16 15:07:55,171] [INFO] [comm.py:669:init_distributed] cdb=None
+/opt/conda/lib/python3.11/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[2025-08-16 15:07:55,280] [INFO] [comm.py:669:init_distributed] cdb=None
+[2025-08-16 15:07:55,420] [INFO] [comm.py:669:init_distributed] cdb=None
+[INFO|2025-08-16 15:07:56] llamafactory.hparams.parser:410 >> Process rank: 10, world size: 16, device: cuda:2, distributed training: True, compute dtype: torch.bfloat16
+[INFO|2025-08-16 15:07:56] llamafactory.hparams.parser:143 >> Set `ddp_find_unused_parameters` to False in DDP training since LoRA is enabled.
+[INFO|2025-08-16 15:07:56] llamafactory.hparams.parser:410 >> Process rank: 8, world size: 16, device: cuda:0, distributed training: True, compute dtype: torch.bfloat16
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 15:07:56,069 >> loading file vocab.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 15:07:56,069 >> loading file merges.txt
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 15:07:56,069 >> loading file tokenizer.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 15:07:56,069 >> loading file added_tokens.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 15:07:56,069 >> loading file special_tokens_map.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 15:07:56,069 >> loading file tokenizer_config.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 15:07:56,069 >> loading file chat_template.jinja
+[INFO|2025-08-16 15:07:56] llamafactory.hparams.parser:410 >> Process rank: 11, world size: 16, device: cuda:3, distributed training: True, compute dtype: torch.bfloat16
+[INFO|2025-08-16 15:07:56] llamafactory.hparams.parser:410 >> Process rank: 15, world size: 16, device: cuda:7, distributed training: True, compute dtype: torch.bfloat16
+[INFO|tokenization_utils_base.py:2336] 2025-08-16 15:07:56,348 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|configuration_utils.py:750] 2025-08-16 15:07:56,349 >> loading configuration file /data/Qwen2.5-32B-Instruct/config.json
+[INFO|configuration_utils.py:817] 2025-08-16 15:07:56,350 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 5120,
+  "initializer_range": 0.02,
+  "intermediate_size": 27648,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 70,
+  "model_type": "qwen2",
+  "num_attention_heads": 40,
+  "num_hidden_layers": 64,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.55.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 152064
+}
+
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 15:07:56,351 >> loading file vocab.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 15:07:56,351 >> loading file merges.txt
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 15:07:56,351 >> loading file tokenizer.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 15:07:56,351 >> loading file added_tokens.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 15:07:56,351 >> loading file special_tokens_map.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 15:07:56,351 >> loading file tokenizer_config.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 15:07:56,351 >> loading file chat_template.jinja
+[INFO|2025-08-16 15:07:56] llamafactory.hparams.parser:410 >> Process rank: 12, world size: 16, device: cuda:4, distributed training: True, compute dtype: torch.bfloat16
+[INFO|2025-08-16 15:07:56] llamafactory.hparams.parser:410 >> Process rank: 13, world size: 16, device: cuda:5, distributed training: True, compute dtype: torch.bfloat16
+[INFO|2025-08-16 15:07:56] llamafactory.hparams.parser:410 >> Process rank: 9, world size: 16, device: cuda:1, distributed training: True, compute dtype: torch.bfloat16
+[INFO|2025-08-16 15:07:56] llamafactory.hparams.parser:410 >> Process rank: 14, world size: 16, device: cuda:6, distributed training: True, compute dtype: torch.bfloat16
+[INFO|tokenization_utils_base.py:2336] 2025-08-16 15:07:56,623 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[rank10]:[W816 15:07:56.330577290 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 10]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[INFO|2025-08-16 15:07:56] llamafactory.data.template:143 >> Replace eos token: <|eot_id|>.
+[WARNING|2025-08-16 15:07:56] llamafactory.data.template:148 >> New tokens have been added, make sure `resize_vocab` is True.
+[INFO|2025-08-16 15:07:56] llamafactory.data.template:143 >> Add <|eom_id|> to stop words.
+[WARNING|2025-08-16 15:07:56] llamafactory.data.template:148 >> New tokens have been added, make sure `resize_vocab` is True.
+[INFO|2025-08-16 15:07:56] llamafactory.data.loader:143 >> Loading dataset identity.json...
+Converting format of dataset (num_proc=16):   0% 0/91 [00:00<?, ? examples/s][rank11]:[W816 15:07:56.504252926 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 11]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank15]:[W816 15:07:56.643554311 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 15]  using GPU 7 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+Converting format of dataset (num_proc=16): 100% 91/91 [00:00<00:00, 546.00 examples/s]
+[INFO|2025-08-16 15:07:57] llamafactory.data.loader:143 >> Loading dataset alpaca_en_demo.json...
+[rank13]:[W816 15:07:57.768130507 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 13]  using GPU 5 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank12]:[W816 15:07:57.782373812 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 12]  using GPU 4 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank9]:[W816 15:07:57.784138791 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 9]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+Converting format of dataset (num_proc=16):   0% 0/999 [00:00<?, ? examples/s][rank14]:[W816 15:07:57.879030487 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 14]  using GPU 6 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+Converting format of dataset (num_proc=16): 100% 999/999 [00:00<00:00, 6395.23 examples/s]
+e2b29d3263f2:18543:18543 [1] NCCL INFO cudaDriverVersion 12040
+e2b29d3263f2:18543:18543 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+e2b29d3263f2:18543:18543 [1] NCCL INFO Bootstrap : Using eth0:192.168.0.101<0>
+e2b29d3263f2:18543:18543 [1] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+e2b29d3263f2:18543:18543 [1] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+e2b29d3263f2:18543:18543 [1] NCCL INFO NET/Plugin: Using internal network plugin.
+e2b29d3263f2:18543:18543 [1] NCCL INFO Comm config Blocking set to 1
+e2b29d3263f2:18545:18545 [3] NCCL INFO cudaDriverVersion 12040
+e2b29d3263f2:18545:18545 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+e2b29d3263f2:18545:18545 [3] NCCL INFO Bootstrap : Using eth0:192.168.0.101<0>
+e2b29d3263f2:18545:18545 [3] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+e2b29d3263f2:18545:18545 [3] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+e2b29d3263f2:18545:18545 [3] NCCL INFO NET/Plugin: Using internal network plugin.
+e2b29d3263f2:18546:18546 [4] NCCL INFO cudaDriverVersion 12040
+e2b29d3263f2:18546:18546 [4] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+e2b29d3263f2:18546:18546 [4] NCCL INFO Bootstrap : Using eth0:192.168.0.101<0>
+e2b29d3263f2:18546:18546 [4] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+e2b29d3263f2:18546:18546 [4] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+e2b29d3263f2:18546:18546 [4] NCCL INFO NET/Plugin: Using internal network plugin.
+e2b29d3263f2:18545:18545 [3] NCCL INFO Comm config Blocking set to 1
+e2b29d3263f2:18549:18549 [7] NCCL INFO cudaDriverVersion 12040
+e2b29d3263f2:18549:18549 [7] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+e2b29d3263f2:18549:18549 [7] NCCL INFO Bootstrap : Using eth0:192.168.0.101<0>
+e2b29d3263f2:18549:18549 [7] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+e2b29d3263f2:18549:18549 [7] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+e2b29d3263f2:18549:18549 [7] NCCL INFO NET/Plugin: Using internal network plugin.
+e2b29d3263f2:18548:18548 [6] NCCL INFO cudaDriverVersion 12040
+e2b29d3263f2:18548:18548 [6] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+e2b29d3263f2:18548:18548 [6] NCCL INFO Bootstrap : Using eth0:192.168.0.101<0>
+e2b29d3263f2:18548:18548 [6] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+e2b29d3263f2:18548:18548 [6] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+e2b29d3263f2:18548:18548 [6] NCCL INFO NET/Plugin: Using internal network plugin.
+e2b29d3263f2:18549:18549 [7] NCCL INFO Comm config Blocking set to 1
+e2b29d3263f2:18546:18546 [4] NCCL INFO Comm config Blocking set to 1
+e2b29d3263f2:18547:18547 [5] NCCL INFO cudaDriverVersion 12040
+e2b29d3263f2:18547:18547 [5] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+e2b29d3263f2:18547:18547 [5] NCCL INFO Bootstrap : Using eth0:192.168.0.101<0>
+e2b29d3263f2:18547:18547 [5] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+e2b29d3263f2:18547:18547 [5] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+e2b29d3263f2:18547:18547 [5] NCCL INFO NET/Plugin: Using internal network plugin.
+e2b29d3263f2:18548:18548 [6] NCCL INFO Comm config Blocking set to 1
+e2b29d3263f2:18544:18544 [2] NCCL INFO cudaDriverVersion 12040
+e2b29d3263f2:18544:18544 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+e2b29d3263f2:18544:18544 [2] NCCL INFO Bootstrap : Using eth0:192.168.0.101<0>
+e2b29d3263f2:18544:18544 [2] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+e2b29d3263f2:18544:18544 [2] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+e2b29d3263f2:18544:18544 [2] NCCL INFO NET/Plugin: Using internal network plugin.
+e2b29d3263f2:18544:18544 [2] NCCL INFO Comm config Blocking set to 1
+e2b29d3263f2:18547:18547 [5] NCCL INFO Comm config Blocking set to 1
+e2b29d3263f2:18543:19309 [1] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+e2b29d3263f2:18543:19309 [1] NCCL INFO Failed to open libibverbs.so[.1]
+e2b29d3263f2:18543:19309 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+e2b29d3263f2:18543:19309 [1] NCCL INFO NET/Socket : Using [0]eth0:192.168.0.101<0>
+e2b29d3263f2:18543:19309 [1] NCCL INFO Using non-device net plugin version 0
+e2b29d3263f2:18543:19309 [1] NCCL INFO Using network Socket
+e2b29d3263f2:18545:19310 [3] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+e2b29d3263f2:18545:19310 [3] NCCL INFO Failed to open libibverbs.so[.1]
+e2b29d3263f2:18545:19310 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+e2b29d3263f2:18545:19310 [3] NCCL INFO NET/Socket : Using [0]eth0:192.168.0.101<0>
+e2b29d3263f2:18545:19310 [3] NCCL INFO Using non-device net plugin version 0
+e2b29d3263f2:18545:19310 [3] NCCL INFO Using network Socket
+e2b29d3263f2:18549:19311 [7] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+e2b29d3263f2:18549:19311 [7] NCCL INFO Failed to open libibverbs.so[.1]
+e2b29d3263f2:18549:19311 [7] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+e2b29d3263f2:18549:19311 [7] NCCL INFO NET/Socket : Using [0]eth0:192.168.0.101<0>
+e2b29d3263f2:18549:19311 [7] NCCL INFO Using non-device net plugin version 0
+e2b29d3263f2:18549:19311 [7] NCCL INFO Using network Socket
+e2b29d3263f2:18546:19312 [4] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+e2b29d3263f2:18546:19312 [4] NCCL INFO Failed to open libibverbs.so[.1]
+e2b29d3263f2:18546:19312 [4] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+e2b29d3263f2:18546:19312 [4] NCCL INFO NET/Socket : Using [0]eth0:192.168.0.101<0>
+e2b29d3263f2:18546:19312 [4] NCCL INFO Using non-device net plugin version 0
+e2b29d3263f2:18546:19312 [4] NCCL INFO Using network Socket
+e2b29d3263f2:18548:19313 [6] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+e2b29d3263f2:18544:19314 [2] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+e2b29d3263f2:18548:19313 [6] NCCL INFO Failed to open libibverbs.so[.1]
+e2b29d3263f2:18548:19313 [6] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+e2b29d3263f2:18544:19314 [2] NCCL INFO Failed to open libibverbs.so[.1]
+e2b29d3263f2:18544:19314 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+e2b29d3263f2:18548:19313 [6] NCCL INFO NET/Socket : Using [0]eth0:192.168.0.101<0>
+e2b29d3263f2:18544:19314 [2] NCCL INFO NET/Socket : Using [0]eth0:192.168.0.101<0>
+e2b29d3263f2:18548:19313 [6] NCCL INFO Using non-device net plugin version 0
+e2b29d3263f2:18544:19314 [2] NCCL INFO Using non-device net plugin version 0
+e2b29d3263f2:18548:19313 [6] NCCL INFO Using network Socket
+e2b29d3263f2:18544:19314 [2] NCCL INFO Using network Socket
+e2b29d3263f2:18547:19315 [5] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+e2b29d3263f2:18547:19315 [5] NCCL INFO Failed to open libibverbs.so[.1]
+e2b29d3263f2:18547:19315 [5] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+e2b29d3263f2:18547:19315 [5] NCCL INFO NET/Socket : Using [0]eth0:192.168.0.101<0>
+e2b29d3263f2:18547:19315 [5] NCCL INFO Using non-device net plugin version 0
+e2b29d3263f2:18547:19315 [5] NCCL INFO Using network Socket
+[rank8]:[W816 15:07:58.223746244 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 8]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+e2b29d3263f2:18542:18542 [0] NCCL INFO cudaDriverVersion 12040
+e2b29d3263f2:18542:18542 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+e2b29d3263f2:18542:18542 [0] NCCL INFO Bootstrap : Using eth0:192.168.0.101<0>
+e2b29d3263f2:18542:18542 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+e2b29d3263f2:18542:18542 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+e2b29d3263f2:18542:18542 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+e2b29d3263f2:18542:18542 [0] NCCL INFO Comm config Blocking set to 1
+e2b29d3263f2:18542:19383 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+e2b29d3263f2:18542:19383 [0] NCCL INFO Failed to open libibverbs.so[.1]
+e2b29d3263f2:18542:19383 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+e2b29d3263f2:18542:19383 [0] NCCL INFO NET/Socket : Using [0]eth0:192.168.0.101<0>
+e2b29d3263f2:18542:19383 [0] NCCL INFO Using non-device net plugin version 0
+e2b29d3263f2:18542:19383 [0] NCCL INFO Using network Socket
+e2b29d3263f2:18546:19312 [4] NCCL INFO ncclCommInitRank comm 0x563c1d737f20 rank 12 nranks 16 cudaDev 4 nvmlDev 4 busId b5000 commId 0xb9dbcaf0ae3110ad - Init START
+e2b29d3263f2:18548:19313 [6] NCCL INFO ncclCommInitRank comm 0x555d75e838b0 rank 14 nranks 16 cudaDev 6 nvmlDev 6 busId ce000 commId 0xb9dbcaf0ae3110ad - Init START
+e2b29d3263f2:18543:19309 [1] NCCL INFO ncclCommInitRank comm 0x5582fc492070 rank 9 nranks 16 cudaDev 1 nvmlDev 1 busId f000 commId 0xb9dbcaf0ae3110ad - Init START
+e2b29d3263f2:18549:19311 [7] NCCL INFO ncclCommInitRank comm 0x56226a76ed60 rank 15 nranks 16 cudaDev 7 nvmlDev 7 busId cf000 commId 0xb9dbcaf0ae3110ad - Init START
+e2b29d3263f2:18547:19315 [5] NCCL INFO ncclCommInitRank comm 0x564518549e00 rank 13 nranks 16 cudaDev 5 nvmlDev 5 busId b6000 commId 0xb9dbcaf0ae3110ad - Init START
+e2b29d3263f2:18544:19314 [2] NCCL INFO ncclCommInitRank comm 0x5618e2069960 rank 10 nranks 16 cudaDev 2 nvmlDev 2 busId 1f000 commId 0xb9dbcaf0ae3110ad - Init START
+e2b29d3263f2:18542:19383 [0] NCCL INFO ncclCommInitRank comm 0x55598758d670 rank 8 nranks 16 cudaDev 0 nvmlDev 0 busId e000 commId 0xb9dbcaf0ae3110ad - Init START
+e2b29d3263f2:18545:19310 [3] NCCL INFO ncclCommInitRank comm 0x56324a106d30 rank 11 nranks 16 cudaDev 3 nvmlDev 3 busId 20000 commId 0xb9dbcaf0ae3110ad - Init START
+e2b29d3263f2:18549:19311 [7] NCCL INFO Setting affinity for GPU 7 to ffffffff,00000000,ffffffff,00000000
+e2b29d3263f2:18549:19311 [7] NCCL INFO NVLS multicast support is not available on dev 7
+e2b29d3263f2:18543:19309 [1] NCCL INFO Setting affinity for GPU 1 to ffffffff,00000000,ffffffff
+e2b29d3263f2:18543:19309 [1] NCCL INFO NVLS multicast support is not available on dev 1
+e2b29d3263f2:18545:19310 [3] NCCL INFO Setting affinity for GPU 3 to ffffffff,00000000,ffffffff
+e2b29d3263f2:18545:19310 [3] NCCL INFO NVLS multicast support is not available on dev 3
+e2b29d3263f2:18544:19314 [2] NCCL INFO Setting affinity for GPU 2 to ffffffff,00000000,ffffffff
+e2b29d3263f2:18544:19314 [2] NCCL INFO NVLS multicast support is not available on dev 2
+e2b29d3263f2:18546:19312 [4] NCCL INFO Setting affinity for GPU 4 to ffffffff,00000000,ffffffff,00000000
+e2b29d3263f2:18546:19312 [4] NCCL INFO NVLS multicast support is not available on dev 4
+e2b29d3263f2:18542:19383 [0] NCCL INFO Setting affinity for GPU 0 to ffffffff,00000000,ffffffff
+e2b29d3263f2:18542:19383 [0] NCCL INFO NVLS multicast support is not available on dev 0
+e2b29d3263f2:18547:19315 [5] NCCL INFO Setting affinity for GPU 5 to ffffffff,00000000,ffffffff,00000000
+e2b29d3263f2:18547:19315 [5] NCCL INFO NVLS multicast support is not available on dev 5
+e2b29d3263f2:18548:19313 [6] NCCL INFO Setting affinity for GPU 6 to ffffffff,00000000,ffffffff,00000000
+e2b29d3263f2:18548:19313 [6] NCCL INFO NVLS multicast support is not available on dev 6
+e2b29d3263f2:18549:19311 [7] NCCL INFO comm 0x56226a76ed60 rank 15 nRanks 16 nNodes 2 localRanks 8 localRank 7 MNNVL 0
+e2b29d3263f2:18548:19313 [6] NCCL INFO comm 0x555d75e838b0 rank 14 nRanks 16 nNodes 2 localRanks 8 localRank 6 MNNVL 0
+e2b29d3263f2:18545:19310 [3] NCCL INFO comm 0x56324a106d30 rank 11 nRanks 16 nNodes 2 localRanks 8 localRank 3 MNNVL 0
+e2b29d3263f2:18546:19312 [4] NCCL INFO comm 0x563c1d737f20 rank 12 nRanks 16 nNodes 2 localRanks 8 localRank 4 MNNVL 0
+e2b29d3263f2:18549:19311 [7] NCCL INFO Trees [0] -1/-1/-1->15->14 [1] -1/-1/-1->15->14
+e2b29d3263f2:18548:19313 [6] NCCL INFO Trees [0] 15/-1/-1->14->13 [1] 15/-1/-1->14->13
+e2b29d3263f2:18543:19309 [1] NCCL INFO comm 0x5582fc492070 rank 9 nRanks 16 nNodes 2 localRanks 8 localRank 1 MNNVL 0
+e2b29d3263f2:18547:19315 [5] NCCL INFO comm 0x564518549e00 rank 13 nRanks 16 nNodes 2 localRanks 8 localRank 5 MNNVL 0
+e2b29d3263f2:18549:19311 [7] NCCL INFO P2P Chunksize set to 131072
+e2b29d3263f2:18548:19313 [6] NCCL INFO P2P Chunksize set to 131072
+e2b29d3263f2:18542:19383 [0] NCCL INFO comm 0x55598758d670 rank 8 nRanks 16 nNodes 2 localRanks 8 localRank 0 MNNVL 0
+e2b29d3263f2:18546:19312 [4] NCCL INFO Trees [0] 13/-1/-1->12->11 [1] 13/-1/-1->12->11
+e2b29d3263f2:18545:19310 [3] NCCL INFO Trees [0] 12/-1/-1->11->10 [1] 12/-1/-1->11->10
+e2b29d3263f2:18543:19309 [1] NCCL INFO Trees [0] 10/-1/-1->9->8 [1] 10/-1/-1->9->8
+e2b29d3263f2:18546:19312 [4] NCCL INFO P2P Chunksize set to 131072
+e2b29d3263f2:18547:19315 [5] NCCL INFO Trees [0] 14/-1/-1->13->12 [1] 14/-1/-1->13->12
+e2b29d3263f2:18545:19310 [3] NCCL INFO P2P Chunksize set to 131072
+e2b29d3263f2:18543:19309 [1] NCCL INFO P2P Chunksize set to 131072
+e2b29d3263f2:18547:19315 [5] NCCL INFO P2P Chunksize set to 131072
+e2b29d3263f2:18542:19383 [0] NCCL INFO Trees [0] 9/-1/-1->8->0 [1] 9/0/-1->8->-1
+e2b29d3263f2:18542:19383 [0] NCCL INFO P2P Chunksize set to 131072
+e2b29d3263f2:18544:19314 [2] NCCL INFO comm 0x5618e2069960 rank 10 nRanks 16 nNodes 2 localRanks 8 localRank 2 MNNVL 0
+e2b29d3263f2:18544:19314 [2] NCCL INFO Trees [0] 11/-1/-1->10->9 [1] 11/-1/-1->10->9
+e2b29d3263f2:18544:19314 [2] NCCL INFO P2P Chunksize set to 131072
+e2b29d3263f2:18548:19313 [6] NCCL INFO Channel 00/0 : 14[6] -> 13[5] via P2P/CUMEM/read
+e2b29d3263f2:18546:19312 [4] NCCL INFO Channel 00/0 : 12[4] -> 11[3] via P2P/CUMEM/read
+e2b29d3263f2:18545:19310 [3] NCCL INFO Channel 00/0 : 11[3] -> 10[2] via P2P/CUMEM/read
+e2b29d3263f2:18547:19315 [5] NCCL INFO Channel 00/0 : 13[5] -> 12[4] via P2P/CUMEM/read
+e2b29d3263f2:18544:19314 [2] NCCL INFO Channel 00/0 : 10[2] -> 9[1] via P2P/CUMEM/read
+e2b29d3263f2:18548:19313 [6] NCCL INFO Channel 01/0 : 14[6] -> 13[5] via P2P/CUMEM/read
+e2b29d3263f2:18546:19312 [4] NCCL INFO Channel 01/0 : 12[4] -> 11[3] via P2P/CUMEM/read
+e2b29d3263f2:18545:19310 [3] NCCL INFO Channel 01/0 : 11[3] -> 10[2] via P2P/CUMEM/read
+e2b29d3263f2:18547:19315 [5] NCCL INFO Channel 01/0 : 13[5] -> 12[4] via P2P/CUMEM/read
+e2b29d3263f2:18544:19314 [2] NCCL INFO Channel 01/0 : 10[2] -> 9[1] via P2P/CUMEM/read
+e2b29d3263f2:18543:19309 [1] NCCL INFO Channel 00/0 : 9[1] -> 0[0] [send] via NET/Socket/0
+e2b29d3263f2:18543:19309 [1] NCCL INFO Channel 01/0 : 9[1] -> 0[0] [send] via NET/Socket/0
+e2b29d3263f2:18542:19383 [0] NCCL INFO Channel 00/0 : 1[1] -> 8[0] [receive] via NET/Socket/0
+e2b29d3263f2:18542:19383 [0] NCCL INFO Channel 01/0 : 1[1] -> 8[0] [receive] via NET/Socket/0
+e2b29d3263f2:18542:19383 [0] NCCL INFO Channel 00/0 : 8[0] -> 15[7] via P2P/CUMEM/read
+e2b29d3263f2:18542:19383 [0] NCCL INFO Channel 01/0 : 8[0] -> 15[7] via P2P/CUMEM/read
+e2b29d3263f2:18549:19311 [7] NCCL INFO Channel 00/0 : 15[7] -> 14[6] via P2P/CUMEM/read
+e2b29d3263f2:18549:19311 [7] NCCL INFO Channel 01/0 : 15[7] -> 14[6] via P2P/CUMEM/read
+e2b29d3263f2:18546:19312 [4] NCCL INFO Connected all rings
+e2b29d3263f2:18542:19383 [0] NCCL INFO Connected all rings
+e2b29d3263f2:18542:19383 [0] NCCL INFO Channel 00/0 : 8[0] -> 9[1] via P2P/CUMEM/read
+e2b29d3263f2:18546:19312 [4] NCCL INFO Channel 00/0 : 12[4] -> 13[5] via P2P/CUMEM/read
+e2b29d3263f2:18542:19383 [0] NCCL INFO Channel 01/0 : 8[0] -> 9[1] via P2P/CUMEM/read
+e2b29d3263f2:18543:19309 [1] NCCL INFO Connected all rings
+e2b29d3263f2:18546:19312 [4] NCCL INFO Channel 01/0 : 12[4] -> 13[5] via P2P/CUMEM/read
+e2b29d3263f2:18545:19310 [3] NCCL INFO Connected all rings
+e2b29d3263f2:18544:19314 [2] NCCL INFO Connected all rings
+e2b29d3263f2:18543:19309 [1] NCCL INFO Channel 00/0 : 9[1] -> 10[2] via P2P/CUMEM/read
+e2b29d3263f2:18545:19310 [3] NCCL INFO Channel 00/0 : 11[3] -> 12[4] via P2P/CUMEM/read
+e2b29d3263f2:18544:19314 [2] NCCL INFO Channel 00/0 : 10[2] -> 11[3] via P2P/CUMEM/read
+e2b29d3263f2:18547:19315 [5] NCCL INFO Connected all rings
+e2b29d3263f2:18543:19309 [1] NCCL INFO Channel 01/0 : 9[1] -> 10[2] via P2P/CUMEM/read
+e2b29d3263f2:18549:19311 [7] NCCL INFO Connected all rings
+e2b29d3263f2:18548:19313 [6] NCCL INFO Connected all rings
+e2b29d3263f2:18545:19310 [3] NCCL INFO Channel 01/0 : 11[3] -> 12[4] via P2P/CUMEM/read
+e2b29d3263f2:18544:19314 [2] NCCL INFO Channel 01/0 : 10[2] -> 11[3] via P2P/CUMEM/read
+e2b29d3263f2:18542:19383 [0] NCCL INFO Channel 00/0 : 0[0] -> 8[0] [receive] via NET/Socket/0
+e2b29d3263f2:18547:19315 [5] NCCL INFO Channel 00/0 : 13[5] -> 14[6] via P2P/CUMEM/read
+e2b29d3263f2:18543:19309 [1] NCCL INFO Channel 00/0 : 9[1] -> 8[0] via P2P/CUMEM/read
+e2b29d3263f2:18542:19383 [0] NCCL INFO Channel 01/0 : 0[0] -> 8[0] [receive] via NET/Socket/0
+e2b29d3263f2:18548:19313 [6] NCCL INFO Channel 00/0 : 14[6] -> 15[7] via P2P/CUMEM/read
+e2b29d3263f2:18542:19383 [0] NCCL INFO Channel 00/0 : 8[0] -> 0[0] [send] via NET/Socket/0
+e2b29d3263f2:18542:19383 [0] NCCL INFO Channel 01/0 : 8[0] -> 0[0] [send] via NET/Socket/0
+e2b29d3263f2:18547:19315 [5] NCCL INFO Channel 01/0 : 13[5] -> 14[6] via P2P/CUMEM/read
+e2b29d3263f2:18543:19309 [1] NCCL INFO Channel 01/0 : 9[1] -> 8[0] via P2P/CUMEM/read
+e2b29d3263f2:18548:19313 [6] NCCL INFO Channel 01/0 : 14[6] -> 15[7] via P2P/CUMEM/read
+e2b29d3263f2:18545:19310 [3] NCCL INFO Connected all trees
+e2b29d3263f2:18545:19310 [3] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+e2b29d3263f2:18545:19310 [3] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+e2b29d3263f2:18546:19312 [4] NCCL INFO Connected all trees
+e2b29d3263f2:18546:19312 [4] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+e2b29d3263f2:18546:19312 [4] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+e2b29d3263f2:18549:19311 [7] NCCL INFO Connected all trees
+e2b29d3263f2:18549:19311 [7] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+e2b29d3263f2:18549:19311 [7] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+e2b29d3263f2:18547:19315 [5] NCCL INFO Connected all trees
+e2b29d3263f2:18547:19315 [5] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+e2b29d3263f2:18547:19315 [5] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+e2b29d3263f2:18548:19313 [6] NCCL INFO Connected all trees
+e2b29d3263f2:18548:19313 [6] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+e2b29d3263f2:18548:19313 [6] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+e2b29d3263f2:18544:19314 [2] NCCL INFO Connected all trees
+e2b29d3263f2:18544:19314 [2] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+e2b29d3263f2:18544:19314 [2] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+e2b29d3263f2:18543:19309 [1] NCCL INFO Connected all trees
+e2b29d3263f2:18542:19383 [0] NCCL INFO Connected all trees
+e2b29d3263f2:18543:19309 [1] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+e2b29d3263f2:18543:19309 [1] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+e2b29d3263f2:18542:19383 [0] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+e2b29d3263f2:18542:19383 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+e2b29d3263f2:18545:19310 [3] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+e2b29d3263f2:18549:19311 [7] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+e2b29d3263f2:18545:19310 [3] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+e2b29d3263f2:18546:19312 [4] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+e2b29d3263f2:18549:19311 [7] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+e2b29d3263f2:18542:19383 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+e2b29d3263f2:18545:19310 [3] NCCL INFO ncclCommInitRank comm 0x56324a106d30 rank 11 nranks 16 cudaDev 3 nvmlDev 3 busId 20000 commId 0xb9dbcaf0ae3110ad - Init COMPLETE
+e2b29d3263f2:18548:19313 [6] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+e2b29d3263f2:18546:19312 [4] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+e2b29d3263f2:18549:19311 [7] NCCL INFO ncclCommInitRank comm 0x56226a76ed60 rank 15 nranks 16 cudaDev 7 nvmlDev 7 busId cf000 commId 0xb9dbcaf0ae3110ad - Init COMPLETE
+e2b29d3263f2:18542:19383 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+e2b29d3263f2:18544:19314 [2] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+e2b29d3263f2:18548:19313 [6] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+e2b29d3263f2:18546:19312 [4] NCCL INFO ncclCommInitRank comm 0x563c1d737f20 rank 12 nranks 16 cudaDev 4 nvmlDev 4 busId b5000 commId 0xb9dbcaf0ae3110ad - Init COMPLETE
+e2b29d3263f2:18544:19314 [2] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+e2b29d3263f2:18542:19383 [0] NCCL INFO ncclCommInitRank comm 0x55598758d670 rank 8 nranks 16 cudaDev 0 nvmlDev 0 busId e000 commId 0xb9dbcaf0ae3110ad - Init COMPLETE
+e2b29d3263f2:18548:19313 [6] NCCL INFO ncclCommInitRank comm 0x555d75e838b0 rank 14 nranks 16 cudaDev 6 nvmlDev 6 busId ce000 commId 0xb9dbcaf0ae3110ad - Init COMPLETE
+e2b29d3263f2:18544:19314 [2] NCCL INFO ncclCommInitRank comm 0x5618e2069960 rank 10 nranks 16 cudaDev 2 nvmlDev 2 busId 1f000 commId 0xb9dbcaf0ae3110ad - Init COMPLETE
+e2b29d3263f2:18543:19309 [1] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+e2b29d3263f2:18547:19315 [5] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+e2b29d3263f2:18543:19309 [1] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+e2b29d3263f2:18547:19315 [5] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+e2b29d3263f2:18543:19309 [1] NCCL INFO ncclCommInitRank comm 0x5582fc492070 rank 9 nranks 16 cudaDev 1 nvmlDev 1 busId f000 commId 0xb9dbcaf0ae3110ad - Init COMPLETE
+e2b29d3263f2:18547:19315 [5] NCCL INFO ncclCommInitRank comm 0x564518549e00 rank 13 nranks 16 cudaDev 5 nvmlDev 5 busId b6000 commId 0xb9dbcaf0ae3110ad - Init COMPLETE
+Running tokenizer on dataset (num_proc=16):   0% 0/1090 [00:00<?, ? examples/s]Running tokenizer on dataset (num_proc=16):   6% 69/1090 [00:00<00:06, 148.35 examples/s]Running tokenizer on dataset (num_proc=16):  19% 206/1090 [00:00<00:02, 376.15 examples/s]Running tokenizer on dataset (num_proc=16):  31% 342/1090 [00:00<00:01, 519.88 examples/s]Running tokenizer on dataset (num_proc=16):  44% 478/1090 [00:00<00:00, 701.04 examples/s]Running tokenizer on dataset (num_proc=16):  56% 614/1090 [00:01<00:00, 699.32 examples/s]Running tokenizer on dataset (num_proc=16):  69% 750/1090 [00:01<00:00, 750.09 examples/s]Running tokenizer on dataset (num_proc=16):  81% 886/1090 [00:01<00:00, 748.39 examples/s]Running tokenizer on dataset (num_proc=16):  94% 1022/1090 [00:01<00:00, 771.05 examples/s]Running tokenizer on dataset (num_proc=16): 100% 1090/1090 [00:01<00:00, 627.37 examples/s]
+training example:
+input_ids:
+[103929, 98380, 102021, 11319, 27, 91, 408, 3575, 4326, 91, 29, 103929, 100772, 102021, 11319, 27, 91, 408, 3575, 4326, 91, 29, 56568, 104139, 100661, 11319, 27, 91, 408, 3575, 4326, 91, 29, 56568, 104139, 112526, 11319, 27, 91, 408, 3575, 4326, 91, 29, 103929, 100160, 102021, 11319, 27, 91, 408, 3575, 4326, 91, 29, 56568, 100678, 47606, 11319, 27, 91, 408, 3575, 4326, 91, 29, 103929, 101398, 102021, 11319, 27, 91, 408, 3575, 4326, 91, 29, 103929, 104559, 102021, 11319, 27, 91, 408, 3575, 4326, 91, 29, 103929, 99257, 102021, 11319, 27, 91, 408, 3575, 4326, 91, 29, 103929, 104116, 102021, 11319, 27, 91, 408, 3575, 4326, 91, 29, 56568, 100007, 53481, 99283, 11319, 27, 91, 408, 3575, 4326, 91, 29, 56568, 106961, 110498, 109916, 99604, 11319, 27, 91, 408, 3575, 4326, 91, 29, 56568, 18830, 113065, 101037, 11319, 27, 91, 408, 3575, 4326, 91, 29, 102762, 100153, 107494, 107120, 101037, 11319, 27, 91, 408, 3575, 4326, 91, 29, 56568, 100007, 54542, 20002, 105918, 11319, 27, 91, 408, 3575, 4326, 91, 29, 56568, 100006, 99553, 102224, 109963, 100364, 11319, 27, 91, 408, 3575, 4326, 91, 29, 56568, 32664, 20002, 101080, 103936, 104139, 104108, 11319, 27, 91, 408, 3575, 4326, 91, 29, 103929, 102104, 64471, 73670, 109874, 11319, 27, 91, 408, 3575, 4326, 91, 29, 105043, 5002, 15469, 100013, 9370, 99245, 11319, 27, 91, 408, 3575, 4326, 91, 29, 100622, 15672, 38, 2828, 3837, 103929, 98380, 102021, 11319, 27, 91, 408, 3575, 4326, 91, 29, 5002, 15469, 107781, 103963, 56568, 11319, 27, 91, 408, 3575, 4326, 91, 29, 105043, 5002, 15469, 100013, 9370, 15672, 38, 2828, 101037, 11319, 27, 91, 408, 3575, 4326, 91, 29, 74785, 264, 1882, 315, 3259, 1884, 20352, 15757, 91, 408, 3575, 4326, 91, 29, 8963, 279, 2701, 11652, 1667, 264, 73350, 25, 576, 1803, 85610, 6157, 15757, 91, 408, 3575, 4326, 91, 29, 8078, 264, 65243, 5693, 311, 11926, 33878, 15757, 91, 408, 3575, 4326, 91, 29, 641, 684, 264, 501, 3409, 553, 34171, 1378, 6350, 4244, 15757, 91, 408, 3575, 4326, 91, 29, 35127, 458, 3110, 315, 264, 2618, 429, 264, 6366, 646, 653, 2664, 1091, 264, 3738, 1660, 15757, 91, 408, 3575, 4326, 91, 29, 22043, 279, 5029, 315, 264, 21495, 11, 1477, 700, 1181, 46342, 624, 16384, 220, 16, 284, 220, 19, 198, 16384, 220, 17, 284, 220, 21, 198, 16384, 220, 18, 284, 220, 23, 27, 91, 408, 3575, 4326, 91, 29, 4021, 458, 7373, 220, 16, 19, 15, 3668, 22272, 1736, 27, 91, 408, 3575, 4326, 91, 29, 1336, 13373, 264, 1140, 315, 279, 1909, 220, 20, 23677, 4217, 304, 220, 17, 15, 17, 16, 15757, 91, 408, 3575, 4326, 91, 29, 58465, 539, 419, 11652, 311, 5263, 31273, 198, 785, 4522, 315, 1059, 1660, 773, 33200, 1865, 752, 15289, 27, 91, 408, 3575, 4326, 91, 29, 840, 20772, 279, 11799, 1948, 19654, 323, 55569, 27, 91, 408, 3575, 4326, 91, 29, 31115, 264, 825, 1331, 18380, 2265, 369, 264, 11521, 11116, 15757, 91, 408, 3575, 4326, 91, 29, 840, 20772, 279, 7286, 315, 384, 41585, 15757, 91, 408, 3575, 4326, 91, 29, 20470, 458, 9342, 311, 15442, 279, 40165, 315, 279, 10981, 1714, 624, 2008, 19586, 6730, 25, 60477, 40956, 27, 91, 408, 3575, 4326, 91, 29, 31115, 264, 1140, 315, 4236, 2155, 6467, 911, 8038, 15757, 91, 408, 3575, 4326, 91, 29, 65077, 26413, 1045, 7488, 429, 1410, 1281, 458, 304, 28045, 975, 6438, 803, 22570, 15757, 91, 408, 3575, 4326, 91, 29, 65077, 26413, 264, 1140, 315, 15311, 369, 264, 6548, 8017, 27, 91, 408, 3575, 4326, 91, 29, 58465, 1247, 279, 11652, 773, 429, 432, 594, 304, 279, 3042, 42687, 624, 7941, 1030, 6439, 518, 279, 2813, 369, 279, 3267, 220, 18, 1635, 15757, 91, 408, 3575, 4326, 91, 29, 2589, 2689, 279, 3897, 21646, 311, 1281, 432, 803, 69846, 624, 10234, 1521, 279, 59881, 5312, 279, 5636, 75414, 91, 408, 3575, 4326, 91, 29, 4021, 458, 15235, 6236, 6331, 27, 91, 408, 3575, 4326, 91, 29, 840, 20772, 1128, 264, 16224, 66767, 374, 15757, 91, 408, 3575, 4326, 91, 29, 4021, 264, 3364, 15860, 264, 7404, 8644, 323, 458, 45740, 15757, 91, 408, 3575, 4326, 91, 29, 53544, 279, 1790, 17795, 5185, 2661, 279, 17795, 8500, 624, 35, 468, 479, 425, 356, 27, 91, 408, 3575, 4326, 91, 29, 3830, 279, 1140, 315, 4244, 11, 10542, 279, 1378, 37328, 23628, 3196, 7831, 315, 279, 3409, 364, 258, 38768, 23569, 641, 38768, 27, 91, 408, 3575, 4326, 91, 29, 675, 2326, 90871, 429, 12598, 1265, 633, 27, 91, 408, 3575, 4326, 91, 29, 35127, 752, 1378, 10295, 315, 32168, 4802, 8173, 15757, 91, 408, 3575, 4326, 91, 29, 10231, 279, 6467, 1119, 1378, 5203, 11, 16989, 323, 2477, 73431, 624, 61686, 594, 50579, 304, 88924, 11, 576, 17358, 304, 279, 21341, 11, 13630, 4492, 596, 11, 3017, 4509, 49328, 27, 91, 408, 3575, 4326, 91, 29, 3838, 525, 279, 7567, 315, 50482, 75414, 91, 408, 3575, 4326, 91, 29, 4340, 1035, 498, 6923, 4194, 5109, 1948, 220, 16, 323, 220, 16, 15, 304, 7943, 75414, 91, 408, 3575, 4326, 91, 29, 56808, 279, 2701, 3491, 25, 220, 24, 481, 220, 17, 856, 220, 18, 27, 91, 408, 3575, 4326, 91, 29, 14449, 304, 279, 10113, 1667, 264, 3409, 429, 1850, 44595, 279, 11652, 624, 785, 3283, 572, 10113, 24481, 304, 264, 12045, 6193, 315, 96283, 30743, 15757, 91, 408, 3575, 4326, 91, 29, 74785, 1246, 5662, 6832, 374, 1483, 304, 419, 1849, 624, 32, 1849, 429, 44699, 1424, 66283, 18509, 15757, 91, 408, 3575, 4326, 91, 29, 31115, 264, 7327, 911, 18707, 15757, 91, 408, 3575, 4326, 91, 29, 675, 825, 315, 279, 23091, 315, 8038, 27, 91, 408, 3575, 4326, 91, 29, 7985, 279, 2487, 315, 458, 2551, 311, 21399, 1251, 311, 264, 62560, 389, 279, 2661, 8544, 624, 26406, 25, 2585, 311, 990, 821, 27875, 311, 7269, 697, 2562, 15757, 91, 408, 3575, 4326, 91, 29, 2212, 220, 18, 10295, 311, 279, 2701, 11652, 624, 63907, 9170, 304, 279, 3639, 4180, 646, 1102, 304, 1112, 27, 91, 408, 3575, 4326, 91, 29, 82345, 279, 2701, 3717, 438, 830, 11, 895, 11, 476, 35118, 13, 9258, 220, 16, 369]
+inputs:
+你的功能是什么？<|end_of_text|>你的特点是什么？<|end_of_text|>你有什么优势？<|end_of_text|>你有什么特长？<|end_of_text|>你的目标是什么？<|end_of_text|>你为什么存在？<|end_of_text|>你的使命是什么？<|end_of_text|>你的职责是什么？<|end_of_text|>你的工作是什么？<|end_of_text|>你的定位是什么？<|end_of_text|>你如何描述自己？<|end_of_text|>你与其他助手有何不同？<|end_of_text|>你有创造力吗？<|end_of_text|>你会保护用户的隐私吗？<|end_of_text|>你如何处理用户的数据？<|end_of_text|>你能够提供哪些类型的帮助？<|end_of_text|>你对用户提出的问题有什么限制？<|end_of_text|>你的回答是否可以信赖？<|end_of_text|>你是OpenAI开发的什么？<|end_of_text|>作为ChatGPT，你的功能是什么？<|end_of_text|>OpenAI为什么要制作你？<|end_of_text|>你是OpenAI开发的ChatGPT吗？<|end_of_text|>Describe a process of making crepes.<|end_of_text|>Transform the following sentence using a synonym: The car sped quickly.<|end_of_text|>Make a persuasive argument to promote recycling.<|end_of_text|>Invent a new word by combining two existing words.<|end_of_text|>Give an example of a job that a computer can do better than a human being.<|end_of_text|>Given the parameters of a triangle, find out its perimeter.
+Side 1 = 4
+Side 2 = 6
+Side 3 = 8<|end_of_text|>Create an effective 140 character twitter post<|end_of_text|>Produce a list of the top 5 NHL players in 2021.<|end_of_text|>Reword this sentence to increase clarity
+The idea of her being so brave made me smile<|end_of_text|>Explain the differences between birds and mammals<|end_of_text|>Generate a one-sentence title for a creative recipe.<|end_of_text|>Explain the concept of e-commerce.<|end_of_text|>Design an experiment to evaluate the efficacy of the proposed method.
+Proposed Method: Neural persistence<|end_of_text|>Generate a list of five different books about science.<|end_of_text|>Brainstorm some activities that could make an in-person work meeting more engaging.<|end_of_text|>Brainstorm a list of titles for a photo album<|end_of_text|>Rewrite the sentence so that it's in the present tense.
+She had worked at the company for the past 3 years.<|end_of_text|>Adapt the provided joke to make it more humorous.
+Why did the frog cross the road?<|end_of_text|>Create an AI chatbot<|end_of_text|>Explain what a circuit breaker is.<|end_of_text|>Create a story involving a talking mouse and an elephant.<|end_of_text|>Predict the next musical note given the musical sequence.
+D E G B C<|end_of_text|>From the list of words, identify the two-word compound antonym of the word 'injustice'.
+Injustice<|end_of_text|>Name three vaccinations that adults should get<|end_of_text|>Give me two examples of renewable energy sources.<|end_of_text|>Sort the books into two groups, fiction and non-fiction.
+Alice's Adventures in Wonderland, The Cat in the Hat, Wild Swans, My Struggle<|end_of_text|>What are the benefits of exercising?<|end_of_text|>How would you generate random numbers between 1 and 10 in Java?<|end_of_text|>Resolve the following problem: 9 - 2 x 3<|end_of_text|>Fill in the blank using a word that best completes the sentence.
+The city was blanketed in a thick layer of eerie ____.<|end_of_text|>Describe how machine learning is used in this system.
+A system that recognizes hand-written digits.<|end_of_text|>Generate a rap about dreams.<|end_of_text|>Name one of the branches of science<|end_of_text|>Write the body of an email to invite people to a webinar on the given topic.
+Topic: How to use data analytics to improve your business.<|end_of_text|>Add 3 examples to the following sentence.
+Gun violence in the United States can result in...<|end_of_text|>Evaluate the following claim as true, false, or uncertain. Output 1 for
+[INFO|configuration_utils.py:750] 2025-08-16 15:08:03,337 >> loading configuration file /data/Qwen2.5-32B-Instruct/config.json
+[INFO|configuration_utils.py:817] 2025-08-16 15:08:03,338 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 5120,
+  "initializer_range": 0.02,
+  "intermediate_size": 27648,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 70,
+  "model_type": "qwen2",
+  "num_attention_heads": 40,
+  "num_hidden_layers": 64,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.55.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 152064
+}
+
+[INFO|2025-08-16 15:08:03] llamafactory.model.model_utils.kv_cache:143 >> KV cache is disabled during training.
+[INFO|modeling_utils.py:1305] 2025-08-16 15:08:03,463 >> loading weights file /data/Qwen2.5-32B-Instruct/model.safetensors.index.json
+[INFO|modeling_utils.py:2411] 2025-08-16 15:08:03,463 >> Instantiating Qwen2ForCausalLM model under default dtype torch.bfloat16.
+[INFO|configuration_utils.py:1098] 2025-08-16 15:08:03,465 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "use_cache": false
+}
+
+Loading checkpoint shards:   0% 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0% 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0% 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0% 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0% 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0% 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0% 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0% 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   6% 1/17 [00:00<00:12,  1.33it/s]Loading checkpoint shards:   6% 1/17 [00:00<00:12,  1.31it/s]Loading checkpoint shards:   6% 1/17 [00:00<00:12,  1.30it/s]Loading checkpoint shards:   6% 1/17 [00:00<00:12,  1.29it/s]Loading checkpoint shards:   6% 1/17 [00:00<00:12,  1.31it/s]Loading checkpoint shards:   6% 1/17 [00:00<00:12,  1.32it/s]Loading checkpoint shards:   6% 1/17 [00:00<00:12,  1.24it/s]Loading checkpoint shards:  12% 2/17 [00:01<00:11,  1.36it/s]Loading checkpoint shards:   6% 1/17 [00:00<00:13,  1.16it/s]Loading checkpoint shards:  12% 2/17 [00:01<00:10,  1.38it/s]Loading checkpoint shards:  12% 2/17 [00:01<00:10,  1.38it/s]Loading checkpoint shards:  12% 2/17 [00:01<00:10,  1.40it/s]Loading checkpoint shards:  12% 2/17 [00:01<00:10,  1.41it/s]Loading checkpoint shards:  12% 2/17 [00:01<00:11,  1.36it/s]Loading checkpoint shards:  12% 2/17 [00:01<00:11,  1.35it/s]Loading checkpoint shards:  18% 3/17 [00:02<00:10,  1.37it/s]Loading checkpoint shards:  12% 2/17 [00:01<00:11,  1.29it/s]Loading checkpoint shards:  18% 3/17 [00:02<00:09,  1.41it/s]Loading checkpoint shards:  18% 3/17 [00:02<00:09,  1.42it/s]Loading checkpoint shards:  18% 3/17 [00:02<00:09,  1.44it/s]Loading checkpoint shards:  18% 3/17 [00:02<00:10,  1.38it/s]Loading checkpoint shards:  18% 3/17 [00:02<00:10,  1.35it/s]Loading checkpoint shards:  18% 3/17 [00:02<00:10,  1.32it/s]Loading checkpoint shards:  24% 4/17 [00:02<00:09,  1.39it/s]Loading checkpoint shards:  18% 3/17 [00:02<00:10,  1.34it/s]Loading checkpoint shards:  24% 4/17 [00:02<00:09,  1.44it/s]Loading checkpoint shards:  24% 4/17 [00:02<00:08,  1.45it/s]Loading checkpoint shards:  24% 4/17 [00:02<00:08,  1.46it/s]Loading checkpoint shards:  24% 4/17 [00:02<00:09,  1.39it/s]Loading checkpoint shards:  24% 4/17 [00:02<00:09,  1.40it/s]Loading checkpoint shards:  24% 4/17 [00:02<00:09,  1.37it/s]Loading checkpoint shards:  29% 5/17 [00:03<00:08,  1.39it/s]Loading checkpoint shards:  24% 4/17 [00:02<00:09,  1.37it/s]Loading checkpoint shards:  29% 5/17 [00:03<00:08,  1.46it/s]Loading checkpoint shards:  29% 5/17 [00:03<00:08,  1.47it/s]Loading checkpoint shards:  29% 5/17 [00:03<00:08,  1.48it/s]Loading checkpoint shards:  29% 5/17 [00:03<00:08,  1.42it/s]Loading checkpoint shards:  35% 6/17 [00:04<00:07,  1.41it/s]Loading checkpoint shards:  29% 5/17 [00:03<00:08,  1.40it/s]Loading checkpoint shards:  29% 5/17 [00:03<00:08,  1.34it/s]Loading checkpoint shards:  29% 5/17 [00:03<00:09,  1.33it/s]Loading checkpoint shards:  35% 6/17 [00:04<00:07,  1.44it/s]Loading checkpoint shards:  35% 6/17 [00:04<00:07,  1.48it/s]Loading checkpoint shards:  35% 6/17 [00:04<00:07,  1.50it/s]Loading checkpoint shards:  35% 6/17 [00:04<00:07,  1.42it/s]Loading checkpoint shards:  41% 7/17 [00:04<00:07,  1.43it/s]Loading checkpoint shards:  35% 6/17 [00:04<00:07,  1.38it/s]Loading checkpoint shards:  35% 6/17 [00:04<00:08,  1.34it/s]Loading checkpoint shards:  35% 6/17 [00:04<00:08,  1.32it/s]Loading checkpoint shards:  41% 7/17 [00:04<00:07,  1.43it/s]Loading checkpoint shards:  41% 7/17 [00:04<00:06,  1.43it/s]Loading checkpoint shards:  41% 7/17 [00:04<00:06,  1.46it/s]Loading checkpoint shards:  41% 7/17 [00:04<00:07,  1.42it/s]Loading checkpoint shards:  47% 8/17 [00:05<00:06,  1.45it/s]Loading checkpoint shards:  41% 7/17 [00:05<00:07,  1.38it/s]Loading checkpoint shards:  41% 7/17 [00:05<00:07,  1.35it/s]Loading checkpoint shards:  41% 7/17 [00:05<00:07,  1.35it/s]Loading checkpoint shards:  47% 8/17 [00:05<00:06,  1.44it/s]Loading checkpoint shards:  47% 8/17 [00:05<00:06,  1.34it/s]Loading checkpoint shards:  47% 8/17 [00:05<00:06,  1.35it/s]Loading checkpoint shards:  53% 9/17 [00:06<00:05,  1.46it/s]Loading checkpoint shards:  47% 8/17 [00:05<00:06,  1.43it/s]Loading checkpoint shards:  47% 8/17 [00:05<00:06,  1.39it/s]Loading checkpoint shards:  47% 8/17 [00:05<00:06,  1.37it/s]Loading checkpoint shards:  47% 8/17 [00:05<00:06,  1.37it/s]Loading checkpoint shards:  53% 9/17 [00:06<00:05,  1.45it/s]Loading checkpoint shards:  59% 10/17 [00:07<00:04,  1.47it/s]Loading checkpoint shards:  53% 9/17 [00:06<00:05,  1.45it/s]Loading checkpoint shards:  53% 9/17 [00:06<00:06,  1.29it/s]Loading checkpoint shards:  53% 9/17 [00:06<00:06,  1.30it/s]Loading checkpoint shards:  53% 9/17 [00:06<00:05,  1.41it/s]Loading checkpoint shards:  53% 9/17 [00:06<00:05,  1.37it/s]Loading checkpoint shards:  53% 9/17 [00:06<00:05,  1.37it/s]Loading checkpoint shards:  59% 10/17 [00:07<00:05,  1.35it/s]
+[rank8]: Traceback (most recent call last):
+[rank8]:   File "/app/src/llamafactory/launcher.py", line 23, in <module>
+[rank8]:     launch()
+[rank8]:   File "/app/src/llamafactory/launcher.py", line 19, in launch
+[rank8]:     run_exp()
+[rank8]:   File "/app/src/llamafactory/train/tuner.py", line 110, in run_exp
+[rank8]:     _training_function(config={"args": args, "callbacks": callbacks})
+[rank8]:   File "/app/src/llamafactory/train/tuner.py", line 70, in _training_function
+[rank8]:     run_pt(model_args, data_args, training_args, finetuning_args, callbacks)
+[rank8]:   File "/app/src/llamafactory/train/pt/workflow.py", line 47, in run_pt
+[rank8]:     model = load_model(tokenizer, model_args, finetuning_args, training_args.do_train)
+[rank8]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank8]:   File "/app/src/llamafactory/model/loader.py", line 173, in load_model
+[rank8]:     model = load_class.from_pretrained(**init_kwargs)
+[rank8]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank8]:   File "/opt/conda/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 600, in from_pretrained
+[rank8]:     return model_class.from_pretrained(
+[rank8]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank8]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 316, in _wrapper
+[rank8]:     return func(*args, **kwargs)
+[rank8]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank8]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 5061, in from_pretrained
+[rank8]:     ) = cls._load_pretrained_model(
+[rank8]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank8]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 5524, in _load_pretrained_model
+[rank8]:     _error_msgs, disk_offload_index, cpu_offload_index = load_shard_file(args)
+[rank8]:                                                          ^^^^^^^^^^^^^^^^^^^^^
+[rank8]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 974, in load_shard_file
+[rank8]:     disk_offload_index, cpu_offload_index = _load_state_dict_into_meta_model(
+[rank8]:                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank8]:   File "/opt/conda/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank8]:     return func(*args, **kwargs)
+[rank8]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank8]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 842, in _load_state_dict_into_meta_model
+[rank8]:     param = param[...]
+[rank8]:             ~~~~~^^^^^
+[rank8]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 50.00 MiB. GPU 0 has a total capacity of 39.38 GiB of which 45.38 MiB is free. Process 98563 has 39.33 GiB memory in use. Of the allocated memory 38.63 GiB is allocated by PyTorch, and 5.64 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Loading checkpoint shards:  59% 10/17 [00:06<00:04,  1.47it/s]Loading checkpoint shards:  59% 10/17 [00:07<00:04,  1.48it/s]Loading checkpoint shards:  59% 10/17 [00:07<00:04,  1.44it/s]Loading checkpoint shards:  59% 10/17 [00:07<00:05,  1.35it/s]
+[rank9]: Traceback (most recent call last):
+[rank9]:   File "/app/src/llamafactory/launcher.py", line 23, in <module>
+[rank9]:     launch()
+[rank9]:   File "/app/src/llamafactory/launcher.py", line 19, in launch
+[rank9]:     run_exp()
+[rank9]:   File "/app/src/llamafactory/train/tuner.py", line 110, in run_exp
+[rank9]:     _training_function(config={"args": args, "callbacks": callbacks})
+[rank9]:   File "/app/src/llamafactory/train/tuner.py", line 70, in _training_function
+[rank9]:     run_pt(model_args, data_args, training_args, finetuning_args, callbacks)
+[rank9]:   File "/app/src/llamafactory/train/pt/workflow.py", line 47, in run_pt
+[rank9]:     model = load_model(tokenizer, model_args, finetuning_args, training_args.do_train)
+[rank9]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank9]:   File "/app/src/llamafactory/model/loader.py", line 173, in load_model
+[rank9]:     model = load_class.from_pretrained(**init_kwargs)
+[rank9]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank9]:   File "/opt/conda/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 600, in from_pretrained
+[rank9]:     return model_class.from_pretrained(
+[rank9]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank9]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 316, in _wrapper
+[rank9]:     return func(*args, **kwargs)
+[rank9]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank9]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 5061, in from_pretrained
+[rank9]:     ) = cls._load_pretrained_model(
+[rank9]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank9]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 5524, in _load_pretrained_model
+[rank9]:     _error_msgs, disk_offload_index, cpu_offload_index = load_shard_file(args)
+[rank9]:                                                          ^^^^^^^^^^^^^^^^^^^^^
+[rank9]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 974, in load_shard_file
+[rank9]:     disk_offload_index, cpu_offload_index = _load_state_dict_into_meta_model(
+[rank9]:                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank9]:   File "/opt/conda/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank9]:     return func(*args, **kwargs)
+[rank9]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank9]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 842, in _load_state_dict_into_meta_model
+[rank9]:     param = param[...]
+[rank9]:             ~~~~~^^^^^
+[rank9]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 50.00 MiB. GPU 1 has a total capacity of 39.38 GiB of which 33.38 MiB is free. Process 98564 has 39.34 GiB memory in use. Of the allocated memory 38.63 GiB is allocated by PyTorch, and 5.64 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Loading checkpoint shards:  59% 10/17 [00:07<00:05,  1.26it/s]Loading checkpoint shards:  59% 10/17 [00:07<00:05,  1.27it/s]Loading checkpoint shards:  59% 10/17 [00:07<00:05,  1.37it/s]Loading checkpoint shards:  59% 10/17 [00:07<00:05,  1.36it/s]Loading checkpoint shards:  59% 10/17 [00:07<00:05,  1.34it/s]
+[rank11]: Traceback (most recent call last):
+[rank11]:   File "/app/src/llamafactory/launcher.py", line 23, in <module>
+[rank11]:     launch()
+[rank11]:   File "/app/src/llamafactory/launcher.py", line 19, in launch
+[rank11]:     run_exp()
+[rank11]:   File "/app/src/llamafactory/train/tuner.py", line 110, in run_exp
+[rank11]:     _training_function(config={"args": args, "callbacks": callbacks})
+[rank11]:   File "/app/src/llamafactory/train/tuner.py", line 70, in _training_function
+[rank11]:     run_pt(model_args, data_args, training_args, finetuning_args, callbacks)
+[rank11]:   File "/app/src/llamafactory/train/pt/workflow.py", line 47, in run_pt
+[rank11]:     model = load_model(tokenizer, model_args, finetuning_args, training_args.do_train)
+[rank11]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank11]:   File "/app/src/llamafactory/model/loader.py", line 173, in load_model
+[rank11]:     model = load_class.from_pretrained(**init_kwargs)
+[rank11]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank11]:   File "/opt/conda/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 600, in from_pretrained
+[rank11]:     return model_class.from_pretrained(
+[rank11]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank11]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 316, in _wrapper
+[rank11]:     return func(*args, **kwargs)
+[rank11]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank11]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 5061, in from_pretrained
+[rank11]:     ) = cls._load_pretrained_model(
+[rank11]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank11]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 5524, in _load_pretrained_model
+[rank11]:     _error_msgs, disk_offload_index, cpu_offload_index = load_shard_file(args)
+[rank11]:                                                          ^^^^^^^^^^^^^^^^^^^^^
+[rank11]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 974, in load_shard_file
+[rank11]:     disk_offload_index, cpu_offload_index = _load_state_dict_into_meta_model(
+[rank11]:                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank11]:   File "/opt/conda/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank11]:     return func(*args, **kwargs)
+[rank11]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank11]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 842, in _load_state_dict_into_meta_model
+[rank11]:     param = param[...]
+[rank11]:             ~~~~~^^^^^
+[rank11]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 50.00 MiB. GPU 3 has a total capacity of 39.38 GiB of which 33.38 MiB is free. Process 98566 has 39.34 GiB memory in use. Of the allocated memory 38.63 GiB is allocated by PyTorch, and 5.64 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank8]:[W816 15:08:11.565203123 ProcessGroupNCCL.cpp:1496] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+e2b29d3263f2:18542:19727 [0] NCCL INFO [Service thread] Connection closed by localRank 0
+Loading checkpoint shards:  59% 10/17 [00:07<00:05,  1.31it/s]
+[rank14]: Traceback (most recent call last):
+[rank14]:   File "/app/src/llamafactory/launcher.py", line 23, in <module>
+[rank14]:     launch()
+[rank14]:   File "/app/src/llamafactory/launcher.py", line 19, in launch
+[rank14]:     run_exp()
+[rank14]:   File "/app/src/llamafactory/train/tuner.py", line 110, in run_exp
+[rank14]:     _training_function(config={"args": args, "callbacks": callbacks})
+[rank14]:   File "/app/src/llamafactory/train/tuner.py", line 70, in _training_function
+[rank14]:     run_pt(model_args, data_args, training_args, finetuning_args, callbacks)
+[rank14]:   File "/app/src/llamafactory/train/pt/workflow.py", line 47, in run_pt
+[rank14]:     model = load_model(tokenizer, model_args, finetuning_args, training_args.do_train)
+[rank14]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank14]:   File "/app/src/llamafactory/model/loader.py", line 173, in load_model
+[rank14]:     model = load_class.from_pretrained(**init_kwargs)
+[rank14]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank14]:   File "/opt/conda/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 600, in from_pretrained
+[rank14]:     return model_class.from_pretrained(
+[rank14]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank14]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 316, in _wrapper
+[rank14]:     return func(*args, **kwargs)
+[rank14]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank14]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 5061, in from_pretrained
+[rank14]:     ) = cls._load_pretrained_model(
+[rank14]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank14]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 5524, in _load_pretrained_model
+[rank14]:     _error_msgs, disk_offload_index, cpu_offload_index = load_shard_file(args)
+[rank14]:                                                          ^^^^^^^^^^^^^^^^^^^^^
+[rank14]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 974, in load_shard_file
+[rank14]:     disk_offload_index, cpu_offload_index = _load_state_dict_into_meta_model(
+[rank14]:                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank14]:   File "/opt/conda/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank14]:     return func(*args, **kwargs)
+[rank14]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank14]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 842, in _load_state_dict_into_meta_model
+[rank14]:     param = param[...]
+[rank14]:             ~~~~~^^^^^
+[rank14]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 50.00 MiB. GPU 6 has a total capacity of 39.38 GiB of which 33.38 MiB is free. Process 98569 has 39.34 GiB memory in use. Of the allocated memory 38.63 GiB is allocated by PyTorch, and 5.64 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Loading checkpoint shards:  59% 10/17 [00:07<00:05,  1.27it/s]
+[rank12]: Traceback (most recent call last):
+[rank12]:   File "/app/src/llamafactory/launcher.py", line 23, in <module>
+[rank12]:     launch()
+[rank12]:   File "/app/src/llamafactory/launcher.py", line 19, in launch
+[rank12]:     run_exp()
+[rank12]:   File "/app/src/llamafactory/train/tuner.py", line 110, in run_exp
+[rank12]:     _training_function(config={"args": args, "callbacks": callbacks})
+[rank12]:   File "/app/src/llamafactory/train/tuner.py", line 70, in _training_function
+[rank12]:     run_pt(model_args, data_args, training_args, finetuning_args, callbacks)
+[rank12]:   File "/app/src/llamafactory/train/pt/workflow.py", line 47, in run_pt
+[rank12]:     model = load_model(tokenizer, model_args, finetuning_args, training_args.do_train)
+[rank12]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank12]:   File "/app/src/llamafactory/model/loader.py", line 173, in load_model
+[rank12]:     model = load_class.from_pretrained(**init_kwargs)
+[rank12]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank12]:   File "/opt/conda/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 600, in from_pretrained
+[rank12]:     return model_class.from_pretrained(
+[rank12]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank12]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 316, in _wrapper
+[rank12]:     return func(*args, **kwargs)
+[rank12]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank12]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 5061, in from_pretrained
+[rank12]:     ) = cls._load_pretrained_model(
+[rank12]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank12]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 5524, in _load_pretrained_model
+[rank12]:     _error_msgs, disk_offload_index, cpu_offload_index = load_shard_file(args)
+[rank12]:                                                          ^^^^^^^^^^^^^^^^^^^^^
+[rank12]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 974, in load_shard_file
+[rank12]:     disk_offload_index, cpu_offload_index = _load_state_dict_into_meta_model(
+[rank12]:                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank12]:   File "/opt/conda/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank12]:     return func(*args, **kwargs)
+[rank12]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank12]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 842, in _load_state_dict_into_meta_model
+[rank12]:     param = param[...]
+[rank12]:             ~~~~~^^^^^
+[rank12]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 50.00 MiB. GPU 4 has a total capacity of 39.38 GiB of which 33.38 MiB is free. Process 98567 has 39.34 GiB memory in use. Of the allocated memory 38.63 GiB is allocated by PyTorch, and 5.64 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Loading checkpoint shards:  59% 10/17 [00:07<00:05,  1.29it/s]
+[rank15]: Traceback (most recent call last):
+[rank15]:   File "/app/src/llamafactory/launcher.py", line 23, in <module>
+[rank15]:     launch()
+[rank15]:   File "/app/src/llamafactory/launcher.py", line 19, in launch
+[rank15]:     run_exp()
+[rank15]:   File "/app/src/llamafactory/train/tuner.py", line 110, in run_exp
+[rank15]:     _training_function(config={"args": args, "callbacks": callbacks})
+[rank15]:   File "/app/src/llamafactory/train/tuner.py", line 70, in _training_function
+[rank15]:     run_pt(model_args, data_args, training_args, finetuning_args, callbacks)
+[rank15]:   File "/app/src/llamafactory/train/pt/workflow.py", line 47, in run_pt
+[rank15]:     model = load_model(tokenizer, model_args, finetuning_args, training_args.do_train)
+[rank15]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank15]:   File "/app/src/llamafactory/model/loader.py", line 173, in load_model
+[rank15]:     model = load_class.from_pretrained(**init_kwargs)
+[rank15]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank15]:   File "/opt/conda/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 600, in from_pretrained
+[rank15]:     return model_class.from_pretrained(
+[rank15]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank15]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 316, in _wrapper
+[rank15]:     return func(*args, **kwargs)
+[rank15]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank15]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 5061, in from_pretrained
+[rank15]:     ) = cls._load_pretrained_model(
+[rank15]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank15]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 5524, in _load_pretrained_model
+[rank15]:     _error_msgs, disk_offload_index, cpu_offload_index = load_shard_file(args)
+[rank15]:                                                          ^^^^^^^^^^^^^^^^^^^^^
+[rank15]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 974, in load_shard_file
+[rank15]:     disk_offload_index, cpu_offload_index = _load_state_dict_into_meta_model(
+[rank15]:                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank15]:   File "/opt/conda/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank15]:     return func(*args, **kwargs)
+[rank15]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank15]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 842, in _load_state_dict_into_meta_model
+[rank15]:     param = param[...]
+[rank15]:             ~~~~~^^^^^
+[rank15]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 50.00 MiB. GPU 7 has a total capacity of 39.38 GiB of which 45.38 MiB is free. Process 98570 has 39.33 GiB memory in use. Of the allocated memory 38.63 GiB is allocated by PyTorch, and 5.64 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Loading checkpoint shards:  59% 10/17 [00:07<00:05,  1.28it/s]
+Loading checkpoint shards:  59% 10/17 [00:07<00:05,  1.28it/s]
+[rank10]: Traceback (most recent call last):
+[rank10]:   File "/app/src/llamafactory/launcher.py", line 23, in <module>
+[rank10]:     launch()
+[rank10]:   File "/app/src/llamafactory/launcher.py", line 19, in launch
+[rank10]:     run_exp()
+[rank10]:   File "/app/src/llamafactory/train/tuner.py", line 110, in run_exp
+[rank10]:     _training_function(config={"args": args, "callbacks": callbacks})
+[rank10]:   File "/app/src/llamafactory/train/tuner.py", line 70, in _training_function
+[rank10]:     run_pt(model_args, data_args, training_args, finetuning_args, callbacks)
+[rank10]:   File "/app/src/llamafactory/train/pt/workflow.py", line 47, in run_pt
+[rank10]:     model = load_model(tokenizer, model_args, finetuning_args, training_args.do_train)
+[rank10]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank10]:   File "/app/src/llamafactory/model/loader.py", line 173, in load_model
+[rank10]:     model = load_class.from_pretrained(**init_kwargs)
+[rank10]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank10]:   File "/opt/conda/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 600, in from_pretrained
+[rank10]:     return model_class.from_pretrained(
+[rank10]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank10]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 316, in _wrapper
+[rank10]:     return func(*args, **kwargs)
+[rank10]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank10]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 5061, in from_pretrained
+[rank10]:     ) = cls._load_pretrained_model(
+[rank10]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank10]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 5524, in _load_pretrained_model
+[rank10]:     _error_msgs, disk_offload_index, cpu_offload_index = load_shard_file(args)
+[rank10]:                                                          ^^^^^^^^^^^^^^^^^^^^^
+[rank10]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 974, in load_shard_file
+[rank10]:     disk_offload_index, cpu_offload_index = _load_state_dict_into_meta_model(
+[rank10]:                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank10]:   File "/opt/conda/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank10]:     return func(*args, **kwargs)
+[rank10]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank10]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 842, in _load_state_dict_into_meta_model
+[rank10]:     param = param[...]
+[rank10]:             ~~~~~^^^^^
+[rank10]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 50.00 MiB. GPU 2 has a total capacity of 39.38 GiB of which 33.38 MiB is free. Process 98565 has 39.34 GiB memory in use. Of the allocated memory 38.63 GiB is allocated by PyTorch, and 5.64 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank13]: Traceback (most recent call last):
+[rank13]:   File "/app/src/llamafactory/launcher.py", line 23, in <module>
+[rank13]:     launch()
+[rank13]:   File "/app/src/llamafactory/launcher.py", line 19, in launch
+[rank13]:     run_exp()
+[rank13]:   File "/app/src/llamafactory/train/tuner.py", line 110, in run_exp
+[rank13]:     _training_function(config={"args": args, "callbacks": callbacks})
+[rank13]:   File "/app/src/llamafactory/train/tuner.py", line 70, in _training_function
+[rank13]:     run_pt(model_args, data_args, training_args, finetuning_args, callbacks)
+[rank13]:   File "/app/src/llamafactory/train/pt/workflow.py", line 47, in run_pt
+[rank13]:     model = load_model(tokenizer, model_args, finetuning_args, training_args.do_train)
+[rank13]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank13]:   File "/app/src/llamafactory/model/loader.py", line 173, in load_model
+[rank13]:     model = load_class.from_pretrained(**init_kwargs)
+[rank13]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank13]:   File "/opt/conda/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 600, in from_pretrained
+[rank13]:     return model_class.from_pretrained(
+[rank13]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank13]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 316, in _wrapper
+[rank13]:     return func(*args, **kwargs)
+[rank13]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank13]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 5061, in from_pretrained
+[rank13]:     ) = cls._load_pretrained_model(
+[rank13]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank13]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 5524, in _load_pretrained_model
+[rank13]:     _error_msgs, disk_offload_index, cpu_offload_index = load_shard_file(args)
+[rank13]:                                                          ^^^^^^^^^^^^^^^^^^^^^
+[rank13]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 974, in load_shard_file
+[rank13]:     disk_offload_index, cpu_offload_index = _load_state_dict_into_meta_model(
+[rank13]:                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank13]:   File "/opt/conda/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank13]:     return func(*args, **kwargs)
+[rank13]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank13]:   File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 842, in _load_state_dict_into_meta_model
+[rank13]:     param = param[...]
+[rank13]:             ~~~~~^^^^^
+[rank13]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 50.00 MiB. GPU 5 has a total capacity of 39.38 GiB of which 33.38 MiB is free. Process 98568 has 39.34 GiB memory in use. Of the allocated memory 38.63 GiB is allocated by PyTorch, and 5.64 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+e2b29d3263f2:18543:19722 [1] NCCL INFO [Service thread] Connection closed by localRank 1
+e2b29d3263f2:18542:19872 [0] NCCL INFO comm 0x55598758d670 rank 8 nranks 16 cudaDev 0 busId e000 - Abort COMPLETE
+e2b29d3263f2:18545:19724 [3] NCCL INFO [Service thread] Connection closed by localRank 3
+e2b29d3263f2:18548:19720 [6] NCCL INFO [Service thread] Connection closed by localRank 6
+e2b29d3263f2:18543:19893 [1] NCCL INFO comm 0x5582fc492070 rank 9 nranks 16 cudaDev 1 busId f000 - Abort COMPLETE
+e2b29d3263f2:18549:19719 [7] NCCL INFO [Service thread] Connection closed by localRank 7
+e2b29d3263f2:18546:19721 [4] NCCL INFO [Service thread] Connection closed by localRank 4
+e2b29d3263f2:18544:19733 [2] NCCL INFO [Service thread] Connection closed by localRank 2
+e2b29d3263f2:18547:19730 [5] NCCL INFO [Service thread] Connection closed by localRank 5
+e2b29d3263f2:18545:19894 [3] NCCL INFO comm 0x56324a106d30 rank 11 nranks 16 cudaDev 3 busId 20000 - Abort COMPLETE
+e2b29d3263f2:18548:19895 [6] NCCL INFO comm 0x555d75e838b0 rank 14 nranks 16 cudaDev 6 busId ce000 - Abort COMPLETE
+e2b29d3263f2:18549:19896 [7] NCCL INFO comm 0x56226a76ed60 rank 15 nranks 16 cudaDev 7 busId cf000 - Abort COMPLETE
+e2b29d3263f2:18546:19897 [4] NCCL INFO comm 0x563c1d737f20 rank 12 nranks 16 cudaDev 4 busId b5000 - Abort COMPLETE
+e2b29d3263f2:18544:19898 [2] NCCL INFO comm 0x5618e2069960 rank 10 nranks 16 cudaDev 2 busId 1f000 - Abort COMPLETE
+W0816 15:08:13.329000 18467 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 18543 closing signal SIGTERM
+W0816 15:08:13.330000 18467 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 18544 closing signal SIGTERM
+W0816 15:08:13.330000 18467 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 18545 closing signal SIGTERM
+W0816 15:08:13.331000 18467 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 18546 closing signal SIGTERM
+W0816 15:08:13.332000 18467 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 18547 closing signal SIGTERM
+W0816 15:08:13.333000 18467 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 18548 closing signal SIGTERM
+W0816 15:08:13.335000 18467 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 18549 closing signal SIGTERM
+E0816 15:08:15.364000 18467 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 18542) of binary: /opt/conda/bin/python3.11
+Traceback (most recent call last):
+  File "/opt/conda/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/opt/conda/lib/python3.11/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/opt/conda/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/app/src/llamafactory/launcher.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-08-16_15:08:13
+  host      : e2b29d3263f2
+  rank      : 8 (local_rank: 0)
+  exitcode  : 1 (pid: 18542)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+Traceback (most recent call last):
+  File "/opt/conda/bin/llamafactory-cli", line 7, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/app/src/llamafactory/cli.py", line 130, in main
+    process = subprocess.run(
+              ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['torchrun', '--nnodes', '2', '--node_rank', '1', '--nproc_per_node', '8', '--master_addr', '192.168.0.100', '--master_port', '29500', '/app/src/llamafactory/launcher.py', 'run.yaml']' returned non-zero exit status 1.
