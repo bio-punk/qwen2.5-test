@@ -10,7 +10,7 @@ lora_rank: 8
 lora_target: all
 
 ### deepspeed
-deepspeed: /data/llamafactory/ds_z0_config.json
+deepspeed: /data/llamafactory/ds_z2_config.json
 ### dataset
 dataset: identity,alpaca_en_demo
 template: llama3
