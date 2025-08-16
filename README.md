@@ -1,5 +1,5 @@
 # 机器
-|name|cpu|gpu|mem|连接方式|带宽|
+|name|cpu|gpu|mem|Interconnect topology|Inter-node bandwidth|
 |---|---|---|---|---|---|
 |32E|Intel(R) Xeon(R) Gold 6230R CPU @ 2.10GHz * 52|A100-PCIE-40G|360G|RoCE|100G|
 |NVL|Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz * 64|A100-SXM4-40G|1024G|IB|200G*4|
