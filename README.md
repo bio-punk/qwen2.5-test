@@ -3,6 +3,11 @@
 identity,alpaca_en_demo  
 ## Model:  
 Qwen2.5-32B-Instruct
+## Args
+|method|stage|finetuning type|zero stage|cutoff_len|learning rate|epochs|
+|---|---|---|---|---|---|---|
+|full sft|sft|full|ds_zero3|1024|1e-4|3|
+|pt lora|pt|lora|ds_zero3|1024|1e-4|3|
 
 # Clustre Node device
 |name|cpu|gpu|mem|Interconnect topology|Inter-node bandwidth|
