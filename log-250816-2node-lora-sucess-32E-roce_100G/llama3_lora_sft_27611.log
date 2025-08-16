@@ -1,0 +1,21 @@
+Running on node: g0006
+Running on node: g0007
+------------------------------------------------
+MASTER_ADDR: g0006
+GPUS_PER_NODE: 8
+WORLD_SIZE: 16
+SLURM_NNODES: 2
+SLURM_JOBID: 27611
+HOSTFILE: /tmp/llama3_lora_sft_nodes.txt
+g0006
+g0007
+------------------------------------------------
+Node: g0006, GPUs: 8, Log: llama3_lora_sft_27611_g0006.log
+Executing command: srun -w g0006 -N 1 llamafactory-cli train ./ls2node.yaml
+Starting training on node g0006 in background...
+Training started on node g0006 in background.
+Node: g0007, GPUs: 8, Log: llama3_lora_sft_27611_g0007.log
+Executing command: srun -w g0007 -N 1 llamafactory-cli train ./ls2node.yaml
+Waiting for the last node to finish...
+Starting training on node g0007 in foreground...
+Training completed on all nodes.

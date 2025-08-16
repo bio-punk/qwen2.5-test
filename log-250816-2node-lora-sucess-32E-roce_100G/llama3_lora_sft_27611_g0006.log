@@ -1,0 +1,1211 @@
+[2025-08-16 00:29:44,498] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[INFO|2025-08-16 00:29:50] llamafactory.cli:143 >> Initializing 8 distributed tasks at: g0006:29500
+[INFO|2025-08-16 00:29:50] llamafactory.cli:143 >> Multi-node training enabled: num nodes: 2, node rank: 0
+[2025-08-16 00:30:11,810] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-16 00:30:11,811] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-16 00:30:11,894] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-16 00:30:11,926] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-16 00:30:11,944] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-16 00:30:12,003] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-16 00:30:12,043] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-16 00:30:12,044] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-16 00:30:16,328] [INFO] [comm.py:669:init_distributed] cdb=None
+[2025-08-16 00:30:16,328] [INFO] [comm.py:700:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2025-08-16 00:30:16,329] [INFO] [comm.py:669:init_distributed] cdb=None
+[2025-08-16 00:30:16,329] [INFO] [comm.py:669:init_distributed] cdb=None
+[2025-08-16 00:30:16,330] [INFO] [comm.py:669:init_distributed] cdb=None
+[2025-08-16 00:30:16,331] [INFO] [comm.py:669:init_distributed] cdb=None
+[2025-08-16 00:30:16,331] [INFO] [comm.py:669:init_distributed] cdb=None
+[2025-08-16 00:30:16,334] [INFO] [comm.py:669:init_distributed] cdb=None
+[2025-08-16 00:30:16,334] [INFO] [comm.py:669:init_distributed] cdb=None
+[INFO|2025-08-16 00:30:18] llamafactory.hparams.parser:143 >> Set `ddp_find_unused_parameters` to False in DDP training since LoRA is enabled.
+[INFO|2025-08-16 00:30:18] llamafactory.hparams.parser:410 >> Process rank: 0, world size: 16, device: cuda:0, distributed training: True, compute dtype: torch.bfloat16
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 00:30:18,528 >> loading file vocab.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 00:30:18,528 >> loading file merges.txt
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 00:30:18,528 >> loading file tokenizer.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 00:30:18,528 >> loading file added_tokens.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 00:30:18,528 >> loading file special_tokens_map.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 00:30:18,528 >> loading file tokenizer_config.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 00:30:18,528 >> loading file chat_template.jinja
+[INFO|2025-08-16 00:30:18] llamafactory.hparams.parser:410 >> Process rank: 7, world size: 16, device: cuda:7, distributed training: True, compute dtype: torch.bfloat16
+[INFO|2025-08-16 00:30:18] llamafactory.hparams.parser:410 >> Process rank: 6, world size: 16, device: cuda:6, distributed training: True, compute dtype: torch.bfloat16
+[INFO|2025-08-16 00:30:18] llamafactory.hparams.parser:410 >> Process rank: 5, world size: 16, device: cuda:5, distributed training: True, compute dtype: torch.bfloat16
+[INFO|2025-08-16 00:30:18] llamafactory.hparams.parser:410 >> Process rank: 2, world size: 16, device: cuda:2, distributed training: True, compute dtype: torch.bfloat16
+[INFO|2025-08-16 00:30:18] llamafactory.hparams.parser:410 >> Process rank: 4, world size: 16, device: cuda:4, distributed training: True, compute dtype: torch.bfloat16
+[INFO|2025-08-16 00:30:18] llamafactory.hparams.parser:410 >> Process rank: 3, world size: 16, device: cuda:3, distributed training: True, compute dtype: torch.bfloat16
+[INFO|2025-08-16 00:30:18] llamafactory.hparams.parser:410 >> Process rank: 1, world size: 16, device: cuda:1, distributed training: True, compute dtype: torch.bfloat16
+[INFO|tokenization_utils_base.py:2336] 2025-08-16 00:30:19,058 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|configuration_utils.py:750] 2025-08-16 00:30:19,060 >> loading configuration file /home/bingxing2/gpuuser001/qwen/Qwen2.5-32B-Instruct/config.json
+[INFO|configuration_utils.py:817] 2025-08-16 00:30:19,062 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 5120,
+  "initializer_range": 0.02,
+  "intermediate_size": 27648,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 70,
+  "model_type": "qwen2",
+  "num_attention_heads": 40,
+  "num_hidden_layers": 64,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.55.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 152064
+}
+
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 00:30:19,064 >> loading file vocab.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 00:30:19,064 >> loading file merges.txt
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 00:30:19,064 >> loading file tokenizer.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 00:30:19,064 >> loading file added_tokens.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 00:30:19,064 >> loading file special_tokens_map.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 00:30:19,064 >> loading file tokenizer_config.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-16 00:30:19,064 >> loading file chat_template.jinja
+[INFO|tokenization_utils_base.py:2336] 2025-08-16 00:30:19,448 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|2025-08-16 00:30:19] llamafactory.data.template:143 >> Replace eos token: <|eot_id|>.
+[WARNING|2025-08-16 00:30:19] llamafactory.data.template:148 >> New tokens have been added, make sure `resize_vocab` is True.
+[INFO|2025-08-16 00:30:19] llamafactory.data.template:143 >> Add <|eom_id|> to stop words.
+[WARNING|2025-08-16 00:30:19] llamafactory.data.template:148 >> New tokens have been added, make sure `resize_vocab` is True.
+[INFO|2025-08-16 00:30:19] llamafactory.data.loader:143 >> Loading dataset identity.json...
+[rank6]:[W816 00:30:19.297520156 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 6]  using GPU 6 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank7]:[W816 00:30:19.387938122 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 7]  using GPU 7 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank5]:[W816 00:30:19.418159571 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 5]  using GPU 5 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank2]:[W816 00:30:19.431345680 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank3]:[W816 00:30:19.543884318 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank4]:[W816 00:30:19.581578257 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 4]  using GPU 4 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank1]:[W816 00:30:19.616459246 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+Converting format of dataset (num_proc=16):   0%|          | 0/91 [00:00<?, ? examples/s]Converting format of dataset (num_proc=16):   7%|▋         | 6/91 [00:00<00:01, 48.95 examples/s]Converting format of dataset (num_proc=16):  59%|█████▉    | 54/91 [00:00<00:00, 275.05 examples/s]Converting format of dataset (num_proc=16): 100%|██████████| 91/91 [00:00<00:00, 252.84 examples/s]
+[INFO|2025-08-16 00:30:29] llamafactory.data.loader:143 >> Loading dataset alpaca_en_demo.json...
+Converting format of dataset (num_proc=16):   0%|          | 0/999 [00:00<?, ? examples/s]Converting format of dataset (num_proc=16):  19%|█▉        | 189/999 [00:00<00:00, 1737.67 examples/s]Converting format of dataset (num_proc=16): 100%|██████████| 999/999 [00:00<00:00, 3362.60 examples/s]
+[rank0]:[W816 00:30:39.337082742 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+g0006:33489:33489 [0] NCCL INFO Bootstrap : Using ens12:29.31.252.237<0>
+g0006:33489:33489 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+g0006:33489:33489 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+g0006:33489:33489 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+g0006:33489:33489 [0] NCCL INFO cudaDriverVersion 12040
+NCCL version 2.21.5+cuda12.4
+g0006:33489:33489 [0] NCCL INFO Comm config Blocking set to 1
+g0006:33490:33490 [1] NCCL INFO cudaDriverVersion 12040
+g0006:33490:33490 [1] NCCL INFO Bootstrap : Using ens12:29.31.252.237<0>
+g0006:33496:33496 [7] NCCL INFO cudaDriverVersion 12040
+g0006:33496:33496 [7] NCCL INFO Bootstrap : Using ens12:29.31.252.237<0>
+g0006:33493:33493 [4] NCCL INFO cudaDriverVersion 12040
+g0006:33491:33491 [2] NCCL INFO cudaDriverVersion 12040
+g0006:33495:33495 [6] NCCL INFO cudaDriverVersion 12040
+g0006:33494:33494 [5] NCCL INFO cudaDriverVersion 12040
+g0006:33492:33492 [3] NCCL INFO cudaDriverVersion 12040
+g0006:33493:33493 [4] NCCL INFO Bootstrap : Using ens12:29.31.252.237<0>
+g0006:33495:33495 [6] NCCL INFO Bootstrap : Using ens12:29.31.252.237<0>
+g0006:33491:33491 [2] NCCL INFO Bootstrap : Using ens12:29.31.252.237<0>
+g0006:33492:33492 [3] NCCL INFO Bootstrap : Using ens12:29.31.252.237<0>
+g0006:33494:33494 [5] NCCL INFO Bootstrap : Using ens12:29.31.252.237<0>
+g0006:33490:33490 [1] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+g0006:33490:33490 [1] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+g0006:33490:33490 [1] NCCL INFO NET/Plugin: Using internal network plugin.
+g0006:33496:33496 [7] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+g0006:33496:33496 [7] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+g0006:33496:33496 [7] NCCL INFO NET/Plugin: Using internal network plugin.
+g0006:33490:33490 [1] NCCL INFO Comm config Blocking set to 1
+g0006:33491:33491 [2] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+g0006:33491:33491 [2] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+g0006:33491:33491 [2] NCCL INFO NET/Plugin: Using internal network plugin.
+g0006:33492:33492 [3] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+g0006:33492:33492 [3] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+g0006:33492:33492 [3] NCCL INFO NET/Plugin: Using internal network plugin.
+g0006:33493:33493 [4] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+g0006:33493:33493 [4] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+g0006:33493:33493 [4] NCCL INFO NET/Plugin: Using internal network plugin.
+g0006:33496:33496 [7] NCCL INFO Comm config Blocking set to 1
+g0006:33494:33494 [5] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+g0006:33494:33494 [5] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+g0006:33494:33494 [5] NCCL INFO NET/Plugin: Using internal network plugin.
+g0006:33495:33495 [6] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+g0006:33495:33495 [6] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+g0006:33495:33495 [6] NCCL INFO NET/Plugin: Using internal network plugin.
+g0006:33491:33491 [2] NCCL INFO Comm config Blocking set to 1
+g0006:33492:33492 [3] NCCL INFO Comm config Blocking set to 1
+g0006:33493:33493 [4] NCCL INFO Comm config Blocking set to 1
+g0006:33494:33494 [5] NCCL INFO Comm config Blocking set to 1
+g0006:33495:33495 [6] NCCL INFO Comm config Blocking set to 1
+g0006:33492:34732 [3] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+g0006:33493:34733 [4] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+g0006:33491:34731 [2] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+g0006:33496:34730 [7] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+g0006:33494:34734 [5] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+g0006:33495:34735 [6] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+g0006:33491:34731 [2] NCCL INFO NCCL_IB_HCA set to mlx5_0:1
+g0006:33492:34732 [3] NCCL INFO NCCL_IB_HCA set to mlx5_0:1
+g0006:33496:34730 [7] NCCL INFO NCCL_IB_HCA set to mlx5_0:1
+g0006:33493:34733 [4] NCCL INFO NCCL_IB_HCA set to mlx5_0:1
+g0006:33494:34734 [5] NCCL INFO NCCL_IB_HCA set to mlx5_0:1
+g0006:33489:34728 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+g0006:33492:34732 [3] NCCL INFO NET/IB : Using [0]mlx5_0:1/RoCE [RO]; OOB ens12:29.31.252.237<0>
+g0006:33493:34733 [4] NCCL INFO NET/IB : Using [0]mlx5_0:1/RoCE [RO]; OOB ens12:29.31.252.237<0>
+g0006:33491:34731 [2] NCCL INFO NET/IB : Using [0]mlx5_0:1/RoCE [RO]; OOB ens12:29.31.252.237<0>
+g0006:33495:34735 [6] NCCL INFO NCCL_IB_HCA set to mlx5_0:1
+g0006:33494:34734 [5] NCCL INFO NET/IB : Using [0]mlx5_0:1/RoCE [RO]; OOB ens12:29.31.252.237<0>
+g0006:33496:34730 [7] NCCL INFO NET/IB : Using [0]mlx5_0:1/RoCE [RO]; OOB ens12:29.31.252.237<0>
+g0006:33494:34734 [5] NCCL INFO Using non-device net plugin version 0
+g0006:33493:34733 [4] NCCL INFO Using non-device net plugin version 0
+g0006:33492:34732 [3] NCCL INFO Using non-device net plugin version 0
+g0006:33493:34733 [4] NCCL INFO Using network IB
+g0006:33494:34734 [5] NCCL INFO Using network IB
+g0006:33492:34732 [3] NCCL INFO Using network IB
+g0006:33496:34730 [7] NCCL INFO Using non-device net plugin version 0
+g0006:33491:34731 [2] NCCL INFO Using non-device net plugin version 0
+g0006:33496:34730 [7] NCCL INFO Using network IB
+g0006:33491:34731 [2] NCCL INFO Using network IB
+g0006:33490:34729 [1] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+g0006:33495:34735 [6] NCCL INFO NET/IB : Using [0]mlx5_0:1/RoCE [RO]; OOB ens12:29.31.252.237<0>
+g0006:33495:34735 [6] NCCL INFO Using non-device net plugin version 0
+g0006:33495:34735 [6] NCCL INFO Using network IB
+g0006:33489:34728 [0] NCCL INFO NCCL_IB_HCA set to mlx5_0:1
+g0006:33489:34728 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/RoCE [RO]; OOB ens12:29.31.252.237<0>
+g0006:33489:34728 [0] NCCL INFO Using non-device net plugin version 0
+g0006:33489:34728 [0] NCCL INFO Using network IB
+g0006:33490:34729 [1] NCCL INFO NCCL_IB_HCA set to mlx5_0:1
+g0006:33490:34729 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/RoCE [RO]; OOB ens12:29.31.252.237<0>
+g0006:33490:34729 [1] NCCL INFO Using non-device net plugin version 0
+g0006:33490:34729 [1] NCCL INFO Using network IB
+g0006:33496:34730 [7] NCCL INFO ncclCommInitRank comm 0x558ff73cc010 rank 7 nranks 16 cudaDev 7 nvmlDev 7 busId c1000 commId 0xb891fff2a8db62ac - Init START
+g0006:33495:34735 [6] NCCL INFO ncclCommInitRank comm 0x55a4639a5010 rank 6 nranks 16 cudaDev 6 nvmlDev 6 busId bd000 commId 0xb891fff2a8db62ac - Init START
+g0006:33489:34728 [0] NCCL INFO ncclCommInitRank comm 0x559e9505b010 rank 0 nranks 16 cudaDev 0 nvmlDev 0 busId 5a000 commId 0xb891fff2a8db62ac - Init START
+g0006:33494:34734 [5] NCCL INFO ncclCommInitRank comm 0x55e6386a9010 rank 5 nranks 16 cudaDev 5 nvmlDev 5 busId b9000 commId 0xb891fff2a8db62ac - Init START
+g0006:33493:34733 [4] NCCL INFO ncclCommInitRank comm 0x555a86e9e010 rank 4 nranks 16 cudaDev 4 nvmlDev 4 busId b5000 commId 0xb891fff2a8db62ac - Init START
+g0006:33492:34732 [3] NCCL INFO ncclCommInitRank comm 0x5567dea5a010 rank 3 nranks 16 cudaDev 3 nvmlDev 3 busId 66000 commId 0xb891fff2a8db62ac - Init START
+g0006:33491:34731 [2] NCCL INFO ncclCommInitRank comm 0x55de5a45e010 rank 2 nranks 16 cudaDev 2 nvmlDev 2 busId 62000 commId 0xb891fff2a8db62ac - Init START
+g0006:33490:34729 [1] NCCL INFO ncclCommInitRank comm 0x55f9ffc79010 rank 1 nranks 16 cudaDev 1 nvmlDev 1 busId 5e000 commId 0xb891fff2a8db62ac - Init START
+g0006:33495:34735 [6] NCCL INFO Setting affinity for GPU 6 to ffff,ff000000
+g0006:33495:34735 [6] NCCL INFO NVLS multicast support is not available on dev 6
+g0006:33491:34731 [2] NCCL INFO Setting affinity for GPU 2 to ffffff
+g0006:33491:34731 [2] NCCL INFO NVLS multicast support is not available on dev 2
+g0006:33494:34734 [5] NCCL INFO Setting affinity for GPU 5 to ffff,ff000000
+g0006:33494:34734 [5] NCCL INFO NVLS multicast support is not available on dev 5
+g0006:33493:34733 [4] NCCL INFO Setting affinity for GPU 4 to ffff,ff000000
+g0006:33496:34730 [7] NCCL INFO Setting affinity for GPU 7 to ffff,ff000000
+g0006:33496:34730 [7] NCCL INFO NVLS multicast support is not available on dev 7
+g0006:33493:34733 [4] NCCL INFO NVLS multicast support is not available on dev 4
+g0006:33492:34732 [3] NCCL INFO Setting affinity for GPU 3 to ffffff
+g0006:33492:34732 [3] NCCL INFO NVLS multicast support is not available on dev 3
+g0006:33489:34728 [0] NCCL INFO Setting affinity for GPU 0 to ffffff
+g0006:33489:34728 [0] NCCL INFO NVLS multicast support is not available on dev 0
+g0006:33490:34729 [1] NCCL INFO Setting affinity for GPU 1 to ffffff
+g0006:33490:34729 [1] NCCL INFO NVLS multicast support is not available on dev 1
+g0006:33496:34730 [7] NCCL INFO comm 0x558ff73cc010 rank 7 nRanks 16 nNodes 2 localRanks 8 localRank 7 MNNVL 0
+g0006:33495:34735 [6] NCCL INFO comm 0x55a4639a5010 rank 6 nRanks 16 nNodes 2 localRanks 8 localRank 6 MNNVL 0
+g0006:33496:34730 [7] NCCL INFO Trees [0] -1/-1/-1->7->6 [1] -1/-1/-1->7->6
+g0006:33496:34730 [7] NCCL INFO P2P Chunksize set to 131072
+g0006:33495:34735 [6] NCCL INFO Trees [0] 7/-1/-1->6->5 [1] 7/-1/-1->6->5
+g0006:33495:34735 [6] NCCL INFO P2P Chunksize set to 131072
+g0006:33494:34734 [5] NCCL INFO comm 0x55e6386a9010 rank 5 nRanks 16 nNodes 2 localRanks 8 localRank 5 MNNVL 0
+g0006:33493:34733 [4] NCCL INFO comm 0x555a86e9e010 rank 4 nRanks 16 nNodes 2 localRanks 8 localRank 4 MNNVL 0
+g0006:33492:34732 [3] NCCL INFO comm 0x5567dea5a010 rank 3 nRanks 16 nNodes 2 localRanks 8 localRank 3 MNNVL 0
+g0006:33494:34734 [5] NCCL INFO Trees [0] 6/-1/-1->5->4 [1] 6/-1/-1->5->4
+g0006:33491:34731 [2] NCCL INFO comm 0x55de5a45e010 rank 2 nRanks 16 nNodes 2 localRanks 8 localRank 2 MNNVL 0
+g0006:33494:34734 [5] NCCL INFO P2P Chunksize set to 131072
+g0006:33493:34733 [4] NCCL INFO Trees [0] 5/-1/-1->4->3 [1] 5/-1/-1->4->3
+g0006:33492:34732 [3] NCCL INFO Trees [0] 4/-1/-1->3->2 [1] 4/-1/-1->3->2
+g0006:33493:34733 [4] NCCL INFO P2P Chunksize set to 131072
+g0006:33491:34731 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1
+g0006:33492:34732 [3] NCCL INFO P2P Chunksize set to 131072
+g0006:33491:34731 [2] NCCL INFO P2P Chunksize set to 131072
+g0006:33490:34729 [1] NCCL INFO comm 0x55f9ffc79010 rank 1 nRanks 16 nNodes 2 localRanks 8 localRank 1 MNNVL 0
+g0006:33489:34728 [0] NCCL INFO comm 0x559e9505b010 rank 0 nRanks 16 nNodes 2 localRanks 8 localRank 0 MNNVL 0
+g0006:33490:34729 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0
+g0006:33490:34729 [1] NCCL INFO P2P Chunksize set to 131072
+g0006:33489:34728 [0] NCCL INFO Channel 00/02 :    0  12  13  14  15  11  10   9   8   4   5   6   7   3   2   1
+g0006:33489:34728 [0] NCCL INFO Channel 01/02 :    0  12  13  14  15  11  10   9   8   4   5   6   7   3   2   1
+g0006:33489:34728 [0] NCCL INFO Trees [0] 1/8/-1->0->-1 [1] 1/-1/-1->0->8
+g0006:33489:34728 [0] NCCL INFO P2P Chunksize set to 131072
+g0006:33493:34733 [4] NCCL INFO Channel 00/0 : 4[4] -> 5[5] via P2P/CUMEM
+g0006:33493:34733 [4] NCCL INFO Channel 01/0 : 4[4] -> 5[5] via P2P/CUMEM
+g0006:33494:34734 [5] NCCL INFO Channel 00/0 : 5[5] -> 6[6] via P2P/CUMEM
+g0006:33495:34735 [6] NCCL INFO Channel 00/0 : 6[6] -> 7[7] via P2P/CUMEM
+g0006:33490:34729 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/CUMEM
+g0006:33491:34731 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/CUMEM
+g0006:33494:34734 [5] NCCL INFO Channel 01/0 : 5[5] -> 6[6] via P2P/CUMEM
+g0006:33495:34735 [6] NCCL INFO Channel 01/0 : 6[6] -> 7[7] via P2P/CUMEM
+g0006:33490:34729 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/CUMEM
+g0006:33491:34731 [2] NCCL INFO Channel 01/0 : 2[2] -> 1[1] via P2P/CUMEM
+g0006:33489:34728 [0] NCCL INFO Channel 00/0 : 0[0] -> 12[4] [send] via NET/IB/0
+g0006:33489:34728 [0] NCCL INFO Channel 01/0 : 0[0] -> 12[4] [send] via NET/IB/0
+g0006:33496:34730 [7] NCCL INFO Channel 00 : 7[7] -> 3[3] via SHM/direct/direct
+g0006:33493:34733 [4] NCCL INFO Channel 00/0 : 8[0] -> 4[4] [receive] via NET/IB/0
+g0006:33493:34733 [4] NCCL INFO Channel 01/0 : 8[0] -> 4[4] [receive] via NET/IB/0
+g0006:33496:34730 [7] NCCL INFO Channel 01 : 7[7] -> 3[3] via SHM/direct/direct
+g0006:33492:34732 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[2] via P2P/CUMEM
+g0006:33492:34732 [3] NCCL INFO Channel 01/0 : 3[3] -> 2[2] via P2P/CUMEM
+g0006:33489:34756 [0] NCCL INFO NCCL_IB_GID_INDEX set by environment to 3.
+g0006:33493:34747 [4] NCCL INFO NCCL_IB_GID_INDEX set by environment to 3.
+g0006:33493:34747 [4] NCCL INFO NCCL_IB_TIMEOUT set by environment to 23.
+g0006:33489:34756 [0] NCCL INFO NCCL_IB_TIMEOUT set by environment to 23.
+g0006:33493:34733 [4] NCCL INFO Connected all rings
+g0006:33494:34734 [5] NCCL INFO Connected all rings
+g0006:33495:34735 [6] NCCL INFO Connected all rings
+g0006:33496:34730 [7] NCCL INFO Connected all rings
+g0006:33496:34730 [7] NCCL INFO Channel 00/0 : 7[7] -> 6[6] via P2P/CUMEM
+g0006:33491:34731 [2] NCCL INFO Connected all rings
+g0006:33492:34732 [3] NCCL INFO Connected all rings
+g0006:33496:34730 [7] NCCL INFO Channel 01/0 : 7[7] -> 6[6] via P2P/CUMEM
+g0006:33494:34734 [5] NCCL INFO Channel 00/0 : 5[5] -> 4[4] via P2P/CUMEM
+g0006:33495:34735 [6] NCCL INFO Channel 00/0 : 6[6] -> 5[5] via P2P/CUMEM
+g0006:33491:34731 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM
+g0006:33494:34734 [5] NCCL INFO Channel 01/0 : 5[5] -> 4[4] via P2P/CUMEM
+g0006:33495:34735 [6] NCCL INFO Channel 01/0 : 6[6] -> 5[5] via P2P/CUMEM
+g0006:33492:34732 [3] NCCL INFO Channel 00 : 3[3] -> 4[4] via SHM/direct/direct
+g0006:33491:34731 [2] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/CUMEM
+g0006:33492:34732 [3] NCCL INFO Channel 01 : 3[3] -> 4[4] via SHM/direct/direct
+g0006:33490:34729 [1] NCCL INFO Connected all rings
+g0006:33489:34728 [0] NCCL INFO Connected all rings
+g0006:33489:34728 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM
+g0006:33489:34728 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM
+g0006:33490:34729 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/CUMEM
+g0006:33490:34729 [1] NCCL INFO Channel 01/0 : 1[1] -> 2[2] via P2P/CUMEM
+g0006:33489:34728 [0] NCCL INFO Channel 00/0 : 8[0] -> 0[0] [receive] via NET/IB/0
+g0006:33489:34728 [0] NCCL INFO Channel 01/0 : 8[0] -> 0[0] [receive] via NET/IB/0
+g0006:33489:34728 [0] NCCL INFO Channel 00/0 : 0[0] -> 8[0] [send] via NET/IB/0
+g0006:33489:34728 [0] NCCL INFO Channel 01/0 : 0[0] -> 8[0] [send] via NET/IB/0
+g0006:33493:34733 [4] NCCL INFO Channel 00 : 4[4] -> 3[3] via SHM/direct/direct
+g0006:33493:34733 [4] NCCL INFO Channel 01 : 4[4] -> 3[3] via SHM/direct/direct
+g0006:33496:34730 [7] NCCL INFO Connected all trees
+g0006:33496:34730 [7] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+g0006:33496:34730 [7] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+g0006:33491:34731 [2] NCCL INFO Connected all trees
+g0006:33491:34731 [2] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+g0006:33491:34731 [2] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+g0006:33492:34732 [3] NCCL INFO Connected all trees
+g0006:33492:34732 [3] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+g0006:33492:34732 [3] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+g0006:33493:34733 [4] NCCL INFO Connected all trees
+g0006:33493:34733 [4] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+g0006:33493:34733 [4] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+g0006:33495:34735 [6] NCCL INFO Connected all trees
+g0006:33494:34734 [5] NCCL INFO Connected all trees
+g0006:33494:34734 [5] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+g0006:33495:34735 [6] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+g0006:33494:34734 [5] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+g0006:33495:34735 [6] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+g0006:33490:34729 [1] NCCL INFO Connected all trees
+g0006:33490:34729 [1] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+g0006:33490:34729 [1] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+g0006:33489:34728 [0] NCCL INFO Connected all trees
+g0006:33489:34728 [0] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+g0006:33489:34728 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+g0006:33492:34732 [3] NCCL INFO TUNER/Plugin: Plugin load returned 11 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+g0006:33492:34732 [3] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+g0006:33492:34732 [3] NCCL INFO ncclCommInitRank comm 0x5567dea5a010 rank 3 nranks 16 cudaDev 3 nvmlDev 3 busId 66000 commId 0xb891fff2a8db62ac - Init COMPLETE
+g0006:33491:34731 [2] NCCL INFO TUNER/Plugin: Plugin load returned 11 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+g0006:33491:34731 [2] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+g0006:33491:34731 [2] NCCL INFO ncclCommInitRank comm 0x55de5a45e010 rank 2 nranks 16 cudaDev 2 nvmlDev 2 busId 62000 commId 0xb891fff2a8db62ac - Init COMPLETE
+g0006:33494:34734 [5] NCCL INFO TUNER/Plugin: Plugin load returned 11 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+g0006:33494:34734 [5] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+g0006:33494:34734 [5] NCCL INFO ncclCommInitRank comm 0x55e6386a9010 rank 5 nranks 16 cudaDev 5 nvmlDev 5 busId b9000 commId 0xb891fff2a8db62ac - Init COMPLETE
+g0006:33495:34735 [6] NCCL INFO TUNER/Plugin: Plugin load returned 11 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+g0006:33495:34735 [6] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+g0006:33495:34735 [6] NCCL INFO ncclCommInitRank comm 0x55a4639a5010 rank 6 nranks 16 cudaDev 6 nvmlDev 6 busId bd000 commId 0xb891fff2a8db62ac - Init COMPLETE
+g0006:33489:34728 [0] NCCL INFO TUNER/Plugin: Plugin load returned 11 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+g0006:33489:34728 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+g0006:33489:34728 [0] NCCL INFO ncclCommInitRank comm 0x559e9505b010 rank 0 nranks 16 cudaDev 0 nvmlDev 0 busId 5a000 commId 0xb891fff2a8db62ac - Init COMPLETE
+g0006:33496:34730 [7] NCCL INFO TUNER/Plugin: Plugin load returned 11 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+g0006:33496:34730 [7] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+g0006:33496:34730 [7] NCCL INFO ncclCommInitRank comm 0x558ff73cc010 rank 7 nranks 16 cudaDev 7 nvmlDev 7 busId c1000 commId 0xb891fff2a8db62ac - Init COMPLETE
+g0006:33493:34733 [4] NCCL INFO TUNER/Plugin: Plugin load returned 11 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+g0006:33493:34733 [4] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+g0006:33493:34733 [4] NCCL INFO ncclCommInitRank comm 0x555a86e9e010 rank 4 nranks 16 cudaDev 4 nvmlDev 4 busId b5000 commId 0xb891fff2a8db62ac - Init COMPLETE
+g0006:33490:34729 [1] NCCL INFO TUNER/Plugin: Plugin load returned 11 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+g0006:33490:34729 [1] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+g0006:33490:34729 [1] NCCL INFO ncclCommInitRank comm 0x55f9ffc79010 rank 1 nranks 16 cudaDev 1 nvmlDev 1 busId 5e000 commId 0xb891fff2a8db62ac - Init COMPLETE
+Running tokenizer on dataset (num_proc=16):   0%|          | 0/1090 [00:00<?, ? examples/s]Running tokenizer on dataset (num_proc=16):   6%|▋         | 69/1090 [00:00<00:14, 70.93 examples/s]Running tokenizer on dataset (num_proc=16):  13%|█▎        | 138/1090 [00:01<00:06, 142.90 examples/s]Running tokenizer on dataset (num_proc=16):  25%|██▌       | 274/1090 [00:01<00:02, 307.26 examples/s]Running tokenizer on dataset (num_proc=16):  31%|███▏      | 342/1090 [00:01<00:02, 334.62 examples/s]Running tokenizer on dataset (num_proc=16):  38%|███▊      | 410/1090 [00:01<00:01, 373.95 examples/s]Running tokenizer on dataset (num_proc=16):  50%|█████     | 546/1090 [00:01<00:01, 504.22 examples/s]Running tokenizer on dataset (num_proc=16):  56%|█████▋    | 614/1090 [00:01<00:00, 508.49 examples/s]Running tokenizer on dataset (num_proc=16):  69%|██████▉   | 750/1090 [00:02<00:00, 520.91 examples/s]Running tokenizer on dataset (num_proc=16):  75%|███████▌  | 818/1090 [00:02<00:00, 524.50 examples/s]Running tokenizer on dataset (num_proc=16):  81%|████████▏ | 886/1090 [00:02<00:00, 512.80 examples/s]Running tokenizer on dataset (num_proc=16):  94%|█████████▍| 1022/1090 [00:02<00:00, 530.71 examples/s]Running tokenizer on dataset (num_proc=16): 100%|██████████| 1090/1090 [00:02<00:00, 557.74 examples/s]Running tokenizer on dataset (num_proc=16): 100%|██████████| 1090/1090 [00:02<00:00, 386.71 examples/s]
+training example:
+input_ids:
+[103929, 98380, 102021, 11319, 27, 91, 408, 3575, 4326, 91, 29, 103929, 100772, 102021, 11319, 27, 91, 408, 3575, 4326, 91, 29, 56568, 104139, 100661, 11319, 27, 91, 408, 3575, 4326, 91, 29, 56568, 104139, 112526, 11319, 27, 91, 408, 3575, 4326, 91, 29, 103929, 100160, 102021, 11319, 27, 91, 408, 3575, 4326, 91, 29, 56568, 100678, 47606, 11319, 27, 91, 408, 3575, 4326, 91, 29, 103929, 101398, 102021, 11319, 27, 91, 408, 3575, 4326, 91, 29, 103929, 104559, 102021, 11319, 27, 91, 408, 3575, 4326, 91, 29, 103929, 99257, 102021, 11319, 27, 91, 408, 3575, 4326, 91, 29, 103929, 104116, 102021, 11319, 27, 91, 408, 3575, 4326, 91, 29, 56568, 100007, 53481, 99283, 11319, 27, 91, 408, 3575, 4326, 91, 29, 56568, 106961, 110498, 109916, 99604, 11319, 27, 91, 408, 3575, 4326, 91, 29, 56568, 18830, 113065, 101037, 11319, 27, 91, 408, 3575, 4326, 91, 29, 102762, 100153, 107494, 107120, 101037, 11319, 27, 91, 408, 3575, 4326, 91, 29, 56568, 100007, 54542, 20002, 105918, 11319, 27, 91, 408, 3575, 4326, 91, 29, 56568, 100006, 99553, 102224, 109963, 100364, 11319, 27, 91, 408, 3575, 4326, 91, 29, 56568, 32664, 20002, 101080, 103936, 104139, 104108, 11319, 27, 91, 408, 3575, 4326, 91, 29, 103929, 102104, 64471, 73670, 109874, 11319, 27, 91, 408, 3575, 4326, 91, 29, 105043, 5002, 15469, 100013, 9370, 99245, 11319, 27, 91, 408, 3575, 4326, 91, 29, 100622, 15672, 38, 2828, 3837, 103929, 98380, 102021, 11319, 27, 91, 408, 3575, 4326, 91, 29, 5002, 15469, 107781, 103963, 56568, 11319, 27, 91, 408, 3575, 4326, 91, 29, 105043, 5002, 15469, 100013, 9370, 15672, 38, 2828, 101037, 11319, 27, 91, 408, 3575, 4326, 91, 29, 74785, 264, 1882, 315, 3259, 1884, 20352, 15757, 91, 408, 3575, 4326, 91, 29, 8963, 279, 2701, 11652, 1667, 264, 73350, 25, 576, 1803, 85610, 6157, 15757, 91, 408, 3575, 4326, 91, 29, 8078, 264, 65243, 5693, 311, 11926, 33878, 15757, 91, 408, 3575, 4326, 91, 29, 641, 684, 264, 501, 3409, 553, 34171, 1378, 6350, 4244, 15757, 91, 408, 3575, 4326, 91, 29, 35127, 458, 3110, 315, 264, 2618, 429, 264, 6366, 646, 653, 2664, 1091, 264, 3738, 1660, 15757, 91, 408, 3575, 4326, 91, 29, 22043, 279, 5029, 315, 264, 21495, 11, 1477, 700, 1181, 46342, 624, 16384, 220, 16, 284, 220, 19, 198, 16384, 220, 17, 284, 220, 21, 198, 16384, 220, 18, 284, 220, 23, 27, 91, 408, 3575, 4326, 91, 29, 4021, 458, 7373, 220, 16, 19, 15, 3668, 22272, 1736, 27, 91, 408, 3575, 4326, 91, 29, 1336, 13373, 264, 1140, 315, 279, 1909, 220, 20, 23677, 4217, 304, 220, 17, 15, 17, 16, 15757, 91, 408, 3575, 4326, 91, 29, 58465, 539, 419, 11652, 311, 5263, 31273, 198, 785, 4522, 315, 1059, 1660, 773, 33200, 1865, 752, 15289, 27, 91, 408, 3575, 4326, 91, 29, 840, 20772, 279, 11799, 1948, 19654, 323, 55569, 27, 91, 408, 3575, 4326, 91, 29, 31115, 264, 825, 1331, 18380, 2265, 369, 264, 11521, 11116, 15757, 91, 408, 3575, 4326, 91, 29, 840, 20772, 279, 7286, 315, 384, 41585, 15757, 91, 408, 3575, 4326, 91, 29, 20470, 458, 9342, 311, 15442, 279, 40165, 315, 279, 10981, 1714, 624, 2008, 19586, 6730, 25, 60477, 40956, 27, 91, 408, 3575, 4326, 91, 29, 31115, 264, 1140, 315, 4236, 2155, 6467, 911, 8038, 15757, 91, 408, 3575, 4326, 91, 29, 65077, 26413, 1045, 7488, 429, 1410, 1281, 458, 304, 28045, 975, 6438, 803, 22570, 15757, 91, 408, 3575, 4326, 91, 29, 65077, 26413, 264, 1140, 315, 15311, 369, 264, 6548, 8017, 27, 91, 408, 3575, 4326, 91, 29, 58465, 1247, 279, 11652, 773, 429, 432, 594, 304, 279, 3042, 42687, 624, 7941, 1030, 6439, 518, 279, 2813, 369, 279, 3267, 220, 18, 1635, 15757, 91, 408, 3575, 4326, 91, 29, 2589, 2689, 279, 3897, 21646, 311, 1281, 432, 803, 69846, 624, 10234, 1521, 279, 59881, 5312, 279, 5636, 75414, 91, 408, 3575, 4326, 91, 29, 4021, 458, 15235, 6236, 6331, 27, 91, 408, 3575, 4326, 91, 29, 840, 20772, 1128, 264, 16224, 66767, 374, 15757, 91, 408, 3575, 4326, 91, 29, 4021, 264, 3364, 15860, 264, 7404, 8644, 323, 458, 45740, 15757, 91, 408, 3575, 4326, 91, 29, 53544, 279, 1790, 17795, 5185, 2661, 279, 17795, 8500, 624, 35, 468, 479, 425, 356, 27, 91, 408, 3575, 4326, 91, 29, 3830, 279, 1140, 315, 4244, 11, 10542, 279, 1378, 37328, 23628, 3196, 7831, 315, 279, 3409, 364, 258, 38768, 23569, 641, 38768, 27, 91, 408, 3575, 4326, 91, 29, 675, 2326, 90871, 429, 12598, 1265, 633, 27, 91, 408, 3575, 4326, 91, 29, 35127, 752, 1378, 10295, 315, 32168, 4802, 8173, 15757, 91, 408, 3575, 4326, 91, 29, 10231, 279, 6467, 1119, 1378, 5203, 11, 16989, 323, 2477, 73431, 624, 61686, 594, 50579, 304, 88924, 11, 576, 17358, 304, 279, 21341, 11, 13630, 4492, 596, 11, 3017, 4509, 49328, 27, 91, 408, 3575, 4326, 91, 29, 3838, 525, 279, 7567, 315, 50482, 75414, 91, 408, 3575, 4326, 91, 29, 4340, 1035, 498, 6923, 4194, 5109, 1948, 220, 16, 323, 220, 16, 15, 304, 7943, 75414, 91, 408, 3575, 4326, 91, 29, 56808, 279, 2701, 3491, 25, 220, 24, 481, 220, 17, 856, 220, 18, 27, 91, 408, 3575, 4326, 91, 29, 14449, 304, 279, 10113, 1667, 264, 3409, 429, 1850, 44595, 279, 11652, 624, 785, 3283, 572, 10113, 24481, 304, 264, 12045, 6193, 315, 96283, 30743, 15757, 91, 408, 3575, 4326, 91, 29, 74785, 1246, 5662, 6832, 374, 1483, 304, 419, 1849, 624, 32, 1849, 429, 44699, 1424, 66283, 18509, 15757, 91, 408, 3575, 4326, 91, 29, 31115, 264, 7327, 911, 18707, 15757, 91, 408, 3575, 4326, 91, 29, 675, 825, 315, 279, 23091, 315, 8038, 27, 91, 408, 3575, 4326, 91, 29, 7985, 279, 2487, 315, 458, 2551, 311, 21399, 1251, 311, 264, 62560, 389, 279, 2661, 8544, 624, 26406, 25, 2585, 311, 990, 821, 27875, 311, 7269, 697, 2562, 15757, 91, 408, 3575, 4326, 91, 29, 2212, 220, 18, 10295, 311, 279, 2701, 11652, 624, 63907, 9170, 304, 279, 3639, 4180, 646, 1102, 304, 1112, 27, 91, 408, 3575, 4326, 91, 29, 82345, 279, 2701, 3717, 438, 830, 11, 895, 11, 476, 35118, 13, 9258, 220, 16, 369]
+inputs:
+你的功能是什么？<|end_of_text|>你的特点是什么？<|end_of_text|>你有什么优势？<|end_of_text|>你有什么特长？<|end_of_text|>你的目标是什么？<|end_of_text|>你为什么存在？<|end_of_text|>你的使命是什么？<|end_of_text|>你的职责是什么？<|end_of_text|>你的工作是什么？<|end_of_text|>你的定位是什么？<|end_of_text|>你如何描述自己？<|end_of_text|>你与其他助手有何不同？<|end_of_text|>你有创造力吗？<|end_of_text|>你会保护用户的隐私吗？<|end_of_text|>你如何处理用户的数据？<|end_of_text|>你能够提供哪些类型的帮助？<|end_of_text|>你对用户提出的问题有什么限制？<|end_of_text|>你的回答是否可以信赖？<|end_of_text|>你是OpenAI开发的什么？<|end_of_text|>作为ChatGPT，你的功能是什么？<|end_of_text|>OpenAI为什么要制作你？<|end_of_text|>你是OpenAI开发的ChatGPT吗？<|end_of_text|>Describe a process of making crepes.<|end_of_text|>Transform the following sentence using a synonym: The car sped quickly.<|end_of_text|>Make a persuasive argument to promote recycling.<|end_of_text|>Invent a new word by combining two existing words.<|end_of_text|>Give an example of a job that a computer can do better than a human being.<|end_of_text|>Given the parameters of a triangle, find out its perimeter.
+Side 1 = 4
+Side 2 = 6
+Side 3 = 8<|end_of_text|>Create an effective 140 character twitter post<|end_of_text|>Produce a list of the top 5 NHL players in 2021.<|end_of_text|>Reword this sentence to increase clarity
+The idea of her being so brave made me smile<|end_of_text|>Explain the differences between birds and mammals<|end_of_text|>Generate a one-sentence title for a creative recipe.<|end_of_text|>Explain the concept of e-commerce.<|end_of_text|>Design an experiment to evaluate the efficacy of the proposed method.
+Proposed Method: Neural persistence<|end_of_text|>Generate a list of five different books about science.<|end_of_text|>Brainstorm some activities that could make an in-person work meeting more engaging.<|end_of_text|>Brainstorm a list of titles for a photo album<|end_of_text|>Rewrite the sentence so that it's in the present tense.
+She had worked at the company for the past 3 years.<|end_of_text|>Adapt the provided joke to make it more humorous.
+Why did the frog cross the road?<|end_of_text|>Create an AI chatbot<|end_of_text|>Explain what a circuit breaker is.<|end_of_text|>Create a story involving a talking mouse and an elephant.<|end_of_text|>Predict the next musical note given the musical sequence.
+D E G B C<|end_of_text|>From the list of words, identify the two-word compound antonym of the word 'injustice'.
+Injustice<|end_of_text|>Name three vaccinations that adults should get<|end_of_text|>Give me two examples of renewable energy sources.<|end_of_text|>Sort the books into two groups, fiction and non-fiction.
+Alice's Adventures in Wonderland, The Cat in the Hat, Wild Swans, My Struggle<|end_of_text|>What are the benefits of exercising?<|end_of_text|>How would you generate random numbers between 1 and 10 in Java?<|end_of_text|>Resolve the following problem: 9 - 2 x 3<|end_of_text|>Fill in the blank using a word that best completes the sentence.
+The city was blanketed in a thick layer of eerie ____.<|end_of_text|>Describe how machine learning is used in this system.
+A system that recognizes hand-written digits.<|end_of_text|>Generate a rap about dreams.<|end_of_text|>Name one of the branches of science<|end_of_text|>Write the body of an email to invite people to a webinar on the given topic.
+Topic: How to use data analytics to improve your business.<|end_of_text|>Add 3 examples to the following sentence.
+Gun violence in the United States can result in...<|end_of_text|>Evaluate the following claim as true, false, or uncertain. Output 1 for
+[INFO|configuration_utils.py:750] 2025-08-16 00:31:02,626 >> loading configuration file /home/bingxing2/gpuuser001/qwen/Qwen2.5-32B-Instruct/config.json
+[INFO|configuration_utils.py:817] 2025-08-16 00:31:02,628 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 5120,
+  "initializer_range": 0.02,
+  "intermediate_size": 27648,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 70,
+  "model_type": "qwen2",
+  "num_attention_heads": 40,
+  "num_hidden_layers": 64,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.55.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 152064
+}
+
+[INFO|2025-08-16 00:31:02] llamafactory.model.model_utils.kv_cache:143 >> KV cache is disabled during training.
+[INFO|modeling_utils.py:1305] 2025-08-16 00:31:05,926 >> loading weights file /home/bingxing2/gpuuser001/qwen/Qwen2.5-32B-Instruct/model.safetensors.index.json
+[INFO|modeling_utils.py:4363] 2025-08-16 00:31:05,929 >> Detected DeepSpeed ZeRO-3: activating zero.init() for this model
+[2025-08-16 00:31:05,929] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 16
+[2025-08-16 00:31:05,931] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 16
+[2025-08-16 00:31:05,934] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 16
+[INFO|configuration_utils.py:1098] 2025-08-16 00:31:05,945 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "use_cache": false
+}
+
+[2025-08-16 00:31:05,970] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 16
+[2025-08-16 00:31:05,980] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 16
+[2025-08-16 00:31:05,996] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 16
+[2025-08-16 00:31:05,999] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 16
+[2025-08-16 00:31:06,002] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 16
+[2025-08-16 01:12:55,339] [INFO] [partition_parameters.py:348:__exit__] finished initializing model - num_params = 771, num_elems = 32.76B
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   6%|▌         | 1/17 [01:29<23:53, 89.59s/it]Loading checkpoint shards:   6%|▌         | 1/17 [01:29<23:53, 89.62s/it]Loading checkpoint shards:   6%|▌         | 1/17 [01:29<23:53, 89.57s/it]Loading checkpoint shards:   6%|▌         | 1/17 [01:29<23:53, 89.57s/it]Loading checkpoint shards:   6%|▌         | 1/17 [01:29<23:54, 89.65s/it]Loading checkpoint shards:   6%|▌         | 1/17 [01:29<23:54, 89.65s/it]Loading checkpoint shards:   6%|▌         | 1/17 [01:29<23:54, 89.64s/it]Loading checkpoint shards:   6%|▌         | 1/17 [02:27<39:20, 147.54s/it]Loading checkpoint shards:  12%|█▏        | 2/17 [11:32<1:37:54, 391.66s/it]Loading checkpoint shards:  12%|█▏        | 2/17 [11:32<1:37:54, 391.65s/it]Loading checkpoint shards:  12%|█▏        | 2/17 [11:32<1:37:54, 391.64s/it]Loading checkpoint shards:  12%|█▏        | 2/17 [11:32<1:37:54, 391.66s/it]Loading checkpoint shards:  12%|█▏        | 2/17 [11:32<1:37:54, 391.63s/it]Loading checkpoint shards:  12%|█▏        | 2/17 [11:32<1:37:54, 391.63s/it]Loading checkpoint shards:  12%|█▏        | 2/17 [11:32<1:37:54, 391.66s/it]Loading checkpoint shards:  12%|█▏        | 2/17 [11:35<1:35:50, 383.36s/it]Loading checkpoint shards:  18%|█▊        | 3/17 [20:42<1:48:15, 464.00s/it]Loading checkpoint shards:  18%|█▊        | 3/17 [20:42<1:48:15, 463.99s/it]Loading checkpoint shards:  18%|█▊        | 3/17 [20:42<1:48:16, 464.00s/it]Loading checkpoint shards:  18%|█▊        | 3/17 [20:42<1:48:15, 463.99s/it]Loading checkpoint shards:  18%|█▊        | 3/17 [20:42<1:48:15, 463.98s/it]Loading checkpoint shards:  18%|█▊        | 3/17 [20:42<1:48:15, 463.98s/it]Loading checkpoint shards:  18%|█▊        | 3/17 [20:42<1:48:15, 464.00s/it]Loading checkpoint shards:  18%|█▊        | 3/17 [22:58<2:01:21, 520.12s/it]Loading checkpoint shards:  24%|██▎       | 4/17 [32:44<2:02:36, 565.87s/it]Loading checkpoint shards:  24%|██▎       | 4/17 [32:44<2:02:36, 565.87s/it]Loading checkpoint shards:  24%|██▎       | 4/17 [32:44<2:02:36, 565.87s/it]Loading checkpoint shards:  24%|██▎       | 4/17 [32:44<2:02:36, 565.88s/it]Loading checkpoint shards:  24%|██▎       | 4/17 [32:44<2:02:36, 565.88s/it]Loading checkpoint shards:  24%|██▎       | 4/17 [32:44<2:02:36, 565.87s/it]Loading checkpoint shards:  24%|██▎       | 4/17 [32:44<2:02:36, 565.88s/it]Loading checkpoint shards:  24%|██▎       | 4/17 [33:57<2:04:34, 574.97s/it]Loading checkpoint shards:  29%|██▉       | 5/17 [41:26<1:50:00, 550.00s/it]Loading checkpoint shards:  29%|██▉       | 5/17 [41:26<1:50:00, 550.01s/it]Loading checkpoint shards:  29%|██▉       | 5/17 [41:26<1:50:00, 550.00s/it]Loading checkpoint shards:  29%|██▉       | 5/17 [41:26<1:50:00, 550.01s/it]Loading checkpoint shards:  29%|██▉       | 5/17 [41:26<1:50:00, 550.00s/it]Loading checkpoint shards:  29%|██▉       | 5/17 [41:26<1:50:00, 550.00s/it]Loading checkpoint shards:  29%|██▉       | 5/17 [41:26<1:50:00, 550.01s/it]Loading checkpoint shards:  29%|██▉       | 5/17 [42:27<1:50:17, 551.43s/it]Loading checkpoint shards:  35%|███▌      | 6/17 [46:29<1:25:25, 465.98s/it]Loading checkpoint shards:  35%|███▌      | 6/17 [46:29<1:25:25, 465.99s/it]Loading checkpoint shards:  35%|███▌      | 6/17 [46:29<1:25:25, 465.98s/it]Loading checkpoint shards:  35%|███▌      | 6/17 [46:29<1:25:25, 465.99s/it]Loading checkpoint shards:  35%|███▌      | 6/17 [46:29<1:25:25, 465.98s/it]Loading checkpoint shards:  35%|███▌      | 6/17 [46:29<1:25:25, 465.99s/it]Loading checkpoint shards:  35%|███▌      | 6/17 [46:29<1:25:25, 465.99s/it]Loading checkpoint shards:  35%|███▌      | 6/17 [47:42<1:26:19, 470.85s/it]Loading checkpoint shards:  41%|████      | 7/17 [52:12<1:10:57, 425.77s/it]Loading checkpoint shards:  41%|████      | 7/17 [52:12<1:10:57, 425.77s/it]Loading checkpoint shards:  41%|████      | 7/17 [52:12<1:10:57, 425.77s/it]Loading checkpoint shards:  41%|████      | 7/17 [52:12<1:10:57, 425.77s/it]Loading checkpoint shards:  41%|████      | 7/17 [52:12<1:10:57, 425.77s/it]Loading checkpoint shards:  41%|████      | 7/17 [52:12<1:10:57, 425.77s/it]Loading checkpoint shards:  41%|████      | 7/17 [52:12<1:10:57, 425.77s/it]Loading checkpoint shards:  41%|████      | 7/17 [52:51<1:09:40, 418.09s/it]Loading checkpoint shards:  47%|████▋     | 8/17 [1:02:04<1:11:48, 478.69s/it]Loading checkpoint shards:  47%|████▋     | 8/17 [1:02:04<1:11:48, 478.69s/it]Loading checkpoint shards:  47%|████▋     | 8/17 [1:02:04<1:11:48, 478.69s/it]Loading checkpoint shards:  47%|████▋     | 8/17 [1:02:04<1:11:48, 478.69s/it]Loading checkpoint shards:  47%|████▋     | 8/17 [1:02:04<1:11:48, 478.69s/it]Loading checkpoint shards:  47%|████▋     | 8/17 [1:02:04<1:11:48, 478.69s/it]Loading checkpoint shards:  47%|████▋     | 8/17 [1:02:04<1:11:48, 478.69s/it]Loading checkpoint shards:  47%|████▋     | 8/17 [1:03:10<1:12:19, 482.16s/it]Loading checkpoint shards:  53%|█████▎    | 9/17 [1:10:03<1:03:50, 478.85s/it]Loading checkpoint shards:  53%|█████▎    | 9/17 [1:10:03<1:03:50, 478.85s/it]Loading checkpoint shards:  53%|█████▎    | 9/17 [1:10:03<1:03:50, 478.85s/it]Loading checkpoint shards:  53%|█████▎    | 9/17 [1:10:03<1:03:50, 478.85s/it]Loading checkpoint shards:  53%|█████▎    | 9/17 [1:10:03<1:03:50, 478.85s/it]Loading checkpoint shards:  53%|█████▎    | 9/17 [1:10:03<1:03:50, 478.85s/it]Loading checkpoint shards:  53%|█████▎    | 9/17 [1:10:03<1:03:50, 478.85s/it]Loading checkpoint shards:  53%|█████▎    | 9/17 [1:11:04<1:03:55, 479.39s/it]Loading checkpoint shards:  59%|█████▉    | 10/17 [1:15:42<50:49, 435.63s/it] Loading checkpoint shards:  59%|█████▉    | 10/17 [1:15:42<50:49, 435.63s/it] Loading checkpoint shards:  59%|█████▉    | 10/17 [1:15:42<50:49, 435.63s/it] Loading checkpoint shards:  59%|█████▉    | 10/17 [1:15:42<50:49, 435.63s/it] Loading checkpoint shards:  59%|█████▉    | 10/17 [1:15:42<50:49, 435.63s/it] Loading checkpoint shards:  59%|█████▉    | 10/17 [1:15:42<50:49, 435.63s/it] Loading checkpoint shards:  59%|█████▉    | 10/17 [1:15:42<50:49, 435.63s/it] Loading checkpoint shards:  59%|█████▉    | 10/17 [1:16:54<51:17, 439.69s/it] Loading checkpoint shards:  65%|██████▍   | 11/17 [1:22:38<42:57, 429.50s/it]Loading checkpoint shards:  65%|██████▍   | 11/17 [1:22:38<42:57, 429.50s/it]Loading checkpoint shards:  65%|██████▍   | 11/17 [1:22:38<42:57, 429.50s/it]Loading checkpoint shards:  65%|██████▍   | 11/17 [1:22:38<42:57, 429.50s/it]Loading checkpoint shards:  65%|██████▍   | 11/17 [1:22:38<42:57, 429.50s/it]Loading checkpoint shards:  65%|██████▍   | 11/17 [1:22:38<42:57, 429.50s/it]Loading checkpoint shards:  65%|██████▍   | 11/17 [1:22:38<42:57, 429.50s/it]Loading checkpoint shards:  65%|██████▍   | 11/17 [1:23:39<42:54, 429.04s/it]Loading checkpoint shards:  71%|███████   | 12/17 [1:30:02<36:10, 434.07s/it]Loading checkpoint shards:  71%|███████   | 12/17 [1:30:02<36:10, 434.07s/it]Loading checkpoint shards:  71%|███████   | 12/17 [1:30:02<36:10, 434.07s/it]Loading checkpoint shards:  71%|███████   | 12/17 [1:30:02<36:10, 434.07s/it]Loading checkpoint shards:  71%|███████   | 12/17 [1:30:02<36:10, 434.07s/it]Loading checkpoint shards:  71%|███████   | 12/17 [1:30:02<36:10, 434.07s/it]Loading checkpoint shards:  71%|███████   | 12/17 [1:30:02<36:10, 434.07s/it]Loading checkpoint shards:  71%|███████   | 12/17 [1:31:06<36:12, 434.51s/it]Loading checkpoint shards:  76%|███████▋  | 13/17 [1:39:44<31:55, 478.94s/it]Loading checkpoint shards:  76%|███████▋  | 13/17 [1:39:44<31:55, 478.94s/it]Loading checkpoint shards:  76%|███████▋  | 13/17 [1:39:44<31:55, 478.94s/it]Loading checkpoint shards:  76%|███████▋  | 13/17 [1:39:44<31:55, 478.94s/it]Loading checkpoint shards:  76%|███████▋  | 13/17 [1:39:44<31:55, 478.94s/it]Loading checkpoint shards:  76%|███████▋  | 13/17 [1:39:44<31:55, 478.94s/it]Loading checkpoint shards:  76%|███████▋  | 13/17 [1:39:44<31:55, 478.94s/it]Loading checkpoint shards:  76%|███████▋  | 13/17 [1:40:50<31:58, 479.66s/it]Loading checkpoint shards:  82%|████████▏ | 14/17 [1:46:36<22:55, 458.47s/it]Loading checkpoint shards:  82%|████████▏ | 14/17 [1:46:36<22:55, 458.47s/it]Loading checkpoint shards:  82%|████████▏ | 14/17 [1:46:36<22:55, 458.47s/it]Loading checkpoint shards:  82%|████████▏ | 14/17 [1:46:36<22:55, 458.47s/it]Loading checkpoint shards:  82%|████████▏ | 14/17 [1:46:36<22:55, 458.47s/it]Loading checkpoint shards:  82%|████████▏ | 14/17 [1:46:36<22:55, 458.47s/it]Loading checkpoint shards:  82%|████████▏ | 14/17 [1:46:36<22:55, 458.47s/it]Loading checkpoint shards:  82%|████████▏ | 14/17 [1:47:43<22:58, 459.66s/it]Loading checkpoint shards:  88%|████████▊ | 15/17 [1:54:38<15:31, 465.75s/it]Loading checkpoint shards:  88%|████████▊ | 15/17 [1:54:38<15:31, 465.75s/it]Loading checkpoint shards:  88%|████████▊ | 15/17 [1:54:38<15:31, 465.75s/it]Loading checkpoint shards:  88%|████████▊ | 15/17 [1:54:38<15:31, 465.75s/it]Loading checkpoint shards:  88%|████████▊ | 15/17 [1:54:38<15:31, 465.75s/it]Loading checkpoint shards:  88%|████████▊ | 15/17 [1:54:38<15:31, 465.75s/it]Loading checkpoint shards:  88%|████████▊ | 15/17 [1:54:38<15:31, 465.75s/it]Loading checkpoint shards:  88%|████████▊ | 15/17 [1:54:39<14:52, 446.48s/it]Loading checkpoint shards:  94%|█████████▍| 16/17 [2:02:12<07:42, 462.14s/it]Loading checkpoint shards:  94%|█████████▍| 16/17 [2:02:12<07:42, 462.14s/it]Loading checkpoint shards:  94%|█████████▍| 16/17 [2:02:12<07:42, 462.14s/it]Loading checkpoint shards:  94%|█████████▍| 16/17 [2:02:12<07:42, 462.14s/it]Loading checkpoint shards:  94%|█████████▍| 16/17 [2:02:12<07:42, 462.14s/it]Loading checkpoint shards:  94%|█████████▍| 16/17 [2:02:12<07:42, 462.14s/it]Loading checkpoint shards:  94%|█████████▍| 16/17 [2:02:12<07:42, 462.14s/it]Loading checkpoint shards:  94%|█████████▍| 16/17 [2:03:11<07:46, 466.14s/it]Loading checkpoint shards: 100%|██████████| 17/17 [2:04:22<00:00, 362.29s/it]Loading checkpoint shards: 100%|██████████| 17/17 [2:04:22<00:00, 362.29s/it]Loading checkpoint shards: 100%|██████████| 17/17 [2:04:22<00:00, 438.97s/it]Loading checkpoint shards: 100%|██████████| 17/17 [2:04:22<00:00, 438.98s/it]
+
+Loading checkpoint shards: 100%|██████████| 17/17 [2:04:22<00:00, 362.29s/it]Loading checkpoint shards: 100%|██████████| 17/17 [2:04:22<00:00, 362.29s/it]Loading checkpoint shards: 100%|██████████| 17/17 [2:04:22<00:00, 362.29s/it]Loading checkpoint shards: 100%|██████████| 17/17 [2:04:22<00:00, 362.29s/it]Loading checkpoint shards: 100%|██████████| 17/17 [2:04:22<00:00, 362.29s/it]Loading checkpoint shards: 100%|██████████| 17/17 [2:04:22<00:00, 438.98s/it]
+Loading checkpoint shards: 100%|██████████| 17/17 [2:04:22<00:00, 438.97s/it]
+Loading checkpoint shards: 100%|██████████| 17/17 [2:04:22<00:00, 438.97s/it]
+Loading checkpoint shards: 100%|██████████| 17/17 [2:04:22<00:00, 438.98s/it]Loading checkpoint shards: 100%|██████████| 17/17 [2:04:22<00:00, 438.97s/it]
+
+Loading checkpoint shards: 100%|██████████| 17/17 [2:07:50<00:00, 409.81s/it]Loading checkpoint shards: 100%|██████████| 17/17 [2:07:50<00:00, 451.20s/it]
+[INFO|modeling_utils.py:5606] 2025-08-16 03:20:45,790 >> All model checkpoint weights were used when initializing Qwen2ForCausalLM.
+
+[INFO|modeling_utils.py:5614] 2025-08-16 03:20:45,790 >> All the weights of Qwen2ForCausalLM were initialized from the model checkpoint at /home/bingxing2/gpuuser001/qwen/Qwen2.5-32B-Instruct.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use Qwen2ForCausalLM for predictions without further training.
+[INFO|configuration_utils.py:1051] 2025-08-16 03:20:45,799 >> loading configuration file /home/bingxing2/gpuuser001/qwen/Qwen2.5-32B-Instruct/generation_config.json
+[INFO|configuration_utils.py:1098] 2025-08-16 03:20:45,799 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "do_sample": true,
+  "eos_token_id": [
+    151645,
+    151643
+  ],
+  "pad_token_id": 151643,
+  "repetition_penalty": 1.05,
+  "temperature": 0.7,
+  "top_k": 20,
+  "top_p": 0.8
+}
+
+[INFO|2025-08-16 03:20:45] llamafactory.model.model_utils.checkpointing:143 >> Gradient checkpointing enabled.
+[INFO|2025-08-16 03:20:45] llamafactory.model.model_utils.attention:143 >> Using torch SDPA for faster training and inference.
+[INFO|2025-08-16 03:20:45] llamafactory.model.adapter:143 >> DeepSpeed ZeRO3 detected, remaining trainable params in float32.
+[INFO|2025-08-16 03:20:45] llamafactory.model.adapter:143 >> Fine-tuning method: LoRA
+[INFO|2025-08-16 03:20:45] llamafactory.model.model_utils.misc:143 >> Found linear modules: down_proj,up_proj,q_proj,gate_proj,k_proj,v_proj,o_proj
+[INFO|2025-08-16 03:21:47] llamafactory.model.loader:143 >> trainable params: 67,108,864 || all params: 32,830,985,216 || trainable%: 0.2044
+Detected kernel version 3.10.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+[INFO|trainer.py:757] 2025-08-16 03:21:47,387 >> Using auto half precision backend
+[2025-08-16 03:21:47,974] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed info: version=0.16.9, git-hash=unknown, git-branch=unknown
+[2025-08-16 03:21:47,974] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 16
+[2025-08-16 03:21:48,048] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2025-08-16 03:21:48,056] [INFO] [logging.py:107:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2025-08-16 03:21:48,056] [INFO] [logging.py:107:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2025-08-16 03:21:48,195] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW
+[2025-08-16 03:21:48,196] [INFO] [utils.py:59:is_zero_supported_optimizer] Checking ZeRO support for optimizer=AdamW type=<class 'torch.optim.adamw.AdamW'>
+[2025-08-16 03:21:48,196] [INFO] [logging.py:107:log_dist] [Rank 0] Creating fp16 ZeRO stage 3 optimizer, MiCS is enabled False, Hierarchical params gather False
+[2025-08-16 03:21:48,196] [INFO] [logging.py:107:log_dist] [Rank 0] Creating torch.bfloat16 ZeRO stage 3 optimizer
+[2025-08-16 03:21:48,462] [INFO] [utils.py:781:see_memory_usage] Stage 3 initialize beginning
+[2025-08-16 03:21:48,463] [INFO] [utils.py:782:see_memory_usage] MA 3.94 GB         Max_MA 8.07 GB         CA 4.08 GB         Max_CA 8 GB 
+[2025-08-16 03:21:48,464] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 37.63 GB, percent = 10.0%
+[2025-08-16 03:21:48,480] [INFO] [stage3.py:170:__init__] Reduce bucket size 26214400
+[2025-08-16 03:21:48,481] [INFO] [stage3.py:171:__init__] Prefetch bucket size 23592960
+[2025-08-16 03:21:48,763] [INFO] [utils.py:781:see_memory_usage] DeepSpeedZeRoOffload initialize [begin]
+[2025-08-16 03:21:48,764] [INFO] [utils.py:782:see_memory_usage] MA 3.94 GB         Max_MA 3.94 GB         CA 4.08 GB         Max_CA 4 GB 
+[2025-08-16 03:21:48,764] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 37.69 GB, percent = 10.0%
+Parameter Offload: Total persistent parameters: 25760768 in 1025 params
+[2025-08-16 03:21:50,695] [INFO] [utils.py:781:see_memory_usage] DeepSpeedZeRoOffload initialize [end]
+[2025-08-16 03:21:50,696] [INFO] [utils.py:782:see_memory_usage] MA 3.82 GB         Max_MA 3.94 GB         CA 4.08 GB         Max_CA 4 GB 
+[2025-08-16 03:21:50,697] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 38.07 GB, percent = 10.1%
+[2025-08-16 03:21:51,069] [INFO] [utils.py:781:see_memory_usage] Before creating fp16 partitions
+[2025-08-16 03:21:51,070] [INFO] [utils.py:782:see_memory_usage] MA 3.82 GB         Max_MA 3.82 GB         CA 4.08 GB         Max_CA 4 GB 
+[2025-08-16 03:21:51,071] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 38.09 GB, percent = 10.1%
+[2025-08-16 03:21:51,929] [INFO] [utils.py:781:see_memory_usage] After creating fp16 partitions: 1
+[2025-08-16 03:21:51,930] [INFO] [utils.py:782:see_memory_usage] MA 3.82 GB         Max_MA 3.82 GB         CA 3.83 GB         Max_CA 4 GB 
+[2025-08-16 03:21:51,931] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 38.1 GB, percent = 10.1%
+[2025-08-16 03:21:52,296] [INFO] [utils.py:781:see_memory_usage] Before creating fp32 partitions
+[2025-08-16 03:21:52,297] [INFO] [utils.py:782:see_memory_usage] MA 3.82 GB         Max_MA 3.82 GB         CA 3.83 GB         Max_CA 4 GB 
+[2025-08-16 03:21:52,298] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 38.1 GB, percent = 10.1%
+[2025-08-16 03:21:52,661] [INFO] [utils.py:781:see_memory_usage] After creating fp32 partitions
+[2025-08-16 03:21:52,662] [INFO] [utils.py:782:see_memory_usage] MA 3.84 GB         Max_MA 3.85 GB         CA 3.85 GB         Max_CA 4 GB 
+[2025-08-16 03:21:52,662] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 38.1 GB, percent = 10.1%
+[2025-08-16 03:21:53,116] [INFO] [utils.py:781:see_memory_usage] Before initializing optimizer states
+[2025-08-16 03:21:53,117] [INFO] [utils.py:782:see_memory_usage] MA 3.84 GB         Max_MA 3.84 GB         CA 3.85 GB         Max_CA 4 GB 
+[2025-08-16 03:21:53,118] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 38.1 GB, percent = 10.1%
+[2025-08-16 03:21:53,510] [INFO] [utils.py:781:see_memory_usage] After initializing optimizer states
+[2025-08-16 03:21:53,511] [INFO] [utils.py:782:see_memory_usage] MA 3.84 GB         Max_MA 3.85 GB         CA 3.87 GB         Max_CA 4 GB 
+[2025-08-16 03:21:53,511] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 38.1 GB, percent = 10.1%
+[2025-08-16 03:21:53,512] [INFO] [stage3.py:534:_setup_for_real_optimizer] optimizer state initialized
+[2025-08-16 03:21:54,713] [INFO] [utils.py:781:see_memory_usage] After initializing ZeRO optimizer
+[2025-08-16 03:21:54,713] [INFO] [utils.py:782:see_memory_usage] MA 3.89 GB         Max_MA 3.9 GB         CA 3.91 GB         Max_CA 4 GB 
+[2025-08-16 03:21:54,714] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 38.88 GB, percent = 10.3%
+[2025-08-16 03:21:54,714] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Final Optimizer = DeepSpeedZeroOptimizer_Stage3
+[2025-08-16 03:21:54,714] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed using configured LR scheduler = None
+[2025-08-16 03:21:54,714] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
+[2025-08-16 03:21:54,714] [INFO] [logging.py:107:log_dist] [Rank 0] step=0, skipped=0, lr=[0.0], mom=[(0.9, 0.999)]
+[2025-08-16 03:21:54,730] [INFO] [config.py:1003:print] DeepSpeedEngine configuration:
+[2025-08-16 03:21:54,730] [INFO] [config.py:1007:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2025-08-16 03:21:54,730] [INFO] [config.py:1007:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'intra_op_parallelism': 1, 'single_submit': False, 'overlap_events': True, 'use_gds': False}
+[2025-08-16 03:21:54,730] [INFO] [config.py:1007:print]   amp_enabled .................. False
+[2025-08-16 03:21:54,730] [INFO] [config.py:1007:print]   amp_params ................... False
+[2025-08-16 03:21:54,730] [INFO] [config.py:1007:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2025-08-16 03:21:54,730] [INFO] [config.py:1007:print]   bfloat16_enabled ............. True
+[2025-08-16 03:21:54,730] [INFO] [config.py:1007:print]   bfloat16_immediate_grad_update  True
+[2025-08-16 03:21:54,730] [INFO] [config.py:1007:print]   checkpoint_parallel_write_pipeline  False
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   checkpoint_tag_validation_enabled  True
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   checkpoint_tag_validation_fail  False
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x2b8a44bfc310>
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   communication_data_type ...... None
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   compile_config ............... deepcompile=False free_activation=False offload_activation=False offload_opt_states=False double_buffer=True symmetric_memory=False debug_log=False offload_parameters=False sync_before_reduce=False sync_after_reduce=False sync_before_allgather=False sync_after_allgather=False
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   curriculum_enabled_legacy .... False
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   curriculum_params_legacy ..... False
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'pin_memory': False, 'curriculum_learning': {'enabled': False}, 'dynamic_batching': {'enabled': False, 'lr_scaling_method': 'linear', 'min_batch_size': 1, 'max_batch_size': None, 'sequence_picking_order': 'dataloader', 'verbose': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   data_efficiency_enabled ...... False
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   dataloader_drop_last ......... False
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   disable_allgather ............ False
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   dump_state ................... False
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   dynamic_loss_scale_args ...... None
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   eigenvalue_enabled ........... False
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   eigenvalue_gas_boundary_resolution  1
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   eigenvalue_layer_num ......... 0
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   eigenvalue_max_iter .......... 100
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   eigenvalue_stability ......... 1e-06
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   eigenvalue_tol ............... 0.01
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   eigenvalue_verbose ........... False
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   elasticity_enabled ........... False
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   fp16_auto_cast ............... None
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   fp16_enabled ................. False
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   fp16_master_weights_and_gradients  False
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   global_rank .................. 0
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   grad_accum_dtype ............. None
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   gradient_accumulation_steps .. 8
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   gradient_clipping ............ 1.0
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   gradient_predivide_factor .... 1.0
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   graph_harvesting ............. False
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   initial_dynamic_scale ........ 1
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   load_universal_checkpoint .... False
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   loss_scale ................... 1.0
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   memory_breakdown ............. False
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   mics_hierarchial_params_gather  False
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   mics_shard_size .............. -1
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName')
+[2025-08-16 03:21:54,731] [INFO] [config.py:1007:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   optimizer_legacy_fusion ...... False
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   optimizer_name ............... None
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   optimizer_params ............. None
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   pld_enabled .................. False
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   pld_params ................... False
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   prescale_gradients ........... False
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   scheduler_name ............... None
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   scheduler_params ............. None
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   seq_parallel_communication_data_type  torch.float32
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   sparse_attention ............. None
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   sparse_gradients_enabled ..... False
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   steps_per_print .............. inf
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   tensor_parallel_config ....... dtype=torch.float16 autotp_size=0 tp_overlap_comm=False tensor_parallel=TPConfig(tp_size=1, tp_grain_size=1, mpu=None, tp_group=None) injection_policy_tuple=None keep_module_on_host=False replace_with_kernel_inject=False
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   timers_config ................ enabled=True synchronized=True
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   train_batch_size ............. 128
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   train_micro_batch_size_per_gpu  1
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   use_data_before_expert_parallel_  False
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   use_node_local_storage ....... False
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   wall_clock_breakdown ......... False
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   weight_quantization_config ... None
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   world_size ................... 16
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   zero_allow_untested_optimizer  True
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   zero_config .................. stage=3 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=26214400 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500000000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=None sub_group_size=1000000000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=23592960 param_persistence_threshold=51200 model_persistence_threshold=9223372036854775807 max_live_parameters=1000000000 max_reuse_distance=1000000000 gather_16bit_weights_on_model_save=True module_granularity_threshold=0 use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False zeropp_loco_param=None mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True log_trace_cache_warnings=False
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   zero_enabled ................. True
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   zero_force_ds_cpu_optimizer .. True
+[2025-08-16 03:21:54,732] [INFO] [config.py:1007:print]   zero_optimization_stage ...... 3
+[2025-08-16 03:21:54,732] [INFO] [config.py:993:print_user_config]   json = {
+    "train_batch_size": 128, 
+    "train_micro_batch_size_per_gpu": 1, 
+    "gradient_accumulation_steps": 8, 
+    "gradient_clipping": 1.0, 
+    "zero_allow_untested_optimizer": true, 
+    "fp16": {
+        "enabled": false, 
+        "loss_scale": 0, 
+        "loss_scale_window": 1000, 
+        "initial_scale_power": 16, 
+        "hysteresis": 2, 
+        "min_loss_scale": 1
+    }, 
+    "bf16": {
+        "enabled": true
+    }, 
+    "zero_optimization": {
+        "stage": 3, 
+        "overlap_comm": false, 
+        "contiguous_gradients": true, 
+        "sub_group_size": 1.000000e+09, 
+        "reduce_bucket_size": 2.621440e+07, 
+        "stage3_prefetch_bucket_size": 2.359296e+07, 
+        "stage3_param_persistence_threshold": 5.120000e+04, 
+        "stage3_max_live_parameters": 1.000000e+09, 
+        "stage3_max_reuse_distance": 1.000000e+09, 
+        "stage3_gather_16bit_weights_on_model_save": true
+    }, 
+    "steps_per_print": inf
+}
+[INFO|trainer.py:2433] 2025-08-16 03:21:54,735 >> ***** Running training *****
+[INFO|trainer.py:2434] 2025-08-16 03:21:54,735 >>   Num examples = 15
+[INFO|trainer.py:2435] 2025-08-16 03:21:54,735 >>   Num Epochs = 3
+[INFO|trainer.py:2436] 2025-08-16 03:21:54,735 >>   Instantaneous batch size per device = 1
+[INFO|trainer.py:2439] 2025-08-16 03:21:54,735 >>   Total train batch size (w. parallel, distributed & accumulation) = 128
+[INFO|trainer.py:2440] 2025-08-16 03:21:54,735 >>   Gradient Accumulation steps = 8
+[INFO|trainer.py:2441] 2025-08-16 03:21:54,735 >>   Total optimization steps = 3
+[INFO|trainer.py:2442] 2025-08-16 03:21:54,745 >>   Number of trainable parameters = 67,108,864
+g0006:33489:832 [0] NCCL INFO Comm config Blocking set to 1
+g0006:33491:891 [2] NCCL INFO Comm config Blocking set to 1
+g0006:33495:887 [6] NCCL INFO Comm config Blocking set to 1
+g0006:33492:843 [3] NCCL INFO Comm config Blocking set to 1
+g0006:33489:2730 [0] NCCL INFO Using non-device net plugin version 0
+g0006:33489:2730 [0] NCCL INFO Using network IB
+g0006:33490:836 [1] NCCL INFO Comm config Blocking set to 1
+g0006:33493:866 [4] NCCL INFO Comm config Blocking set to 1
+g0006:33492:2733 [3] NCCL INFO Using non-device net plugin version 0
+g0006:33492:2733 [3] NCCL INFO Using network IB
+g0006:33494:869 [5] NCCL INFO Comm config Blocking set to 1
+g0006:33491:2731 [2] NCCL INFO Using non-device net plugin version 0
+g0006:33491:2731 [2] NCCL INFO Using network IB
+g0006:33495:2732 [6] NCCL INFO Using non-device net plugin version 0
+g0006:33495:2732 [6] NCCL INFO Using network IB
+g0006:33494:2736 [5] NCCL INFO Using non-device net plugin version 0
+g0006:33494:2736 [5] NCCL INFO Using network IB
+g0006:33490:2734 [1] NCCL INFO Using non-device net plugin version 0
+g0006:33490:2734 [1] NCCL INFO Using network IB
+g0006:33493:2735 [4] NCCL INFO Using non-device net plugin version 0
+g0006:33493:2735 [4] NCCL INFO Using network IB
+g0006:33496:879 [7] NCCL INFO Comm config Blocking set to 1
+g0006:33496:2737 [7] NCCL INFO Using non-device net plugin version 0
+g0006:33496:2737 [7] NCCL INFO Using network IB
+g0006:33494:2736 [5] NCCL INFO ncclCommInitRank comm 0x2ba5a8edfe70 rank 5 nranks 16 cudaDev 5 nvmlDev 5 busId b9000 commId 0xcb80fe906eb5d00d - Init START
+g0006:33492:2733 [3] NCCL INFO ncclCommInitRank comm 0x2ba2ccee0cf0 rank 3 nranks 16 cudaDev 3 nvmlDev 3 busId 66000 commId 0xcb80fe906eb5d00d - Init START
+g0006:33489:2730 [0] NCCL INFO ncclCommInitRank comm 0x2b8a6cee04a0 rank 0 nranks 16 cudaDev 0 nvmlDev 0 busId 5a000 commId 0xcb80fe906eb5d00d - Init START
+g0006:33493:2735 [4] NCCL INFO ncclCommInitRank comm 0x2ac9c4ee04a0 rank 4 nranks 16 cudaDev 4 nvmlDev 4 busId b5000 commId 0xcb80fe906eb5d00d - Init START
+g0006:33495:2732 [6] NCCL INFO ncclCommInitRank comm 0x2af060ee04d0 rank 6 nranks 16 cudaDev 6 nvmlDev 6 busId bd000 commId 0xcb80fe906eb5d00d - Init START
+g0006:33491:2731 [2] NCCL INFO ncclCommInitRank comm 0x2ad594ee0960 rank 2 nranks 16 cudaDev 2 nvmlDev 2 busId 62000 commId 0xcb80fe906eb5d00d - Init START
+g0006:33490:2734 [1] NCCL INFO ncclCommInitRank comm 0x2b740cee0340 rank 1 nranks 16 cudaDev 1 nvmlDev 1 busId 5e000 commId 0xcb80fe906eb5d00d - Init START
+g0006:33496:2737 [7] NCCL INFO ncclCommInitRank comm 0x2adef8edf570 rank 7 nranks 16 cudaDev 7 nvmlDev 7 busId c1000 commId 0xcb80fe906eb5d00d - Init START
+g0006:33492:2733 [3] NCCL INFO Setting affinity for GPU 3 to ffffff
+g0006:33492:2733 [3] NCCL INFO NVLS multicast support is not available on dev 3
+g0006:33494:2736 [5] NCCL INFO Setting affinity for GPU 5 to ffff,ff000000
+g0006:33494:2736 [5] NCCL INFO NVLS multicast support is not available on dev 5
+g0006:33495:2732 [6] NCCL INFO Setting affinity for GPU 6 to ffff,ff000000
+g0006:33495:2732 [6] NCCL INFO NVLS multicast support is not available on dev 6
+g0006:33491:2731 [2] NCCL INFO Setting affinity for GPU 2 to ffffff
+g0006:33490:2734 [1] NCCL INFO Setting affinity for GPU 1 to ffffff
+g0006:33491:2731 [2] NCCL INFO NVLS multicast support is not available on dev 2
+g0006:33496:2737 [7] NCCL INFO Setting affinity for GPU 7 to ffff,ff000000
+g0006:33496:2737 [7] NCCL INFO NVLS multicast support is not available on dev 7
+g0006:33490:2734 [1] NCCL INFO NVLS multicast support is not available on dev 1
+g0006:33489:2730 [0] NCCL INFO Setting affinity for GPU 0 to ffffff
+g0006:33489:2730 [0] NCCL INFO NVLS multicast support is not available on dev 0
+g0006:33493:2735 [4] NCCL INFO Setting affinity for GPU 4 to ffff,ff000000
+g0006:33493:2735 [4] NCCL INFO NVLS multicast support is not available on dev 4
+g0006:33496:2737 [7] NCCL INFO comm 0x2adef8edf570 rank 7 nRanks 16 nNodes 2 localRanks 8 localRank 7 MNNVL 0
+g0006:33495:2732 [6] NCCL INFO comm 0x2af060ee04d0 rank 6 nRanks 16 nNodes 2 localRanks 8 localRank 6 MNNVL 0
+g0006:33494:2736 [5] NCCL INFO comm 0x2ba5a8edfe70 rank 5 nRanks 16 nNodes 2 localRanks 8 localRank 5 MNNVL 0
+g0006:33493:2735 [4] NCCL INFO comm 0x2ac9c4ee04a0 rank 4 nRanks 16 nNodes 2 localRanks 8 localRank 4 MNNVL 0
+g0006:33492:2733 [3] NCCL INFO comm 0x2ba2ccee0cf0 rank 3 nRanks 16 nNodes 2 localRanks 8 localRank 3 MNNVL 0
+g0006:33490:2734 [1] NCCL INFO comm 0x2b740cee0340 rank 1 nRanks 16 nNodes 2 localRanks 8 localRank 1 MNNVL 0
+g0006:33494:2736 [5] NCCL INFO Trees [0] 6/-1/-1->5->4 [1] 6/-1/-1->5->4
+g0006:33495:2732 [6] NCCL INFO Trees [0] 7/-1/-1->6->5 [1] 7/-1/-1->6->5
+g0006:33496:2737 [7] NCCL INFO Trees [0] -1/-1/-1->7->6 [1] -1/-1/-1->7->6
+g0006:33491:2731 [2] NCCL INFO comm 0x2ad594ee0960 rank 2 nRanks 16 nNodes 2 localRanks 8 localRank 2 MNNVL 0
+g0006:33495:2732 [6] NCCL INFO P2P Chunksize set to 131072
+g0006:33494:2736 [5] NCCL INFO P2P Chunksize set to 131072
+g0006:33496:2737 [7] NCCL INFO P2P Chunksize set to 131072
+g0006:33493:2735 [4] NCCL INFO Trees [0] 5/-1/-1->4->3 [1] 5/-1/-1->4->3
+g0006:33489:2730 [0] NCCL INFO comm 0x2b8a6cee04a0 rank 0 nRanks 16 nNodes 2 localRanks 8 localRank 0 MNNVL 0
+g0006:33493:2735 [4] NCCL INFO P2P Chunksize set to 131072
+g0006:33492:2733 [3] NCCL INFO Trees [0] 4/-1/-1->3->2 [1] 4/-1/-1->3->2
+g0006:33490:2734 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0
+g0006:33492:2733 [3] NCCL INFO P2P Chunksize set to 131072
+g0006:33490:2734 [1] NCCL INFO P2P Chunksize set to 131072
+g0006:33491:2731 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1
+g0006:33489:2730 [0] NCCL INFO Channel 00/02 :    0  12  13  14  15  11  10   9   8   4   5   6   7   3   2   1
+g0006:33491:2731 [2] NCCL INFO P2P Chunksize set to 131072
+g0006:33489:2730 [0] NCCL INFO Channel 01/02 :    0  12  13  14  15  11  10   9   8   4   5   6   7   3   2   1
+g0006:33489:2730 [0] NCCL INFO Trees [0] 1/8/-1->0->-1 [1] 1/-1/-1->0->8
+g0006:33489:2730 [0] NCCL INFO P2P Chunksize set to 131072
+g0006:33493:2735 [4] NCCL INFO Channel 00/0 : 4[4] -> 5[5] via P2P/CUMEM
+g0006:33493:2735 [4] NCCL INFO Channel 01/0 : 4[4] -> 5[5] via P2P/CUMEM
+g0006:33495:2732 [6] NCCL INFO Channel 00/0 : 6[6] -> 7[7] via P2P/CUMEM
+g0006:33494:2736 [5] NCCL INFO Channel 00/0 : 5[5] -> 6[6] via P2P/CUMEM
+g0006:33490:2734 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/CUMEM
+g0006:33491:2731 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/CUMEM
+g0006:33495:2732 [6] NCCL INFO Channel 01/0 : 6[6] -> 7[7] via P2P/CUMEM
+g0006:33494:2736 [5] NCCL INFO Channel 01/0 : 5[5] -> 6[6] via P2P/CUMEM
+g0006:33490:2734 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/CUMEM
+g0006:33491:2731 [2] NCCL INFO Channel 01/0 : 2[2] -> 1[1] via P2P/CUMEM
+g0006:33489:2730 [0] NCCL INFO Channel 00/0 : 0[0] -> 12[4] [send] via NET/IB/0
+g0006:33489:2730 [0] NCCL INFO Channel 01/0 : 0[0] -> 12[4] [send] via NET/IB/0
+g0006:33496:2737 [7] NCCL INFO Channel 00 : 7[7] -> 3[3] via SHM/direct/direct
+g0006:33496:2737 [7] NCCL INFO Channel 01 : 7[7] -> 3[3] via SHM/direct/direct
+g0006:33492:2733 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[2] via P2P/CUMEM
+g0006:33493:2735 [4] NCCL INFO Channel 00/0 : 8[0] -> 4[4] [receive] via NET/IB/0
+g0006:33493:2735 [4] NCCL INFO Channel 01/0 : 8[0] -> 4[4] [receive] via NET/IB/0
+g0006:33492:2733 [3] NCCL INFO Channel 01/0 : 3[3] -> 2[2] via P2P/CUMEM
+g0006:33489:2730 [0] NCCL INFO Connected all rings
+g0006:33489:2730 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM
+g0006:33489:2730 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM
+g0006:33495:2732 [6] NCCL INFO Connected all rings
+g0006:33496:2737 [7] NCCL INFO Connected all rings
+g0006:33496:2737 [7] NCCL INFO Channel 00/0 : 7[7] -> 6[6] via P2P/CUMEM
+g0006:33496:2737 [7] NCCL INFO Channel 01/0 : 7[7] -> 6[6] via P2P/CUMEM
+g0006:33490:2734 [1] NCCL INFO Connected all rings
+g0006:33495:2732 [6] NCCL INFO Channel 00/0 : 6[6] -> 5[5] via P2P/CUMEM
+g0006:33492:2733 [3] NCCL INFO Connected all rings
+g0006:33491:2731 [2] NCCL INFO Connected all rings
+g0006:33495:2732 [6] NCCL INFO Channel 01/0 : 6[6] -> 5[5] via P2P/CUMEM
+g0006:33490:2734 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/CUMEM
+g0006:33491:2731 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM
+g0006:33490:2734 [1] NCCL INFO Channel 01/0 : 1[1] -> 2[2] via P2P/CUMEM
+g0006:33492:2733 [3] NCCL INFO Channel 00 : 3[3] -> 4[4] via SHM/direct/direct
+g0006:33491:2731 [2] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/CUMEM
+g0006:33492:2733 [3] NCCL INFO Channel 01 : 3[3] -> 4[4] via SHM/direct/direct
+g0006:33489:2730 [0] NCCL INFO Channel 00/0 : 8[0] -> 0[0] [receive] via NET/IB/0
+g0006:33489:2730 [0] NCCL INFO Channel 01/0 : 8[0] -> 0[0] [receive] via NET/IB/0
+g0006:33489:2730 [0] NCCL INFO Channel 00/0 : 0[0] -> 8[0] [send] via NET/IB/0
+g0006:33489:2730 [0] NCCL INFO Channel 01/0 : 0[0] -> 8[0] [send] via NET/IB/0
+g0006:33494:2736 [5] NCCL INFO Connected all rings
+g0006:33493:2735 [4] NCCL INFO Connected all rings
+g0006:33494:2736 [5] NCCL INFO Channel 00/0 : 5[5] -> 4[4] via P2P/CUMEM
+g0006:33494:2736 [5] NCCL INFO Channel 01/0 : 5[5] -> 4[4] via P2P/CUMEM
+g0006:33493:2735 [4] NCCL INFO Channel 00 : 4[4] -> 3[3] via SHM/direct/direct
+g0006:33493:2735 [4] NCCL INFO Channel 01 : 4[4] -> 3[3] via SHM/direct/direct
+g0006:33496:2737 [7] NCCL INFO Connected all trees
+g0006:33496:2737 [7] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+g0006:33496:2737 [7] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+g0006:33495:2732 [6] NCCL INFO Connected all trees
+g0006:33495:2732 [6] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+g0006:33495:2732 [6] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+g0006:33491:2731 [2] NCCL INFO Connected all trees
+g0006:33491:2731 [2] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+g0006:33491:2731 [2] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+g0006:33492:2733 [3] NCCL INFO Connected all trees
+g0006:33492:2733 [3] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+g0006:33492:2733 [3] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+g0006:33494:2736 [5] NCCL INFO Connected all trees
+g0006:33494:2736 [5] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+g0006:33494:2736 [5] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+g0006:33493:2735 [4] NCCL INFO Connected all trees
+g0006:33493:2735 [4] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+g0006:33493:2735 [4] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+g0006:33490:2734 [1] NCCL INFO Connected all trees
+g0006:33490:2734 [1] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+g0006:33490:2734 [1] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+g0006:33489:2730 [0] NCCL INFO Connected all trees
+g0006:33489:2730 [0] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+g0006:33489:2730 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+g0006:33494:2736 [5] NCCL INFO ncclCommInitRank comm 0x2ba5a8edfe70 rank 5 nranks 16 cudaDev 5 nvmlDev 5 busId b9000 commId 0xcb80fe906eb5d00d - Init COMPLETE
+g0006:33490:2734 [1] NCCL INFO ncclCommInitRank comm 0x2b740cee0340 rank 1 nranks 16 cudaDev 1 nvmlDev 1 busId 5e000 commId 0xcb80fe906eb5d00d - Init COMPLETE
+g0006:33496:2737 [7] NCCL INFO ncclCommInitRank comm 0x2adef8edf570 rank 7 nranks 16 cudaDev 7 nvmlDev 7 busId c1000 commId 0xcb80fe906eb5d00d - Init COMPLETE
+g0006:33495:2732 [6] NCCL INFO ncclCommInitRank comm 0x2af060ee04d0 rank 6 nranks 16 cudaDev 6 nvmlDev 6 busId bd000 commId 0xcb80fe906eb5d00d - Init COMPLETE
+g0006:33492:2733 [3] NCCL INFO ncclCommInitRank comm 0x2ba2ccee0cf0 rank 3 nranks 16 cudaDev 3 nvmlDev 3 busId 66000 commId 0xcb80fe906eb5d00d - Init COMPLETE
+g0006:33491:2731 [2] NCCL INFO ncclCommInitRank comm 0x2ad594ee0960 rank 2 nranks 16 cudaDev 2 nvmlDev 2 busId 62000 commId 0xcb80fe906eb5d00d - Init COMPLETE
+g0006:33489:2730 [0] NCCL INFO ncclCommInitRank comm 0x2b8a6cee04a0 rank 0 nranks 16 cudaDev 0 nvmlDev 0 busId 5a000 commId 0xcb80fe906eb5d00d - Init COMPLETE
+g0006:33493:2735 [4] NCCL INFO ncclCommInitRank comm 0x2ac9c4ee04a0 rank 4 nranks 16 cudaDev 4 nvmlDev 4 busId b5000 commId 0xcb80fe906eb5d00d - Init COMPLETE
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [1:01:42<2:03:25, 3702.85s/it] 67%|██████▋   | 2/3 [1:42:56<49:39, 2979.52s/it]  100%|██████████| 3/3 [2:17:59<00:00, 2579.48s/it][INFO|trainer.py:4074] 2025-08-16 06:30:12,298 >> Saving model checkpoint to saves/qwen2_5vl-32b/lora/sft/checkpoint-3
+[INFO|configuration_utils.py:750] 2025-08-16 06:30:12,342 >> loading configuration file /home/bingxing2/gpuuser001/qwen/Qwen2.5-32B-Instruct/config.json
+[INFO|configuration_utils.py:817] 2025-08-16 06:30:12,344 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 5120,
+  "initializer_range": 0.02,
+  "intermediate_size": 27648,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 70,
+  "model_type": "qwen2",
+  "num_attention_heads": 40,
+  "num_hidden_layers": 64,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.55.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 152064
+}
+
+[INFO|tokenization_utils_base.py:2393] 2025-08-16 06:30:15,350 >> chat template saved in saves/qwen2_5vl-32b/lora/sft/checkpoint-3/chat_template.jinja
+[INFO|tokenization_utils_base.py:2562] 2025-08-16 06:30:15,353 >> tokenizer config file saved in saves/qwen2_5vl-32b/lora/sft/checkpoint-3/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2571] 2025-08-16 06:30:15,356 >> Special tokens file saved in saves/qwen2_5vl-32b/lora/sft/checkpoint-3/special_tokens_map.json
+[2025-08-16 06:30:15,739] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step0 is about to be saved!
+[2025-08-16 06:30:15,804] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: saves/qwen2_5vl-32b/lora/sft/checkpoint-3/global_step0/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-08-16 06:30:15,805] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving saves/qwen2_5vl-32b/lora/sft/checkpoint-3/global_step0/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-08-16 06:30:15,918] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved saves/qwen2_5vl-32b/lora/sft/checkpoint-3/global_step0/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-08-16 06:30:16,273] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving saves/qwen2_5vl-32b/lora/sft/checkpoint-3/global_step0/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-08-16 06:30:16,562] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved saves/qwen2_5vl-32b/lora/sft/checkpoint-3/global_step0/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-08-16 06:30:16,572] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved saves/qwen2_5vl-32b/lora/sft/checkpoint-3/global_step0/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-08-16 06:30:17,541] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step0 is ready now!
+[INFO|trainer.py:2718] 2025-08-16 06:30:17,565 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+{'train_runtime': 11302.8198, 'train_samples_per_second': 0.004, 'train_steps_per_second': 0.0, 'train_loss': 1.8948941230773926, 'epoch': 3.0}
+                                                 100%|██████████| 3/3 [3:08:22<00:00, 2579.48s/it]100%|██████████| 3/3 [3:08:22<00:00, 3767.61s/it]
+[INFO|trainer.py:4074] 2025-08-16 07:12:06,477 >> Saving model checkpoint to saves/qwen2_5vl-32b/lora/sft
+[INFO|configuration_utils.py:750] 2025-08-16 07:12:06,505 >> loading configuration file /home/bingxing2/gpuuser001/qwen/Qwen2.5-32B-Instruct/config.json
+[INFO|configuration_utils.py:817] 2025-08-16 07:12:06,506 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 5120,
+  "initializer_range": 0.02,
+  "intermediate_size": 27648,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 70,
+  "model_type": "qwen2",
+  "num_attention_heads": 40,
+  "num_hidden_layers": 64,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.55.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 152064
+}
+
+g0006:33492:33492 [3] NCCL INFO comm 0x2ba2ccee0cf0 rank 3 nranks 16 cudaDev 3 busId 66000 - Destroy COMPLETE
+g0006:33490:33490 [1] NCCL INFO comm 0x2b740cee0340 rank 1 nranks 16 cudaDev 1 busId 5e000 - Destroy COMPLETE
+g0006:33491:33491 [2] NCCL INFO comm 0x2ad594ee0960 rank 2 nranks 16 cudaDev 2 busId 62000 - Destroy COMPLETE
+g0006:33496:33496 [7] NCCL INFO comm 0x2adef8edf570 rank 7 nranks 16 cudaDev 7 busId c1000 - Destroy COMPLETE
+g0006:33494:33494 [5] NCCL INFO comm 0x2ba5a8edfe70 rank 5 nranks 16 cudaDev 5 busId b9000 - Destroy COMPLETE
+g0006:33493:33493 [4] NCCL INFO comm 0x2ac9c4ee04a0 rank 4 nranks 16 cudaDev 4 busId b5000 - Destroy COMPLETE
+g0006:33495:33495 [6] NCCL INFO comm 0x2af060ee04d0 rank 6 nranks 16 cudaDev 6 busId bd000 - Destroy COMPLETE
+g0006:33496:33496 [7] NCCL INFO comm 0x558ff73cc010 rank 7 nranks 16 cudaDev 7 busId c1000 - Destroy COMPLETE
+g0006:33493:33493 [4] NCCL INFO comm 0x555a86e9e010 rank 4 nranks 16 cudaDev 4 busId b5000 - Destroy COMPLETE
+g0006:33495:33495 [6] NCCL INFO comm 0x55a4639a5010 rank 6 nranks 16 cudaDev 6 busId bd000 - Destroy COMPLETE
+g0006:33494:33494 [5] NCCL INFO comm 0x55e6386a9010 rank 5 nranks 16 cudaDev 5 busId b9000 - Destroy COMPLETE
+Exception ignored in atexit callback: <function matmul_ext_update_autotune_table at 0x2ba4df65b7f0>
+Traceback (most recent call last):
+  File "/home/bingxing2/apps/miniconda/envs/qwen32b/lib/python3.10/site-packages/deepspeed/ops/transformer/inference/triton/matmul_ext.py", line 480, in matmul_ext_update_autotune_table
+Exception ignored in atexit callback: <function matmul_ext_update_autotune_table at 0x2ac90646f7f0>
+Traceback (most recent call last):
+  File "/home/bingxing2/apps/miniconda/envs/qwen32b/lib/python3.10/site-packages/deepspeed/ops/transformer/inference/triton/matmul_ext.py", line 480, in matmul_ext_update_autotune_table
+Exception ignored in atexit callback: <function matmul_ext_update_autotune_table at 0x2ade345077f0>
+Traceback (most recent call last):
+  File "/home/bingxing2/apps/miniconda/envs/qwen32b/lib/python3.10/site-packages/deepspeed/ops/transformer/inference/triton/matmul_ext.py", line 480, in matmul_ext_update_autotune_table
+Exception ignored in atexit callback: <function matmul_ext_update_autotune_table at 0x2aef8fedf7f0>
+Traceback (most recent call last):
+  File "/home/bingxing2/apps/miniconda/envs/qwen32b/lib/python3.10/site-packages/deepspeed/ops/transformer/inference/triton/matmul_ext.py", line 480, in matmul_ext_update_autotune_table
+        fp16_matmul._update_autotune_table()fp16_matmul._update_autotune_table()        
+
+fp16_matmul._update_autotune_table()fp16_matmul._update_autotune_table()
+
+  File "/home/bingxing2/apps/miniconda/envs/qwen32b/lib/python3.10/site-packages/deepspeed/ops/transformer/inference/triton/matmul_ext.py", line 457, in _update_autotune_table
+  File "/home/bingxing2/apps/miniconda/envs/qwen32b/lib/python3.10/site-packages/deepspeed/ops/transformer/inference/triton/matmul_ext.py", line 457, in _update_autotune_table
+  File "/home/bingxing2/apps/miniconda/envs/qwen32b/lib/python3.10/site-packages/deepspeed/ops/transformer/inference/triton/matmul_ext.py", line 457, in _update_autotune_table
+  File "/home/bingxing2/apps/miniconda/envs/qwen32b/lib/python3.10/site-packages/deepspeed/ops/transformer/inference/triton/matmul_ext.py", line 457, in _update_autotune_table
+    TritonMatmul._update_autotune_table(__class__.__name__ + "_2d_kernel", __class__._2d_kernel)
+  File "/home/bingxing2/apps/miniconda/envs/qwen32b/lib/python3.10/site-packages/deepspeed/ops/transformer/inference/triton/matmul_ext.py", line 181, in _update_autotune_table
+    TritonMatmul._update_autotune_table(__class__.__name__ + "_2d_kernel", __class__._2d_kernel)
+      File "/home/bingxing2/apps/miniconda/envs/qwen32b/lib/python3.10/site-packages/deepspeed/ops/transformer/inference/triton/matmul_ext.py", line 181, in _update_autotune_table
+TritonMatmul._update_autotune_table(__class__.__name__ + "_2d_kernel", __class__._2d_kernel)
+  File "/home/bingxing2/apps/miniconda/envs/qwen32b/lib/python3.10/site-packages/deepspeed/ops/transformer/inference/triton/matmul_ext.py", line 181, in _update_autotune_table
+    TritonMatmul._update_autotune_table(__class__.__name__ + "_2d_kernel", __class__._2d_kernel)
+  File "/home/bingxing2/apps/miniconda/envs/qwen32b/lib/python3.10/site-packages/deepspeed/ops/transformer/inference/triton/matmul_ext.py", line 181, in _update_autotune_table
+    autotune_table = cache_manager.load()
+  File "/home/bingxing2/apps/miniconda/envs/qwen32b/lib/python3.10/site-packages/deepspeed/ops/transformer/inference/triton/matmul_ext.py", line 110, in load
+    autotune_table = cache_manager.load()
+  File "/home/bingxing2/apps/miniconda/envs/qwen32b/lib/python3.10/site-packages/deepspeed/ops/transformer/inference/triton/matmul_ext.py", line 110, in load
+    autotune_table = cache_manager.load()
+  File "/home/bingxing2/apps/miniconda/envs/qwen32b/lib/python3.10/site-packages/deepspeed/ops/transformer/inference/triton/matmul_ext.py", line 110, in load
+    autotune_table = cache_manager.load()
+  File "/home/bingxing2/apps/miniconda/envs/qwen32b/lib/python3.10/site-packages/deepspeed/ops/transformer/inference/triton/matmul_ext.py", line 110, in load
+    loaded_dict = pickle.load(handle)
+FileNotFoundError: [Errno 2] No such file or directory
+    loaded_dict = pickle.load(handle)
+FileNotFoundError: [Errno 2] No such file or directory
+    loaded_dict = pickle.load(handle)
+FileNotFoundError: [Errno 2] No such file or directory
+    loaded_dict = pickle.load(handle)
+FileNotFoundError: [Errno 2] No such file or directory
+[INFO|tokenization_utils_base.py:2393] 2025-08-16 07:12:08,864 >> chat template saved in saves/qwen2_5vl-32b/lora/sft/chat_template.jinja
+[INFO|tokenization_utils_base.py:2562] 2025-08-16 07:12:08,868 >> tokenizer config file saved in saves/qwen2_5vl-32b/lora/sft/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2571] 2025-08-16 07:12:08,873 >> Special tokens file saved in saves/qwen2_5vl-32b/lora/sft/special_tokens_map.json
+g0006:33490:33490 [1] NCCL INFO comm 0x55f9ffc79010 rank 1 nranks 16 cudaDev 1 busId 5e000 - Destroy COMPLETE
+g0006:33492:33492 [3] NCCL INFO comm 0x5567dea5a010 rank 3 nranks 16 cudaDev 3 busId 66000 - Destroy COMPLETE
+g0006:33491:33491 [2] NCCL INFO comm 0x55de5a45e010 rank 2 nranks 16 cudaDev 2 busId 62000 - Destroy COMPLETE
+***** train metrics *****
+  epoch                    =        3.0
+  total_flos               =     4716GF
+  train_loss               =     1.8949
+  train_runtime            = 3:08:22.81
+  train_samples_per_second =      0.004
+  train_steps_per_second   =        0.0
+[WARNING|2025-08-16 07:12:09] llamafactory.extras.ploting:148 >> No metric loss to plot.
+[WARNING|2025-08-16 07:12:09] llamafactory.extras.ploting:148 >> No metric eval_loss to plot.
+[INFO|modelcard.py:456] 2025-08-16 07:12:09,233 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Causal Language Modeling', 'type': 'text-generation'}}
+g0006:33489:33489 [0] NCCL INFO comm 0x2b8a6cee04a0 rank 0 nranks 16 cudaDev 0 busId 5a000 - Destroy COMPLETE
+g0006:33489:33489 [0] NCCL INFO comm 0x559e9505b010 rank 0 nranks 16 cudaDev 0 busId 5a000 - Destroy COMPLETE
