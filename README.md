@@ -7,5 +7,5 @@
 # 结果
 |NAME|stage|zero stage|lora|lora rank|lora target|total flos|runtime|simple/s|steps/s|
 |---|---|---|---|---|---|---|---|---|---|
-|32E|PT|ds_zero3|ON|8|all|4716GF|00:08:55|0.084|0.006|
-|NVL|PT|ds_zero3|ON|8|all|4716GF|03:08:22|0.004|0.0|
+|NVL|PT|ds_zero3|ON|8|all|4716GF|00:08:55|0.084|0.006|
+|32E|PT|ds_zero3|ON|8|all|4716GF|03:08:22|0.004|0.0|
