@@ -1,814 +1,0 @@
-[2025-08-15 16:51:53,467] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-/opt/conda/lib/python3.11/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-[INFO|2025-08-15 16:51:56] llamafactory.cli:143 >> Initializing 8 distributed tasks at: 192.168.0.100:29500
-[INFO|2025-08-15 16:51:56] llamafactory.cli:143 >> Multi-node training enabled: num nodes: 2, node rank: 1
-[2025-08-15 16:52:03,735] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2025-08-15 16:52:03,766] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2025-08-15 16:52:03,856] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2025-08-15 16:52:03,941] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2025-08-15 16:52:03,976] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2025-08-15 16:52:03,999] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2025-08-15 16:52:04,007] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2025-08-15 16:52:04,015] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-/opt/conda/lib/python3.11/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-/opt/conda/lib/python3.11/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-/opt/conda/lib/python3.11/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-[2025-08-15 16:52:05,332] [INFO] [comm.py:669:init_distributed] cdb=None
-/opt/conda/lib/python3.11/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-/opt/conda/lib/python3.11/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-/opt/conda/lib/python3.11/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-/opt/conda/lib/python3.11/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-[2025-08-15 16:52:05,398] [INFO] [comm.py:669:init_distributed] cdb=None
-/opt/conda/lib/python3.11/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-[2025-08-15 16:52:05,423] [INFO] [comm.py:669:init_distributed] cdb=None
-[2025-08-15 16:52:05,516] [INFO] [comm.py:669:init_distributed] cdb=None
-[2025-08-15 16:52:05,516] [INFO] [comm.py:669:init_distributed] cdb=None
-[2025-08-15 16:52:05,524] [INFO] [comm.py:669:init_distributed] cdb=None
-[2025-08-15 16:52:05,525] [INFO] [comm.py:669:init_distributed] cdb=None
-[2025-08-15 16:52:05,576] [INFO] [comm.py:669:init_distributed] cdb=None
-[INFO|2025-08-15 16:52:06] llamafactory.hparams.parser:410 >> Process rank: 8, world size: 16, device: cuda:0, distributed training: True, compute dtype: torch.bfloat16
-[INFO|tokenization_utils_base.py:2065] 2025-08-15 16:52:06,335 >> loading file vocab.json
-[INFO|tokenization_utils_base.py:2065] 2025-08-15 16:52:06,335 >> loading file merges.txt
-[INFO|tokenization_utils_base.py:2065] 2025-08-15 16:52:06,335 >> loading file tokenizer.json
-[INFO|tokenization_utils_base.py:2065] 2025-08-15 16:52:06,335 >> loading file added_tokens.json
-[INFO|tokenization_utils_base.py:2065] 2025-08-15 16:52:06,335 >> loading file special_tokens_map.json
-[INFO|tokenization_utils_base.py:2065] 2025-08-15 16:52:06,335 >> loading file tokenizer_config.json
-[INFO|tokenization_utils_base.py:2065] 2025-08-15 16:52:06,335 >> loading file chat_template.jinja
-[INFO|2025-08-15 16:52:06] llamafactory.hparams.parser:410 >> Process rank: 11, world size: 16, device: cuda:3, distributed training: True, compute dtype: torch.bfloat16
-[INFO|2025-08-15 16:52:06] llamafactory.hparams.parser:410 >> Process rank: 10, world size: 16, device: cuda:2, distributed training: True, compute dtype: torch.bfloat16
-[INFO|2025-08-15 16:52:06] llamafactory.hparams.parser:410 >> Process rank: 9, world size: 16, device: cuda:1, distributed training: True, compute dtype: torch.bfloat16
-[INFO|2025-08-15 16:52:06] llamafactory.hparams.parser:410 >> Process rank: 12, world size: 16, device: cuda:4, distributed training: True, compute dtype: torch.bfloat16
-[INFO|2025-08-15 16:52:06] llamafactory.hparams.parser:410 >> Process rank: 14, world size: 16, device: cuda:6, distributed training: True, compute dtype: torch.bfloat16
-[INFO|2025-08-15 16:52:06] llamafactory.hparams.parser:410 >> Process rank: 13, world size: 16, device: cuda:5, distributed training: True, compute dtype: torch.bfloat16
-[INFO|2025-08-15 16:52:06] llamafactory.hparams.parser:410 >> Process rank: 15, world size: 16, device: cuda:7, distributed training: True, compute dtype: torch.bfloat16
-[INFO|tokenization_utils_base.py:2336] 2025-08-15 16:52:06,596 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-[INFO|configuration_utils.py:750] 2025-08-15 16:52:06,597 >> loading configuration file /data/Qwen2.5-32B-Instruct/config.json
-[INFO|configuration_utils.py:817] 2025-08-15 16:52:06,599 >> Model config Qwen2Config {
-  "architectures": [
-    "Qwen2ForCausalLM"
-  ],
-  "attention_dropout": 0.0,
-  "bos_token_id": 151643,
-  "eos_token_id": 151645,
-  "hidden_act": "silu",
-  "hidden_size": 5120,
-  "initializer_range": 0.02,
-  "intermediate_size": 27648,
-  "layer_types": [
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention"
-  ],
-  "max_position_embeddings": 32768,
-  "max_window_layers": 70,
-  "model_type": "qwen2",
-  "num_attention_heads": 40,
-  "num_hidden_layers": 64,
-  "num_key_value_heads": 8,
-  "rms_norm_eps": 1e-06,
-  "rope_scaling": null,
-  "rope_theta": 1000000.0,
-  "sliding_window": null,
-  "tie_word_embeddings": false,
-  "torch_dtype": "bfloat16",
-  "transformers_version": "4.55.0",
-  "use_cache": true,
-  "use_sliding_window": false,
-  "vocab_size": 152064
-}
-
-[INFO|tokenization_utils_base.py:2065] 2025-08-15 16:52:06,599 >> loading file vocab.json
-[INFO|tokenization_utils_base.py:2065] 2025-08-15 16:52:06,599 >> loading file merges.txt
-[INFO|tokenization_utils_base.py:2065] 2025-08-15 16:52:06,599 >> loading file tokenizer.json
-[INFO|tokenization_utils_base.py:2065] 2025-08-15 16:52:06,599 >> loading file added_tokens.json
-[INFO|tokenization_utils_base.py:2065] 2025-08-15 16:52:06,599 >> loading file special_tokens_map.json
-[INFO|tokenization_utils_base.py:2065] 2025-08-15 16:52:06,599 >> loading file tokenizer_config.json
-[INFO|tokenization_utils_base.py:2065] 2025-08-15 16:52:06,599 >> loading file chat_template.jinja
-[INFO|tokenization_utils_base.py:2336] 2025-08-15 16:52:06,857 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-[INFO|2025-08-15 16:52:06] llamafactory.data.template:143 >> Replace eos token: <|eot_id|>.
-[WARNING|2025-08-15 16:52:06] llamafactory.data.template:148 >> New tokens have been added, make sure `resize_vocab` is True.
-[INFO|2025-08-15 16:52:06] llamafactory.data.template:143 >> Add <|eom_id|> to stop words.
-[WARNING|2025-08-15 16:52:06] llamafactory.data.template:148 >> New tokens have been added, make sure `resize_vocab` is True.
-[INFO|2025-08-15 16:52:06] llamafactory.data.loader:143 >> Loading dataset identity.json...
-Converting format of dataset (num_proc=16):   0% 0/91 [00:00<?, ? examples/s][rank11]:[W815 16:52:07.747347779 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 11]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
-[rank10]:[W815 16:52:07.790593582 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 10]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
-[rank9]:[W815 16:52:07.828665770 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 9]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
-[rank12]:[W815 16:52:07.834253711 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 12]  using GPU 4 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
-[rank14]:[W815 16:52:07.834363519 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 14]  using GPU 6 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
-[rank15]:[W815 16:52:07.838233616 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 15]  using GPU 7 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
-[rank13]:[W815 16:52:07.849144326 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 13]  using GPU 5 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
-Converting format of dataset (num_proc=16): 100% 91/91 [00:00<00:00, 559.12 examples/s]
-[INFO|2025-08-15 16:52:07] llamafactory.data.loader:143 >> Loading dataset alpaca_en_demo.json...
-Converting format of dataset (num_proc=16):   0% 0/999 [00:00<?, ? examples/s]Converting format of dataset (num_proc=16): 100% 999/999 [00:00<00:00, 6972.82 examples/s]
-[rank8]:[W815 16:52:08.783978912 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 8]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
-e2b29d3263f2:14757:14757 [4] NCCL INFO cudaDriverVersion 12040
-e2b29d3263f2:14757:14757 [4] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-e2b29d3263f2:14757:14757 [4] NCCL INFO Bootstrap : Using eth0:192.168.0.101<0>
-e2b29d3263f2:14754:14754 [1] NCCL INFO cudaDriverVersion 12040
-e2b29d3263f2:14754:14754 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-e2b29d3263f2:14757:14757 [4] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
-e2b29d3263f2:14757:14757 [4] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
-e2b29d3263f2:14757:14757 [4] NCCL INFO NET/Plugin: Using internal network plugin.
-e2b29d3263f2:14754:14754 [1] NCCL INFO Bootstrap : Using eth0:192.168.0.101<0>
-e2b29d3263f2:14754:14754 [1] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
-e2b29d3263f2:14754:14754 [1] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
-e2b29d3263f2:14754:14754 [1] NCCL INFO NET/Plugin: Using internal network plugin.
-e2b29d3263f2:14757:14757 [4] NCCL INFO Comm config Blocking set to 1
-e2b29d3263f2:14754:14754 [1] NCCL INFO Comm config Blocking set to 1
-e2b29d3263f2:14759:14759 [6] NCCL INFO cudaDriverVersion 12040
-e2b29d3263f2:14759:14759 [6] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-e2b29d3263f2:14759:14759 [6] NCCL INFO Bootstrap : Using eth0:192.168.0.101<0>
-e2b29d3263f2:14759:14759 [6] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
-e2b29d3263f2:14759:14759 [6] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
-e2b29d3263f2:14759:14759 [6] NCCL INFO NET/Plugin: Using internal network plugin.
-e2b29d3263f2:14759:14759 [6] NCCL INFO Comm config Blocking set to 1
-e2b29d3263f2:14756:14756 [3] NCCL INFO cudaDriverVersion 12040
-e2b29d3263f2:14756:14756 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-e2b29d3263f2:14756:14756 [3] NCCL INFO Bootstrap : Using eth0:192.168.0.101<0>
-e2b29d3263f2:14756:14756 [3] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
-e2b29d3263f2:14756:14756 [3] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
-e2b29d3263f2:14756:14756 [3] NCCL INFO NET/Plugin: Using internal network plugin.
-e2b29d3263f2:14756:14756 [3] NCCL INFO Comm config Blocking set to 1
-e2b29d3263f2:14755:14755 [2] NCCL INFO cudaDriverVersion 12040
-e2b29d3263f2:14755:14755 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-e2b29d3263f2:14755:14755 [2] NCCL INFO Bootstrap : Using eth0:192.168.0.101<0>
-e2b29d3263f2:14755:14755 [2] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
-e2b29d3263f2:14755:14755 [2] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
-e2b29d3263f2:14755:14755 [2] NCCL INFO NET/Plugin: Using internal network plugin.
-e2b29d3263f2:14760:14760 [7] NCCL INFO cudaDriverVersion 12040
-e2b29d3263f2:14760:14760 [7] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-e2b29d3263f2:14760:14760 [7] NCCL INFO Bootstrap : Using eth0:192.168.0.101<0>
-e2b29d3263f2:14760:14760 [7] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
-e2b29d3263f2:14760:14760 [7] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
-e2b29d3263f2:14760:14760 [7] NCCL INFO NET/Plugin: Using internal network plugin.
-e2b29d3263f2:14753:14753 [0] NCCL INFO cudaDriverVersion 12040
-e2b29d3263f2:14753:14753 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-e2b29d3263f2:14753:14753 [0] NCCL INFO Bootstrap : Using eth0:192.168.0.101<0>
-e2b29d3263f2:14753:14753 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
-e2b29d3263f2:14753:14753 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
-e2b29d3263f2:14753:14753 [0] NCCL INFO NET/Plugin: Using internal network plugin.
-e2b29d3263f2:14755:14755 [2] NCCL INFO Comm config Blocking set to 1
-e2b29d3263f2:14758:14758 [5] NCCL INFO cudaDriverVersion 12040
-e2b29d3263f2:14758:14758 [5] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-e2b29d3263f2:14758:14758 [5] NCCL INFO Bootstrap : Using eth0:192.168.0.101<0>
-e2b29d3263f2:14758:14758 [5] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
-e2b29d3263f2:14758:14758 [5] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
-e2b29d3263f2:14758:14758 [5] NCCL INFO NET/Plugin: Using internal network plugin.
-e2b29d3263f2:14760:14760 [7] NCCL INFO Comm config Blocking set to 1
-e2b29d3263f2:14753:14753 [0] NCCL INFO Comm config Blocking set to 1
-e2b29d3263f2:14758:14758 [5] NCCL INFO Comm config Blocking set to 1
-e2b29d3263f2:14754:16115 [1] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
-e2b29d3263f2:14754:16115 [1] NCCL INFO Failed to open libibverbs.so[.1]
-e2b29d3263f2:14754:16115 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-e2b29d3263f2:14754:16115 [1] NCCL INFO NET/Socket : Using [0]eth0:192.168.0.101<0>
-e2b29d3263f2:14754:16115 [1] NCCL INFO Using non-device net plugin version 0
-e2b29d3263f2:14754:16115 [1] NCCL INFO Using network Socket
-e2b29d3263f2:14757:16114 [4] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
-e2b29d3263f2:14759:16116 [6] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
-e2b29d3263f2:14757:16114 [4] NCCL INFO Failed to open libibverbs.so[.1]
-e2b29d3263f2:14757:16114 [4] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-e2b29d3263f2:14757:16114 [4] NCCL INFO NET/Socket : Using [0]eth0:192.168.0.101<0>
-e2b29d3263f2:14757:16114 [4] NCCL INFO Using non-device net plugin version 0
-e2b29d3263f2:14757:16114 [4] NCCL INFO Using network Socket
-e2b29d3263f2:14759:16116 [6] NCCL INFO Failed to open libibverbs.so[.1]
-e2b29d3263f2:14759:16116 [6] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-e2b29d3263f2:14759:16116 [6] NCCL INFO NET/Socket : Using [0]eth0:192.168.0.101<0>
-e2b29d3263f2:14759:16116 [6] NCCL INFO Using non-device net plugin version 0
-e2b29d3263f2:14759:16116 [6] NCCL INFO Using network Socket
-e2b29d3263f2:14756:16117 [3] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
-e2b29d3263f2:14756:16117 [3] NCCL INFO Failed to open libibverbs.so[.1]
-e2b29d3263f2:14756:16117 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-e2b29d3263f2:14756:16117 [3] NCCL INFO NET/Socket : Using [0]eth0:192.168.0.101<0>
-e2b29d3263f2:14756:16117 [3] NCCL INFO Using non-device net plugin version 0
-e2b29d3263f2:14756:16117 [3] NCCL INFO Using network Socket
-e2b29d3263f2:14760:16119 [7] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
-e2b29d3263f2:14758:16121 [5] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
-e2b29d3263f2:14758:16121 [5] NCCL INFO Failed to open libibverbs.so[.1]
-e2b29d3263f2:14758:16121 [5] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-e2b29d3263f2:14760:16119 [7] NCCL INFO Failed to open libibverbs.so[.1]
-e2b29d3263f2:14760:16119 [7] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-e2b29d3263f2:14758:16121 [5] NCCL INFO NET/Socket : Using [0]eth0:192.168.0.101<0>
-e2b29d3263f2:14760:16119 [7] NCCL INFO NET/Socket : Using [0]eth0:192.168.0.101<0>
-e2b29d3263f2:14758:16121 [5] NCCL INFO Using non-device net plugin version 0
-e2b29d3263f2:14758:16121 [5] NCCL INFO Using network Socket
-e2b29d3263f2:14760:16119 [7] NCCL INFO Using non-device net plugin version 0
-e2b29d3263f2:14760:16119 [7] NCCL INFO Using network Socket
-e2b29d3263f2:14755:16118 [2] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
-e2b29d3263f2:14755:16118 [2] NCCL INFO Failed to open libibverbs.so[.1]
-e2b29d3263f2:14755:16118 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-e2b29d3263f2:14755:16118 [2] NCCL INFO NET/Socket : Using [0]eth0:192.168.0.101<0>
-e2b29d3263f2:14755:16118 [2] NCCL INFO Using non-device net plugin version 0
-e2b29d3263f2:14755:16118 [2] NCCL INFO Using network Socket
-e2b29d3263f2:14753:16120 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
-e2b29d3263f2:14753:16120 [0] NCCL INFO Failed to open libibverbs.so[.1]
-e2b29d3263f2:14753:16120 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-e2b29d3263f2:14753:16120 [0] NCCL INFO NET/Socket : Using [0]eth0:192.168.0.101<0>
-e2b29d3263f2:14753:16120 [0] NCCL INFO Using non-device net plugin version 0
-e2b29d3263f2:14753:16120 [0] NCCL INFO Using network Socket
-e2b29d3263f2:14760:16119 [7] NCCL INFO ncclCommInitRank comm 0x55fc28eaf180 rank 15 nranks 16 cudaDev 7 nvmlDev 7 busId cf000 commId 0xa0364583bc190008 - Init START
-e2b29d3263f2:14758:16121 [5] NCCL INFO ncclCommInitRank comm 0x564758f4f040 rank 13 nranks 16 cudaDev 5 nvmlDev 5 busId b6000 commId 0xa0364583bc190008 - Init START
-e2b29d3263f2:14759:16116 [6] NCCL INFO ncclCommInitRank comm 0x55a0fd94f2d0 rank 14 nranks 16 cudaDev 6 nvmlDev 6 busId ce000 commId 0xa0364583bc190008 - Init START
-e2b29d3263f2:14756:16117 [3] NCCL INFO ncclCommInitRank comm 0x55632b6d9440 rank 11 nranks 16 cudaDev 3 nvmlDev 3 busId 20000 commId 0xa0364583bc190008 - Init START
-e2b29d3263f2:14757:16114 [4] NCCL INFO ncclCommInitRank comm 0x555d5f312bb0 rank 12 nranks 16 cudaDev 4 nvmlDev 4 busId b5000 commId 0xa0364583bc190008 - Init START
-e2b29d3263f2:14755:16118 [2] NCCL INFO ncclCommInitRank comm 0x55e79f723060 rank 10 nranks 16 cudaDev 2 nvmlDev 2 busId 1f000 commId 0xa0364583bc190008 - Init START
-e2b29d3263f2:14753:16120 [0] NCCL INFO ncclCommInitRank comm 0x56119e4c7280 rank 8 nranks 16 cudaDev 0 nvmlDev 0 busId e000 commId 0xa0364583bc190008 - Init START
-e2b29d3263f2:14754:16115 [1] NCCL INFO ncclCommInitRank comm 0x5584eb45cf70 rank 9 nranks 16 cudaDev 1 nvmlDev 1 busId f000 commId 0xa0364583bc190008 - Init START
-e2b29d3263f2:14760:16119 [7] NCCL INFO Setting affinity for GPU 7 to ffffffff,00000000,ffffffff,00000000
-e2b29d3263f2:14760:16119 [7] NCCL INFO NVLS multicast support is not available on dev 7
-e2b29d3263f2:14758:16121 [5] NCCL INFO Setting affinity for GPU 5 to ffffffff,00000000,ffffffff,00000000
-e2b29d3263f2:14758:16121 [5] NCCL INFO NVLS multicast support is not available on dev 5
-e2b29d3263f2:14753:16120 [0] NCCL INFO Setting affinity for GPU 0 to ffffffff,00000000,ffffffff
-e2b29d3263f2:14753:16120 [0] NCCL INFO NVLS multicast support is not available on dev 0
-e2b29d3263f2:14756:16117 [3] NCCL INFO Setting affinity for GPU 3 to ffffffff,00000000,ffffffff
-e2b29d3263f2:14756:16117 [3] NCCL INFO NVLS multicast support is not available on dev 3
-e2b29d3263f2:14755:16118 [2] NCCL INFO Setting affinity for GPU 2 to ffffffff,00000000,ffffffff
-e2b29d3263f2:14755:16118 [2] NCCL INFO NVLS multicast support is not available on dev 2
-e2b29d3263f2:14757:16114 [4] NCCL INFO Setting affinity for GPU 4 to ffffffff,00000000,ffffffff,00000000
-e2b29d3263f2:14757:16114 [4] NCCL INFO NVLS multicast support is not available on dev 4
-e2b29d3263f2:14759:16116 [6] NCCL INFO Setting affinity for GPU 6 to ffffffff,00000000,ffffffff,00000000
-e2b29d3263f2:14759:16116 [6] NCCL INFO NVLS multicast support is not available on dev 6
-e2b29d3263f2:14754:16115 [1] NCCL INFO Setting affinity for GPU 1 to ffffffff,00000000,ffffffff
-e2b29d3263f2:14754:16115 [1] NCCL INFO NVLS multicast support is not available on dev 1
-e2b29d3263f2:14760:16119 [7] NCCL INFO comm 0x55fc28eaf180 rank 15 nRanks 16 nNodes 2 localRanks 8 localRank 7 MNNVL 0
-e2b29d3263f2:14759:16116 [6] NCCL INFO comm 0x55a0fd94f2d0 rank 14 nRanks 16 nNodes 2 localRanks 8 localRank 6 MNNVL 0
-e2b29d3263f2:14758:16121 [5] NCCL INFO comm 0x564758f4f040 rank 13 nRanks 16 nNodes 2 localRanks 8 localRank 5 MNNVL 0
-e2b29d3263f2:14753:16120 [0] NCCL INFO comm 0x56119e4c7280 rank 8 nRanks 16 nNodes 2 localRanks 8 localRank 0 MNNVL 0
-e2b29d3263f2:14757:16114 [4] NCCL INFO comm 0x555d5f312bb0 rank 12 nRanks 16 nNodes 2 localRanks 8 localRank 4 MNNVL 0
-e2b29d3263f2:14755:16118 [2] NCCL INFO comm 0x55e79f723060 rank 10 nRanks 16 nNodes 2 localRanks 8 localRank 2 MNNVL 0
-e2b29d3263f2:14760:16119 [7] NCCL INFO Trees [0] -1/-1/-1->15->14 [1] -1/-1/-1->15->14
-e2b29d3263f2:14759:16116 [6] NCCL INFO Trees [0] 15/-1/-1->14->13 [1] 15/-1/-1->14->13
-e2b29d3263f2:14758:16121 [5] NCCL INFO Trees [0] 14/-1/-1->13->12 [1] 14/-1/-1->13->12
-e2b29d3263f2:14760:16119 [7] NCCL INFO P2P Chunksize set to 131072
-e2b29d3263f2:14757:16114 [4] NCCL INFO Trees [0] 13/-1/-1->12->11 [1] 13/-1/-1->12->11
-e2b29d3263f2:14759:16116 [6] NCCL INFO P2P Chunksize set to 131072
-e2b29d3263f2:14754:16115 [1] NCCL INFO comm 0x5584eb45cf70 rank 9 nRanks 16 nNodes 2 localRanks 8 localRank 1 MNNVL 0
-e2b29d3263f2:14758:16121 [5] NCCL INFO P2P Chunksize set to 131072
-e2b29d3263f2:14753:16120 [0] NCCL INFO Trees [0] 9/-1/-1->8->0 [1] 9/0/-1->8->-1
-e2b29d3263f2:14757:16114 [4] NCCL INFO P2P Chunksize set to 131072
-e2b29d3263f2:14753:16120 [0] NCCL INFO P2P Chunksize set to 131072
-e2b29d3263f2:14755:16118 [2] NCCL INFO Trees [0] 11/-1/-1->10->9 [1] 11/-1/-1->10->9
-e2b29d3263f2:14755:16118 [2] NCCL INFO P2P Chunksize set to 131072
-e2b29d3263f2:14756:16117 [3] NCCL INFO comm 0x55632b6d9440 rank 11 nRanks 16 nNodes 2 localRanks 8 localRank 3 MNNVL 0
-e2b29d3263f2:14754:16115 [1] NCCL INFO Trees [0] 10/-1/-1->9->8 [1] 10/-1/-1->9->8
-e2b29d3263f2:14754:16115 [1] NCCL INFO P2P Chunksize set to 131072
-e2b29d3263f2:14756:16117 [3] NCCL INFO Trees [0] 12/-1/-1->11->10 [1] 12/-1/-1->11->10
-e2b29d3263f2:14756:16117 [3] NCCL INFO P2P Chunksize set to 131072
-e2b29d3263f2:14758:16121 [5] NCCL INFO Channel 00/0 : 13[5] -> 12[4] via P2P/CUMEM/read
-e2b29d3263f2:14758:16121 [5] NCCL INFO Channel 01/0 : 13[5] -> 12[4] via P2P/CUMEM/read
-e2b29d3263f2:14755:16118 [2] NCCL INFO Channel 00/0 : 10[2] -> 9[1] via P2P/CUMEM/read
-e2b29d3263f2:14756:16117 [3] NCCL INFO Channel 00/0 : 11[3] -> 10[2] via P2P/CUMEM/read
-e2b29d3263f2:14755:16118 [2] NCCL INFO Channel 01/0 : 10[2] -> 9[1] via P2P/CUMEM/read
-e2b29d3263f2:14756:16117 [3] NCCL INFO Channel 01/0 : 11[3] -> 10[2] via P2P/CUMEM/read
-e2b29d3263f2:14759:16116 [6] NCCL INFO Channel 00/0 : 14[6] -> 13[5] via P2P/CUMEM/read
-e2b29d3263f2:14759:16116 [6] NCCL INFO Channel 01/0 : 14[6] -> 13[5] via P2P/CUMEM/read
-e2b29d3263f2:14757:16114 [4] NCCL INFO Channel 00/0 : 12[4] -> 11[3] via P2P/CUMEM/read
-e2b29d3263f2:14757:16114 [4] NCCL INFO Channel 01/0 : 12[4] -> 11[3] via P2P/CUMEM/read
-e2b29d3263f2:14754:16115 [1] NCCL INFO Channel 00/0 : 9[1] -> 0[0] [send] via NET/Socket/0
-e2b29d3263f2:14754:16115 [1] NCCL INFO Channel 01/0 : 9[1] -> 0[0] [send] via NET/Socket/0
-e2b29d3263f2:14753:16120 [0] NCCL INFO Channel 00/0 : 1[1] -> 8[0] [receive] via NET/Socket/0
-e2b29d3263f2:14753:16120 [0] NCCL INFO Channel 01/0 : 1[1] -> 8[0] [receive] via NET/Socket/0
-e2b29d3263f2:14753:16120 [0] NCCL INFO Channel 00/0 : 8[0] -> 15[7] via P2P/CUMEM/read
-e2b29d3263f2:14753:16120 [0] NCCL INFO Channel 01/0 : 8[0] -> 15[7] via P2P/CUMEM/read
-e2b29d3263f2:14760:16119 [7] NCCL INFO Channel 00/0 : 15[7] -> 14[6] via P2P/CUMEM/read
-e2b29d3263f2:14760:16119 [7] NCCL INFO Channel 01/0 : 15[7] -> 14[6] via P2P/CUMEM/read
-e2b29d3263f2:14757:16114 [4] NCCL INFO Connected all rings
-e2b29d3263f2:14756:16117 [3] NCCL INFO Connected all rings
-e2b29d3263f2:14757:16114 [4] NCCL INFO Channel 00/0 : 12[4] -> 13[5] via P2P/CUMEM/read
-e2b29d3263f2:14756:16117 [3] NCCL INFO Channel 00/0 : 11[3] -> 12[4] via P2P/CUMEM/read
-e2b29d3263f2:14753:16120 [0] NCCL INFO Connected all rings
-e2b29d3263f2:14753:16120 [0] NCCL INFO Channel 00/0 : 8[0] -> 9[1] via P2P/CUMEM/read
-e2b29d3263f2:14757:16114 [4] NCCL INFO Channel 01/0 : 12[4] -> 13[5] via P2P/CUMEM/read
-e2b29d3263f2:14756:16117 [3] NCCL INFO Channel 01/0 : 11[3] -> 12[4] via P2P/CUMEM/read
-e2b29d3263f2:14753:16120 [0] NCCL INFO Channel 01/0 : 8[0] -> 9[1] via P2P/CUMEM/read
-e2b29d3263f2:14754:16115 [1] NCCL INFO Connected all rings
-e2b29d3263f2:14755:16118 [2] NCCL INFO Connected all rings
-e2b29d3263f2:14758:16121 [5] NCCL INFO Connected all rings
-e2b29d3263f2:14760:16119 [7] NCCL INFO Connected all rings
-e2b29d3263f2:14759:16116 [6] NCCL INFO Connected all rings
-e2b29d3263f2:14754:16115 [1] NCCL INFO Channel 00/0 : 9[1] -> 10[2] via P2P/CUMEM/read
-e2b29d3263f2:14755:16118 [2] NCCL INFO Channel 00/0 : 10[2] -> 11[3] via P2P/CUMEM/read
-e2b29d3263f2:14754:16115 [1] NCCL INFO Channel 01/0 : 9[1] -> 10[2] via P2P/CUMEM/read
-e2b29d3263f2:14758:16121 [5] NCCL INFO Channel 00/0 : 13[5] -> 14[6] via P2P/CUMEM/read
-e2b29d3263f2:14755:16118 [2] NCCL INFO Channel 01/0 : 10[2] -> 11[3] via P2P/CUMEM/read
-e2b29d3263f2:14759:16116 [6] NCCL INFO Channel 00/0 : 14[6] -> 15[7] via P2P/CUMEM/read
-e2b29d3263f2:14758:16121 [5] NCCL INFO Channel 01/0 : 13[5] -> 14[6] via P2P/CUMEM/read
-e2b29d3263f2:14753:16120 [0] NCCL INFO Channel 00/0 : 0[0] -> 8[0] [receive] via NET/Socket/0
-e2b29d3263f2:14759:16116 [6] NCCL INFO Channel 01/0 : 14[6] -> 15[7] via P2P/CUMEM/read
-e2b29d3263f2:14754:16115 [1] NCCL INFO Channel 00/0 : 9[1] -> 8[0] via P2P/CUMEM/read
-e2b29d3263f2:14753:16120 [0] NCCL INFO Channel 01/0 : 0[0] -> 8[0] [receive] via NET/Socket/0
-e2b29d3263f2:14753:16120 [0] NCCL INFO Channel 00/0 : 8[0] -> 0[0] [send] via NET/Socket/0
-e2b29d3263f2:14753:16120 [0] NCCL INFO Channel 01/0 : 8[0] -> 0[0] [send] via NET/Socket/0
-e2b29d3263f2:14754:16115 [1] NCCL INFO Channel 01/0 : 9[1] -> 8[0] via P2P/CUMEM/read
-e2b29d3263f2:14756:16117 [3] NCCL INFO Connected all trees
-e2b29d3263f2:14756:16117 [3] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
-e2b29d3263f2:14756:16117 [3] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
-e2b29d3263f2:14757:16114 [4] NCCL INFO Connected all trees
-e2b29d3263f2:14757:16114 [4] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
-e2b29d3263f2:14757:16114 [4] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
-e2b29d3263f2:14760:16119 [7] NCCL INFO Connected all trees
-e2b29d3263f2:14760:16119 [7] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
-e2b29d3263f2:14760:16119 [7] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
-e2b29d3263f2:14758:16121 [5] NCCL INFO Connected all trees
-e2b29d3263f2:14758:16121 [5] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
-e2b29d3263f2:14758:16121 [5] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
-e2b29d3263f2:14759:16116 [6] NCCL INFO Connected all trees
-e2b29d3263f2:14759:16116 [6] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
-e2b29d3263f2:14759:16116 [6] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
-e2b29d3263f2:14755:16118 [2] NCCL INFO Connected all trees
-e2b29d3263f2:14755:16118 [2] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
-e2b29d3263f2:14755:16118 [2] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
-e2b29d3263f2:14753:16120 [0] NCCL INFO Connected all trees
-e2b29d3263f2:14754:16115 [1] NCCL INFO Connected all trees
-e2b29d3263f2:14753:16120 [0] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
-e2b29d3263f2:14754:16115 [1] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
-e2b29d3263f2:14753:16120 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
-e2b29d3263f2:14754:16115 [1] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
-e2b29d3263f2:14758:16121 [5] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
-e2b29d3263f2:14757:16114 [4] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
-e2b29d3263f2:14758:16121 [5] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
-e2b29d3263f2:14757:16114 [4] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
-e2b29d3263f2:14758:16121 [5] NCCL INFO ncclCommInitRank comm 0x564758f4f040 rank 13 nranks 16 cudaDev 5 nvmlDev 5 busId b6000 commId 0xa0364583bc190008 - Init COMPLETE
-e2b29d3263f2:14757:16114 [4] NCCL INFO ncclCommInitRank comm 0x555d5f312bb0 rank 12 nranks 16 cudaDev 4 nvmlDev 4 busId b5000 commId 0xa0364583bc190008 - Init COMPLETE
-e2b29d3263f2:14753:16120 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
-e2b29d3263f2:14759:16116 [6] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
-e2b29d3263f2:14753:16120 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
-e2b29d3263f2:14759:16116 [6] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
-e2b29d3263f2:14753:16120 [0] NCCL INFO ncclCommInitRank comm 0x56119e4c7280 rank 8 nranks 16 cudaDev 0 nvmlDev 0 busId e000 commId 0xa0364583bc190008 - Init COMPLETE
-e2b29d3263f2:14759:16116 [6] NCCL INFO ncclCommInitRank comm 0x55a0fd94f2d0 rank 14 nranks 16 cudaDev 6 nvmlDev 6 busId ce000 commId 0xa0364583bc190008 - Init COMPLETE
-e2b29d3263f2:14760:16119 [7] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
-e2b29d3263f2:14760:16119 [7] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
-e2b29d3263f2:14760:16119 [7] NCCL INFO ncclCommInitRank comm 0x55fc28eaf180 rank 15 nranks 16 cudaDev 7 nvmlDev 7 busId cf000 commId 0xa0364583bc190008 - Init COMPLETE
-e2b29d3263f2:14755:16118 [2] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
-e2b29d3263f2:14755:16118 [2] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
-e2b29d3263f2:14755:16118 [2] NCCL INFO ncclCommInitRank comm 0x55e79f723060 rank 10 nranks 16 cudaDev 2 nvmlDev 2 busId 1f000 commId 0xa0364583bc190008 - Init COMPLETE
-e2b29d3263f2:14756:16117 [3] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
-e2b29d3263f2:14756:16117 [3] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
-e2b29d3263f2:14756:16117 [3] NCCL INFO ncclCommInitRank comm 0x55632b6d9440 rank 11 nranks 16 cudaDev 3 nvmlDev 3 busId 20000 commId 0xa0364583bc190008 - Init COMPLETE
-e2b29d3263f2:14754:16115 [1] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
-e2b29d3263f2:14754:16115 [1] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
-e2b29d3263f2:14754:16115 [1] NCCL INFO ncclCommInitRank comm 0x5584eb45cf70 rank 9 nranks 16 cudaDev 1 nvmlDev 1 busId f000 commId 0xa0364583bc190008 - Init COMPLETE
-Running tokenizer on dataset (num_proc=16):   0% 0/1090 [00:00<?, ? examples/s]Running tokenizer on dataset (num_proc=16):   6% 69/1090 [00:00<00:06, 149.96 examples/s]Running tokenizer on dataset (num_proc=16):  13% 138/1090 [00:00<00:03, 239.41 examples/s]Running tokenizer on dataset (num_proc=16):  31% 342/1090 [00:00<00:01, 565.21 examples/s]Running tokenizer on dataset (num_proc=16):  44% 478/1090 [00:01<00:01, 565.11 examples/s]Running tokenizer on dataset (num_proc=16):  63% 682/1090 [00:01<00:00, 743.53 examples/s]Running tokenizer on dataset (num_proc=16):  75% 818/1090 [00:01<00:00, 786.32 examples/s]Running tokenizer on dataset (num_proc=16):  88% 954/1090 [00:01<00:00, 793.87 examples/s]Running tokenizer on dataset (num_proc=16): 100% 1090/1090 [00:01<00:00, 844.36 examples/s]Running tokenizer on dataset (num_proc=16): 100% 1090/1090 [00:01<00:00, 627.91 examples/s]
-training example:
-input_ids:
-[27, 91, 2468, 8757, 842, 91, 29, 872, 27, 91, 408, 8757, 842, 91, 1339, 6023, 151665, 27, 91, 2468, 8757, 842, 91, 29, 77091, 27, 91, 408, 8757, 842, 91, 1339, 9707, 0, 358, 1079, 5867, 606, 38154, 458, 15235, 17847, 7881, 553, 5867, 3094, 3417, 13, 2585, 646, 358, 7789, 498, 3351, 30, 151665]
-inputs:
-<|start_header_id|>user<|end_header_id|>
-
-hi<|eot_id|><|start_header_id|>assistant<|end_header_id|>
-
-Hello! I am {{name}}, an AI assistant developed by {{author}}. How can I assist you today?<|eot_id|>
-label_ids:
-[-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 9707, 0, 358, 1079, 5867, 606, 38154, 458, 15235, 17847, 7881, 553, 5867, 3094, 3417, 13, 2585, 646, 358, 7789, 498, 3351, 30, 151665]
-labels:
-Hello! I am {{name}}, an AI assistant developed by {{author}}. How can I assist you today?<|eot_id|>
-[INFO|configuration_utils.py:750] 2025-08-15 16:52:13,618 >> loading configuration file /data/Qwen2.5-32B-Instruct/config.json
-[INFO|configuration_utils.py:817] 2025-08-15 16:52:13,619 >> Model config Qwen2Config {
-  "architectures": [
-    "Qwen2ForCausalLM"
-  ],
-  "attention_dropout": 0.0,
-  "bos_token_id": 151643,
-  "eos_token_id": 151645,
-  "hidden_act": "silu",
-  "hidden_size": 5120,
-  "initializer_range": 0.02,
-  "intermediate_size": 27648,
-  "layer_types": [
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention"
-  ],
-  "max_position_embeddings": 32768,
-  "max_window_layers": 70,
-  "model_type": "qwen2",
-  "num_attention_heads": 40,
-  "num_hidden_layers": 64,
-  "num_key_value_heads": 8,
-  "rms_norm_eps": 1e-06,
-  "rope_scaling": null,
-  "rope_theta": 1000000.0,
-  "sliding_window": null,
-  "tie_word_embeddings": false,
-  "torch_dtype": "bfloat16",
-  "transformers_version": "4.55.0",
-  "use_cache": true,
-  "use_sliding_window": false,
-  "vocab_size": 152064
-}
-
-[INFO|2025-08-15 16:52:13] llamafactory.model.model_utils.kv_cache:143 >> KV cache is disabled during training.
-[INFO|modeling_utils.py:1305] 2025-08-15 16:52:13,742 >> loading weights file /data/Qwen2.5-32B-Instruct/model.safetensors.index.json
-[INFO|modeling_utils.py:4363] 2025-08-15 16:52:13,742 >> Detected DeepSpeed ZeRO-3: activating zero.init() for this model
-[2025-08-15 16:52:13,742] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 16
-[INFO|configuration_utils.py:1098] 2025-08-15 16:52:13,752 >> Generate config GenerationConfig {
-  "bos_token_id": 151643,
-  "eos_token_id": 151645,
-  "use_cache": false
-}
-
-[2025-08-15 16:52:13,865] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 16
-[2025-08-15 16:52:13,870] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 16
-[2025-08-15 16:52:13,871] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 16
-[2025-08-15 16:52:13,871] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 16
-[2025-08-15 16:52:13,871] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 16
-[2025-08-15 16:52:13,873] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 16
-[2025-08-15 16:52:13,875] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 16
-Loading checkpoint shards:   0% 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0% 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0% 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0% 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0% 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0% 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0% 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   0% 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   6% 1/17 [00:08<02:12,  8.27s/it]Loading checkpoint shards:   6% 1/17 [00:08<02:12,  8.27s/it]Loading checkpoint shards:   6% 1/17 [00:08<02:12,  8.28s/it]Loading checkpoint shards:   6% 1/17 [00:08<02:12,  8.28s/it]Loading checkpoint shards:   6% 1/17 [00:08<02:12,  8.27s/it]Loading checkpoint shards:   6% 1/17 [00:08<02:12,  8.27s/it]Loading checkpoint shards:   6% 1/17 [00:08<02:12,  8.26s/it]Loading checkpoint shards:   6% 1/17 [00:08<02:12,  8.28s/it]Loading checkpoint shards:  12% 2/17 [00:15<01:58,  7.88s/it]Loading checkpoint shards:  12% 2/17 [00:15<01:58,  7.88s/it]Loading checkpoint shards:  12% 2/17 [00:15<01:58,  7.89s/it]Loading checkpoint shards:  12% 2/17 [00:15<01:58,  7.89s/it]Loading checkpoint shards:  12% 2/17 [00:15<01:58,  7.88s/it]Loading checkpoint shards:  12% 2/17 [00:15<01:58,  7.89s/it]Loading checkpoint shards:  12% 2/17 [00:15<01:58,  7.88s/it]Loading checkpoint shards:  12% 2/17 [00:15<01:58,  7.88s/it]Loading checkpoint shards:  18% 3/17 [00:23<01:47,  7.69s/it]Loading checkpoint shards:  18% 3/17 [00:23<01:47,  7.68s/it]Loading checkpoint shards:  18% 3/17 [00:23<01:47,  7.69s/it]Loading checkpoint shards:  18% 3/17 [00:23<01:47,  7.68s/it]Loading checkpoint shards:  18% 3/17 [00:23<01:47,  7.68s/it]Loading checkpoint shards:  18% 3/17 [00:23<01:47,  7.69s/it]Loading checkpoint shards:  18% 3/17 [00:23<01:47,  7.69s/it]Loading checkpoint shards:  18% 3/17 [00:23<01:47,  7.68s/it]Loading checkpoint shards:  24% 4/17 [00:30<01:39,  7.62s/it]Loading checkpoint shards:  24% 4/17 [00:30<01:39,  7.62s/it]Loading checkpoint shards:  24% 4/17 [00:30<01:39,  7.62s/it]Loading checkpoint shards:  24% 4/17 [00:30<01:39,  7.62s/it]Loading checkpoint shards:  24% 4/17 [00:30<01:39,  7.62s/it]Loading checkpoint shards:  24% 4/17 [00:30<01:39,  7.62s/it]Loading checkpoint shards:  24% 4/17 [00:30<01:39,  7.62s/it]Loading checkpoint shards:  24% 4/17 [00:30<01:39,  7.62s/it]Loading checkpoint shards:  29% 5/17 [00:38<01:31,  7.58s/it]Loading checkpoint shards:  29% 5/17 [00:38<01:31,  7.58s/it]Loading checkpoint shards:  29% 5/17 [00:38<01:31,  7.58s/it]Loading checkpoint shards:  29% 5/17 [00:38<01:31,  7.58s/it]Loading checkpoint shards:  29% 5/17 [00:38<01:31,  7.58s/it]Loading checkpoint shards:  29% 5/17 [00:38<01:31,  7.58s/it]Loading checkpoint shards:  29% 5/17 [00:38<01:31,  7.58s/it]Loading checkpoint shards:  29% 5/17 [00:38<01:31,  7.58s/it]Loading checkpoint shards:  35% 6/17 [00:45<01:23,  7.56s/it]Loading checkpoint shards:  35% 6/17 [00:45<01:23,  7.55s/it]Loading checkpoint shards:  35% 6/17 [00:45<01:23,  7.55s/it]Loading checkpoint shards:  35% 6/17 [00:45<01:23,  7.55s/it]Loading checkpoint shards:  35% 6/17 [00:45<01:23,  7.56s/it]Loading checkpoint shards:  35% 6/17 [00:45<01:23,  7.55s/it]Loading checkpoint shards:  35% 6/17 [00:45<01:23,  7.55s/it]Loading checkpoint shards:  35% 6/17 [00:45<01:23,  7.56s/it]Loading checkpoint shards:  41% 7/17 [00:53<01:15,  7.54s/it]Loading checkpoint shards:  41% 7/17 [00:53<01:15,  7.54s/it]Loading checkpoint shards:  41% 7/17 [00:53<01:15,  7.54s/it]Loading checkpoint shards:  41% 7/17 [00:53<01:15,  7.54s/it]Loading checkpoint shards:  41% 7/17 [00:53<01:15,  7.54s/it]Loading checkpoint shards:  41% 7/17 [00:53<01:15,  7.54s/it]Loading checkpoint shards:  41% 7/17 [00:53<01:15,  7.54s/it]Loading checkpoint shards:  41% 7/17 [00:53<01:15,  7.54s/it]Loading checkpoint shards:  47% 8/17 [01:00<01:07,  7.53s/it]Loading checkpoint shards:  47% 8/17 [01:00<01:07,  7.53s/it]Loading checkpoint shards:  47% 8/17 [01:00<01:07,  7.53s/it]Loading checkpoint shards:  47% 8/17 [01:00<01:07,  7.53s/it]Loading checkpoint shards:  47% 8/17 [01:00<01:07,  7.53s/it]Loading checkpoint shards:  47% 8/17 [01:00<01:07,  7.53s/it]Loading checkpoint shards:  47% 8/17 [01:00<01:07,  7.52s/it]Loading checkpoint shards:  47% 8/17 [01:00<01:07,  7.53s/it]Loading checkpoint shards:  53% 9/17 [01:08<01:00,  7.51s/it]Loading checkpoint shards:  53% 9/17 [01:08<01:00,  7.51s/it]Loading checkpoint shards:  53% 9/17 [01:08<01:00,  7.51s/it]Loading checkpoint shards:  53% 9/17 [01:08<01:00,  7.51s/it]Loading checkpoint shards:  53% 9/17 [01:08<01:00,  7.51s/it]Loading checkpoint shards:  53% 9/17 [01:08<01:00,  7.51s/it]Loading checkpoint shards:  53% 9/17 [01:08<01:00,  7.51s/it]Loading checkpoint shards:  53% 9/17 [01:08<01:00,  7.51s/it]Loading checkpoint shards:  59% 10/17 [01:15<00:52,  7.50s/it]Loading checkpoint shards:  59% 10/17 [01:15<00:52,  7.50s/it]Loading checkpoint shards:  59% 10/17 [01:15<00:52,  7.50s/it]Loading checkpoint shards:  59% 10/17 [01:15<00:52,  7.50s/it]Loading checkpoint shards:  59% 10/17 [01:15<00:52,  7.50s/it]Loading checkpoint shards:  59% 10/17 [01:15<00:52,  7.50s/it]Loading checkpoint shards:  59% 10/17 [01:15<00:52,  7.50s/it]Loading checkpoint shards:  59% 10/17 [01:15<00:52,  7.50s/it]Loading checkpoint shards:  65% 11/17 [01:23<00:45,  7.50s/it]Loading checkpoint shards:  65% 11/17 [01:23<00:45,  7.50s/it]Loading checkpoint shards:  65% 11/17 [01:23<00:45,  7.50s/it]Loading checkpoint shards:  65% 11/17 [01:23<00:45,  7.50s/it]Loading checkpoint shards:  65% 11/17 [01:23<00:45,  7.50s/it]Loading checkpoint shards:  65% 11/17 [01:23<00:45,  7.50s/it]Loading checkpoint shards:  65% 11/17 [01:23<00:44,  7.50s/it]Loading checkpoint shards:  65% 11/17 [01:23<00:45,  7.50s/it]Loading checkpoint shards:  71% 12/17 [01:30<00:37,  7.49s/it]Loading checkpoint shards:  71% 12/17 [01:30<00:37,  7.49s/it]Loading checkpoint shards:  71% 12/17 [01:30<00:37,  7.49s/it]Loading checkpoint shards:  71% 12/17 [01:30<00:37,  7.49s/it]Loading checkpoint shards:  71% 12/17 [01:30<00:37,  7.49s/it]Loading checkpoint shards:  71% 12/17 [01:30<00:37,  7.49s/it]Loading checkpoint shards:  71% 12/17 [01:30<00:37,  7.49s/it]Loading checkpoint shards:  71% 12/17 [01:30<00:37,  7.49s/it]Loading checkpoint shards:  76% 13/17 [01:38<00:29,  7.49s/it]Loading checkpoint shards:  76% 13/17 [01:38<00:29,  7.49s/it]Loading checkpoint shards:  76% 13/17 [01:38<00:29,  7.49s/it]Loading checkpoint shards:  76% 13/17 [01:38<00:29,  7.49s/it]Loading checkpoint shards:  76% 13/17 [01:38<00:29,  7.49s/it]Loading checkpoint shards:  76% 13/17 [01:38<00:29,  7.49s/it]Loading checkpoint shards:  76% 13/17 [01:38<00:29,  7.49s/it]Loading checkpoint shards:  76% 13/17 [01:38<00:29,  7.49s/it]Loading checkpoint shards:  82% 14/17 [01:45<00:22,  7.49s/it]Loading checkpoint shards:  82% 14/17 [01:45<00:22,  7.49s/it]Loading checkpoint shards:  82% 14/17 [01:45<00:22,  7.49s/it]Loading checkpoint shards:  82% 14/17 [01:45<00:22,  7.49s/it]Loading checkpoint shards:  82% 14/17 [01:45<00:22,  7.49s/it]Loading checkpoint shards:  82% 14/17 [01:45<00:22,  7.49s/it]Loading checkpoint shards:  82% 14/17 [01:45<00:22,  7.49s/it]Loading checkpoint shards:  82% 14/17 [01:45<00:22,  7.49s/it]Loading checkpoint shards:  88% 15/17 [01:53<00:15,  7.50s/it]Loading checkpoint shards:  88% 15/17 [01:53<00:15,  7.50s/it]Loading checkpoint shards:  88% 15/17 [01:53<00:15,  7.50s/it]Loading checkpoint shards:  88% 15/17 [01:53<00:15,  7.50s/it]Loading checkpoint shards:  88% 15/17 [01:53<00:15,  7.50s/it]Loading checkpoint shards:  88% 15/17 [01:53<00:15,  7.50s/it]Loading checkpoint shards:  88% 15/17 [01:53<00:15,  7.50s/it]Loading checkpoint shards:  88% 15/17 [01:53<00:15,  7.50s/it]Loading checkpoint shards:  94% 16/17 [02:00<00:07,  7.51s/it]Loading checkpoint shards:  94% 16/17 [02:00<00:07,  7.51s/it]Loading checkpoint shards:  94% 16/17 [02:00<00:07,  7.51s/it]Loading checkpoint shards:  94% 16/17 [02:00<00:07,  7.51s/it]Loading checkpoint shards:  94% 16/17 [02:00<00:07,  7.51s/it]Loading checkpoint shards:  94% 16/17 [02:00<00:07,  7.51s/it]Loading checkpoint shards:  94% 16/17 [02:00<00:07,  7.51s/it]Loading checkpoint shards:  94% 16/17 [02:00<00:07,  7.51s/it]Loading checkpoint shards: 100% 17/17 [02:02<00:00,  5.83s/it]Loading checkpoint shards: 100% 17/17 [02:02<00:00,  5.83s/it]Loading checkpoint shards: 100% 17/17 [02:02<00:00,  5.83s/it]Loading checkpoint shards: 100% 17/17 [02:02<00:00,  5.83s/it]Loading checkpoint shards: 100% 17/17 [02:02<00:00,  7.22s/it]
-Loading checkpoint shards: 100% 17/17 [02:02<00:00,  7.22s/it]Loading checkpoint shards: 100% 17/17 [02:02<00:00,  7.22s/it]
-
-Loading checkpoint shards: 100% 17/17 [02:02<00:00,  5.83s/it]Loading checkpoint shards: 100% 17/17 [02:02<00:00,  7.22s/it]Loading checkpoint shards: 100% 17/17 [02:02<00:00,  5.83s/it]
-Loading checkpoint shards: 100% 17/17 [02:02<00:00,  7.22s/it]
-Loading checkpoint shards: 100% 17/17 [02:02<00:00,  7.22s/it]
-Loading checkpoint shards: 100% 17/17 [02:02<00:00,  5.83s/it]Loading checkpoint shards: 100% 17/17 [02:02<00:00,  7.22s/it]
-[INFO|modeling_utils.py:5606] 2025-08-15 16:55:14,731 >> All model checkpoint weights were used when initializing Qwen2ForCausalLM.
-
-[INFO|modeling_utils.py:5614] 2025-08-15 16:55:14,731 >> All the weights of Qwen2ForCausalLM were initialized from the model checkpoint at /data/Qwen2.5-32B-Instruct.
-If your task is similar to the task the model of the checkpoint was trained on, you can already use Qwen2ForCausalLM for predictions without further training.
-Loading checkpoint shards: 100% 17/17 [02:02<00:00,  5.83s/it]Loading checkpoint shards: 100% 17/17 [02:02<00:00,  7.22s/it]
-[INFO|configuration_utils.py:1051] 2025-08-15 16:55:14,736 >> loading configuration file /data/Qwen2.5-32B-Instruct/generation_config.json
-[INFO|configuration_utils.py:1098] 2025-08-15 16:55:14,736 >> Generate config GenerationConfig {
-  "bos_token_id": 151643,
-  "do_sample": true,
-  "eos_token_id": [
-    151645,
-    151643
-  ],
-  "pad_token_id": 151643,
-  "repetition_penalty": 1.05,
-  "temperature": 0.7,
-  "top_k": 20,
-  "top_p": 0.8
-}
-
-[INFO|2025-08-15 16:55:14] llamafactory.model.model_utils.checkpointing:143 >> Gradient checkpointing enabled.
-[INFO|2025-08-15 16:55:14] llamafactory.model.model_utils.attention:143 >> Using torch SDPA for faster training and inference.
-[INFO|2025-08-15 16:55:14] llamafactory.model.adapter:143 >> DeepSpeed ZeRO3 detected, remaining trainable params in float32.
-[INFO|2025-08-15 16:55:14] llamafactory.model.adapter:143 >> Fine-tuning method: Full
-[INFO|2025-08-15 16:55:14] llamafactory.model.loader:143 >> trainable params: 32,763,876,352 || all params: 32,763,876,352 || trainable%: 100.0000
-[INFO|trainer.py:757] 2025-08-15 16:55:14,760 >> Using auto half precision backend
-[2025-08-15 16:55:19,559] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 16
-[INFO|trainer.py:2433] 2025-08-15 16:56:20,371 >> ***** Running training *****
-[INFO|trainer.py:2434] 2025-08-15 16:56:20,371 >>   Num examples = 1,090
-[INFO|trainer.py:2435] 2025-08-15 16:56:20,371 >>   Num Epochs = 3
-[INFO|trainer.py:2436] 2025-08-15 16:56:20,371 >>   Instantaneous batch size per device = 1
-[INFO|trainer.py:2439] 2025-08-15 16:56:20,371 >>   Total train batch size (w. parallel, distributed & accumulation) = 128
-[INFO|trainer.py:2440] 2025-08-15 16:56:20,371 >>   Gradient Accumulation steps = 8
-[INFO|trainer.py:2441] 2025-08-15 16:56:20,371 >>   Total optimization steps = 27
-[INFO|trainer.py:2442] 2025-08-15 16:56:20,373 >>   Number of trainable parameters = 32,763,876,352
-e2b29d3263f2:14760:16462 [7] NCCL INFO Comm config Blocking set to 1
-e2b29d3263f2:14758:16436 [5] NCCL INFO Comm config Blocking set to 1
-e2b29d3263f2:14759:16445 [6] NCCL INFO Comm config Blocking set to 1
-e2b29d3263f2:14757:16423 [4] NCCL INFO Comm config Blocking set to 1
-e2b29d3263f2:14755:16420 [2] NCCL INFO Comm config Blocking set to 1
-e2b29d3263f2:14756:16466 [3] NCCL INFO Comm config Blocking set to 1
-e2b29d3263f2:14753:16471 [0] NCCL INFO Comm config Blocking set to 1
-e2b29d3263f2:14754:16448 [1] NCCL INFO Comm config Blocking set to 1
-e2b29d3263f2:14760:16479 [7] NCCL INFO Using non-device net plugin version 0
-e2b29d3263f2:14758:16480 [5] NCCL INFO Using non-device net plugin version 0
-e2b29d3263f2:14755:16483 [2] NCCL INFO Using non-device net plugin version 0
-e2b29d3263f2:14760:16479 [7] NCCL INFO Using network Socket
-e2b29d3263f2:14759:16481 [6] NCCL INFO Using non-device net plugin version 0
-e2b29d3263f2:14758:16480 [5] NCCL INFO Using network Socket
-e2b29d3263f2:14755:16483 [2] NCCL INFO Using network Socket
-e2b29d3263f2:14756:16484 [3] NCCL INFO Using non-device net plugin version 0
-e2b29d3263f2:14759:16481 [6] NCCL INFO Using network Socket
-e2b29d3263f2:14756:16484 [3] NCCL INFO Using network Socket
-e2b29d3263f2:14753:16485 [0] NCCL INFO Using non-device net plugin version 0
-e2b29d3263f2:14757:16482 [4] NCCL INFO Using non-device net plugin version 0
-e2b29d3263f2:14753:16485 [0] NCCL INFO Using network Socket
-e2b29d3263f2:14757:16482 [4] NCCL INFO Using network Socket
-e2b29d3263f2:14754:16486 [1] NCCL INFO Using non-device net plugin version 0
-e2b29d3263f2:14754:16486 [1] NCCL INFO Using network Socket
-e2b29d3263f2:14759:16481 [6] NCCL INFO ncclCommInitRank comm 0x7fcb8006e4d0 rank 14 nranks 16 cudaDev 6 nvmlDev 6 busId ce000 commId 0xd019db1c768eabe6 - Init START
-e2b29d3263f2:14758:16480 [5] NCCL INFO ncclCommInitRank comm 0x7f33a406e4a0 rank 13 nranks 16 cudaDev 5 nvmlDev 5 busId b6000 commId 0xd019db1c768eabe6 - Init START
-e2b29d3263f2:14760:16479 [7] NCCL INFO ncclCommInitRank comm 0x7f556c06e4a0 rank 15 nranks 16 cudaDev 7 nvmlDev 7 busId cf000 commId 0xd019db1c768eabe6 - Init START
-e2b29d3263f2:14757:16482 [4] NCCL INFO ncclCommInitRank comm 0x7f771006e690 rank 12 nranks 16 cudaDev 4 nvmlDev 4 busId b5000 commId 0xd019db1c768eabe6 - Init START
-e2b29d3263f2:14756:16484 [3] NCCL INFO ncclCommInitRank comm 0x7f91c4069660 rank 11 nranks 16 cudaDev 3 nvmlDev 3 busId 20000 commId 0xd019db1c768eabe6 - Init START
-e2b29d3263f2:14755:16483 [2] NCCL INFO ncclCommInitRank comm 0x7ff6d006e470 rank 10 nranks 16 cudaDev 2 nvmlDev 2 busId 1f000 commId 0xd019db1c768eabe6 - Init START
-e2b29d3263f2:14754:16486 [1] NCCL INFO ncclCommInitRank comm 0x7fa0100d7140 rank 9 nranks 16 cudaDev 1 nvmlDev 1 busId f000 commId 0xd019db1c768eabe6 - Init START
-e2b29d3263f2:14753:16485 [0] NCCL INFO ncclCommInitRank comm 0x7f4874069690 rank 8 nranks 16 cudaDev 0 nvmlDev 0 busId e000 commId 0xd019db1c768eabe6 - Init START
-e2b29d3263f2:14757:16482 [4] NCCL INFO Setting affinity for GPU 4 to ffffffff,00000000,ffffffff,00000000
-e2b29d3263f2:14757:16482 [4] NCCL INFO NVLS multicast support is not available on dev 4
-e2b29d3263f2:14753:16485 [0] NCCL INFO Setting affinity for GPU 0 to ffffffff,00000000,ffffffff
-e2b29d3263f2:14753:16485 [0] NCCL INFO NVLS multicast support is not available on dev 0
-e2b29d3263f2:14754:16486 [1] NCCL INFO Setting affinity for GPU 1 to ffffffff,00000000,ffffffff
-e2b29d3263f2:14754:16486 [1] NCCL INFO NVLS multicast support is not available on dev 1
-e2b29d3263f2:14759:16481 [6] NCCL INFO Setting affinity for GPU 6 to ffffffff,00000000,ffffffff,00000000
-e2b29d3263f2:14759:16481 [6] NCCL INFO NVLS multicast support is not available on dev 6
-e2b29d3263f2:14758:16480 [5] NCCL INFO Setting affinity for GPU 5 to ffffffff,00000000,ffffffff,00000000
-e2b29d3263f2:14758:16480 [5] NCCL INFO NVLS multicast support is not available on dev 5
-e2b29d3263f2:14756:16484 [3] NCCL INFO Setting affinity for GPU 3 to ffffffff,00000000,ffffffff
-e2b29d3263f2:14756:16484 [3] NCCL INFO NVLS multicast support is not available on dev 3
-e2b29d3263f2:14755:16483 [2] NCCL INFO Setting affinity for GPU 2 to ffffffff,00000000,ffffffff
-e2b29d3263f2:14755:16483 [2] NCCL INFO NVLS multicast support is not available on dev 2
-e2b29d3263f2:14760:16479 [7] NCCL INFO Setting affinity for GPU 7 to ffffffff,00000000,ffffffff,00000000
-e2b29d3263f2:14760:16479 [7] NCCL INFO NVLS multicast support is not available on dev 7
-e2b29d3263f2:14759:16481 [6] NCCL INFO comm 0x7fcb8006e4d0 rank 14 nRanks 16 nNodes 2 localRanks 8 localRank 6 MNNVL 0
-e2b29d3263f2:14760:16479 [7] NCCL INFO comm 0x7f556c06e4a0 rank 15 nRanks 16 nNodes 2 localRanks 8 localRank 7 MNNVL 0
-e2b29d3263f2:14758:16480 [5] NCCL INFO comm 0x7f33a406e4a0 rank 13 nRanks 16 nNodes 2 localRanks 8 localRank 5 MNNVL 0
-e2b29d3263f2:14759:16481 [6] NCCL INFO Trees [0] 15/-1/-1->14->13 [1] 15/-1/-1->14->13
-e2b29d3263f2:14760:16479 [7] NCCL INFO Trees [0] -1/-1/-1->15->14 [1] -1/-1/-1->15->14
-e2b29d3263f2:14758:16480 [5] NCCL INFO Trees [0] 14/-1/-1->13->12 [1] 14/-1/-1->13->12
-e2b29d3263f2:14759:16481 [6] NCCL INFO P2P Chunksize set to 131072
-e2b29d3263f2:14760:16479 [7] NCCL INFO P2P Chunksize set to 131072
-e2b29d3263f2:14758:16480 [5] NCCL INFO P2P Chunksize set to 131072
-e2b29d3263f2:14753:16485 [0] NCCL INFO comm 0x7f4874069690 rank 8 nRanks 16 nNodes 2 localRanks 8 localRank 0 MNNVL 0
-e2b29d3263f2:14756:16484 [3] NCCL INFO comm 0x7f91c4069660 rank 11 nRanks 16 nNodes 2 localRanks 8 localRank 3 MNNVL 0
-e2b29d3263f2:14755:16483 [2] NCCL INFO comm 0x7ff6d006e470 rank 10 nRanks 16 nNodes 2 localRanks 8 localRank 2 MNNVL 0
-e2b29d3263f2:14754:16486 [1] NCCL INFO comm 0x7fa0100d7140 rank 9 nRanks 16 nNodes 2 localRanks 8 localRank 1 MNNVL 0
-e2b29d3263f2:14757:16482 [4] NCCL INFO comm 0x7f771006e690 rank 12 nRanks 16 nNodes 2 localRanks 8 localRank 4 MNNVL 0
-e2b29d3263f2:14753:16485 [0] NCCL INFO Trees [0] 9/-1/-1->8->0 [1] 9/0/-1->8->-1
-e2b29d3263f2:14753:16485 [0] NCCL INFO P2P Chunksize set to 131072
-e2b29d3263f2:14756:16484 [3] NCCL INFO Trees [0] 12/-1/-1->11->10 [1] 12/-1/-1->11->10
-e2b29d3263f2:14755:16483 [2] NCCL INFO Trees [0] 11/-1/-1->10->9 [1] 11/-1/-1->10->9
-e2b29d3263f2:14756:16484 [3] NCCL INFO P2P Chunksize set to 131072
-e2b29d3263f2:14757:16482 [4] NCCL INFO Trees [0] 13/-1/-1->12->11 [1] 13/-1/-1->12->11
-e2b29d3263f2:14755:16483 [2] NCCL INFO P2P Chunksize set to 131072
-e2b29d3263f2:14754:16486 [1] NCCL INFO Trees [0] 10/-1/-1->9->8 [1] 10/-1/-1->9->8
-e2b29d3263f2:14757:16482 [4] NCCL INFO P2P Chunksize set to 131072
-e2b29d3263f2:14754:16486 [1] NCCL INFO P2P Chunksize set to 131072
-e2b29d3263f2:14757:16482 [4] NCCL INFO Channel 00/0 : 12[4] -> 11[3] via P2P/CUMEM/read
-e2b29d3263f2:14756:16484 [3] NCCL INFO Channel 00/0 : 11[3] -> 10[2] via P2P/CUMEM/read
-e2b29d3263f2:14755:16483 [2] NCCL INFO Channel 00/0 : 10[2] -> 9[1] via P2P/CUMEM/read
-e2b29d3263f2:14757:16482 [4] NCCL INFO Channel 01/0 : 12[4] -> 11[3] via P2P/CUMEM/read
-e2b29d3263f2:14756:16484 [3] NCCL INFO Channel 01/0 : 11[3] -> 10[2] via P2P/CUMEM/read
-e2b29d3263f2:14755:16483 [2] NCCL INFO Channel 01/0 : 10[2] -> 9[1] via P2P/CUMEM/read
-e2b29d3263f2:14753:16485 [0] NCCL INFO Channel 00/0 : 1[1] -> 8[0] [receive] via NET/Socket/0
-e2b29d3263f2:14754:16486 [1] NCCL INFO Channel 00/0 : 9[1] -> 0[0] [send] via NET/Socket/0
-e2b29d3263f2:14754:16486 [1] NCCL INFO Channel 01/0 : 9[1] -> 0[0] [send] via NET/Socket/0
-e2b29d3263f2:14753:16485 [0] NCCL INFO Channel 01/0 : 1[1] -> 8[0] [receive] via NET/Socket/0
-e2b29d3263f2:14753:16485 [0] NCCL INFO Channel 00/0 : 8[0] -> 15[7] via P2P/CUMEM/read
-e2b29d3263f2:14753:16485 [0] NCCL INFO Channel 01/0 : 8[0] -> 15[7] via P2P/CUMEM/read
-e2b29d3263f2:14758:16480 [5] NCCL INFO Channel 00/0 : 13[5] -> 12[4] via P2P/CUMEM/read
-e2b29d3263f2:14759:16481 [6] NCCL INFO Channel 00/0 : 14[6] -> 13[5] via P2P/CUMEM/read
-e2b29d3263f2:14760:16479 [7] NCCL INFO Channel 00/0 : 15[7] -> 14[6] via P2P/CUMEM/read
-e2b29d3263f2:14758:16480 [5] NCCL INFO Channel 01/0 : 13[5] -> 12[4] via P2P/CUMEM/read
-e2b29d3263f2:14759:16481 [6] NCCL INFO Channel 01/0 : 14[6] -> 13[5] via P2P/CUMEM/read
-e2b29d3263f2:14760:16479 [7] NCCL INFO Channel 01/0 : 15[7] -> 14[6] via P2P/CUMEM/read
-e2b29d3263f2:14754:16486 [1] NCCL INFO Connected all rings
-e2b29d3263f2:14753:16485 [0] NCCL INFO Connected all rings
-e2b29d3263f2:14755:16483 [2] NCCL INFO Connected all rings
-e2b29d3263f2:14753:16485 [0] NCCL INFO Channel 00/0 : 8[0] -> 9[1] via P2P/CUMEM/read
-e2b29d3263f2:14760:16479 [7] NCCL INFO Connected all rings
-e2b29d3263f2:14756:16484 [3] NCCL INFO Connected all rings
-e2b29d3263f2:14757:16482 [4] NCCL INFO Connected all rings
-e2b29d3263f2:14759:16481 [6] NCCL INFO Connected all rings
-e2b29d3263f2:14758:16480 [5] NCCL INFO Connected all rings
-e2b29d3263f2:14753:16485 [0] NCCL INFO Channel 01/0 : 8[0] -> 9[1] via P2P/CUMEM/read
-e2b29d3263f2:14754:16486 [1] NCCL INFO Channel 00/0 : 9[1] -> 10[2] via P2P/CUMEM/read
-e2b29d3263f2:14755:16483 [2] NCCL INFO Channel 00/0 : 10[2] -> 11[3] via P2P/CUMEM/read
-e2b29d3263f2:14756:16484 [3] NCCL INFO Channel 00/0 : 11[3] -> 12[4] via P2P/CUMEM/read
-e2b29d3263f2:14754:16486 [1] NCCL INFO Channel 01/0 : 9[1] -> 10[2] via P2P/CUMEM/read
-e2b29d3263f2:14757:16482 [4] NCCL INFO Channel 00/0 : 12[4] -> 13[5] via P2P/CUMEM/read
-e2b29d3263f2:14755:16483 [2] NCCL INFO Channel 01/0 : 10[2] -> 11[3] via P2P/CUMEM/read
-e2b29d3263f2:14759:16481 [6] NCCL INFO Channel 00/0 : 14[6] -> 15[7] via P2P/CUMEM/read
-e2b29d3263f2:14758:16480 [5] NCCL INFO Channel 00/0 : 13[5] -> 14[6] via P2P/CUMEM/read
-e2b29d3263f2:14756:16484 [3] NCCL INFO Channel 01/0 : 11[3] -> 12[4] via P2P/CUMEM/read
-e2b29d3263f2:14757:16482 [4] NCCL INFO Channel 01/0 : 12[4] -> 13[5] via P2P/CUMEM/read
-e2b29d3263f2:14759:16481 [6] NCCL INFO Channel 01/0 : 14[6] -> 15[7] via P2P/CUMEM/read
-e2b29d3263f2:14753:16485 [0] NCCL INFO Channel 00/0 : 0[0] -> 8[0] [receive] via NET/Socket/0
-e2b29d3263f2:14754:16486 [1] NCCL INFO Channel 00/0 : 9[1] -> 8[0] via P2P/CUMEM/read
-e2b29d3263f2:14758:16480 [5] NCCL INFO Channel 01/0 : 13[5] -> 14[6] via P2P/CUMEM/read
-e2b29d3263f2:14753:16485 [0] NCCL INFO Channel 01/0 : 0[0] -> 8[0] [receive] via NET/Socket/0
-e2b29d3263f2:14753:16485 [0] NCCL INFO Channel 00/0 : 8[0] -> 0[0] [send] via NET/Socket/0
-e2b29d3263f2:14753:16485 [0] NCCL INFO Channel 01/0 : 8[0] -> 0[0] [send] via NET/Socket/0
-e2b29d3263f2:14754:16486 [1] NCCL INFO Channel 01/0 : 9[1] -> 8[0] via P2P/CUMEM/read
-e2b29d3263f2:14756:16484 [3] NCCL INFO Connected all trees
-e2b29d3263f2:14756:16484 [3] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
-e2b29d3263f2:14756:16484 [3] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
-e2b29d3263f2:14760:16479 [7] NCCL INFO Connected all trees
-e2b29d3263f2:14760:16479 [7] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
-e2b29d3263f2:14760:16479 [7] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
-e2b29d3263f2:14759:16481 [6] NCCL INFO Connected all trees
-e2b29d3263f2:14759:16481 [6] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
-e2b29d3263f2:14759:16481 [6] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
-e2b29d3263f2:14757:16482 [4] NCCL INFO Connected all trees
-e2b29d3263f2:14758:16480 [5] NCCL INFO Connected all trees
-e2b29d3263f2:14757:16482 [4] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
-e2b29d3263f2:14757:16482 [4] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
-e2b29d3263f2:14758:16480 [5] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
-e2b29d3263f2:14758:16480 [5] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
-e2b29d3263f2:14755:16483 [2] NCCL INFO Connected all trees
-e2b29d3263f2:14755:16483 [2] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
-e2b29d3263f2:14755:16483 [2] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
-e2b29d3263f2:14753:16485 [0] NCCL INFO Connected all trees
-e2b29d3263f2:14753:16485 [0] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
-e2b29d3263f2:14753:16485 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
-e2b29d3263f2:14754:16486 [1] NCCL INFO Connected all trees
-e2b29d3263f2:14754:16486 [1] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
-e2b29d3263f2:14754:16486 [1] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
-e2b29d3263f2:14758:16480 [5] NCCL INFO ncclCommInitRank comm 0x7f33a406e4a0 rank 13 nranks 16 cudaDev 5 nvmlDev 5 busId b6000 commId 0xd019db1c768eabe6 - Init COMPLETE
-e2b29d3263f2:14756:16484 [3] NCCL INFO ncclCommInitRank comm 0x7f91c4069660 rank 11 nranks 16 cudaDev 3 nvmlDev 3 busId 20000 commId 0xd019db1c768eabe6 - Init COMPLETE
-e2b29d3263f2:14754:16486 [1] NCCL INFO ncclCommInitRank comm 0x7fa0100d7140 rank 9 nranks 16 cudaDev 1 nvmlDev 1 busId f000 commId 0xd019db1c768eabe6 - Init COMPLETE
-e2b29d3263f2:14760:16479 [7] NCCL INFO ncclCommInitRank comm 0x7f556c06e4a0 rank 15 nranks 16 cudaDev 7 nvmlDev 7 busId cf000 commId 0xd019db1c768eabe6 - Init COMPLETE
-e2b29d3263f2:14757:16482 [4] NCCL INFO ncclCommInitRank comm 0x7f771006e690 rank 12 nranks 16 cudaDev 4 nvmlDev 4 busId b5000 commId 0xd019db1c768eabe6 - Init COMPLETE
-e2b29d3263f2:14755:16483 [2] NCCL INFO ncclCommInitRank comm 0x7ff6d006e470 rank 10 nranks 16 cudaDev 2 nvmlDev 2 busId 1f000 commId 0xd019db1c768eabe6 - Init COMPLETE
-e2b29d3263f2:14759:16481 [6] NCCL INFO ncclCommInitRank comm 0x7fcb8006e4d0 rank 14 nranks 16 cudaDev 6 nvmlDev 6 busId ce000 commId 0xd019db1c768eabe6 - Init COMPLETE
-e2b29d3263f2:14753:16485 [0] NCCL INFO ncclCommInitRank comm 0x7f4874069690 rank 8 nranks 16 cudaDev 0 nvmlDev 0 busId e000 commId 0xd019db1c768eabe6 - Init COMPLETE
-[2025-08-16 02:24:04,259] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data/llamafactory/saves/qwen2_5vl-32b/lora/full_sft/checkpoint-27/global_step25/zero_pp_rank_8_mp_rank_00_model_states.pt...
-[2025-08-16 02:24:04,292] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data/llamafactory/saves/qwen2_5vl-32b/lora/full_sft/checkpoint-27/global_step25/zero_pp_rank_8_mp_rank_00_model_states.pt.
-[2025-08-16 02:24:05,847] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data/llamafactory/saves/qwen2_5vl-32b/lora/full_sft/checkpoint-27/global_step25/bf16_zero_pp_rank_8_mp_rank_00_optim_states.pt...
-[2025-08-16 02:26:54,716] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data/llamafactory/saves/qwen2_5vl-32b/lora/full_sft/checkpoint-27/global_step25/bf16_zero_pp_rank_8_mp_rank_00_optim_states.pt.
-[2025-08-16 02:26:54,716] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved /data/llamafactory/saves/qwen2_5vl-32b/lora/full_sft/checkpoint-27/global_step25/bf16_zero_pp_rank_8_mp_rank_00_optim_states.pt
-[2025-08-16 02:27:19,243] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step25 is ready now!
-[INFO|trainer.py:2718] 2025-08-16 02:27:19,249 >> 
-
-Training completed. Do not forget to share your model on huggingface.co/models =)
-
-
-
-e2b29d3263f2:14754:16811 [0] init.cc:1962 NCCL WARN Cuda failure 'out of memory'
-e2b29d3263f2:14754:16811 [0] NCCL INFO group.cc:64 -> 1 [Async thread]
-
-e2b29d3263f2:14760:16807 [0] init.cc:1962 NCCL WARN Cuda failure 'out of memory'
-e2b29d3263f2:14760:16807 [0] NCCL INFO group.cc:64 -> 1 [Async thread]
-e2b29d3263f2:14754:14754 [1] NCCL INFO group.cc:418 -> 1
-e2b29d3263f2:14754:14754 [1] NCCL INFO init.cc:2038 -> 1
-e2b29d3263f2:14760:14760 [7] NCCL INFO group.cc:418 -> 1
-e2b29d3263f2:14760:14760 [7] NCCL INFO init.cc:2038 -> 1
-[WARNING|2025-08-16 02:29:45] llamafactory.train.tuner:91 >> Failed to destroy process group: NCCL error in: /pytorch/torch/csrc/distributed/c10d/NCCLUtils.cpp:133, unhandled cuda error (run with NCCL_DEBUG=INFO for details), NCCL version 2.21.5
-ncclUnhandledCudaError: Call to CUDA function failed.
-Last error:
-Cuda failure 'out of memory'.
-[WARNING|2025-08-16 02:29:45] llamafactory.train.tuner:91 >> Failed to destroy process group: NCCL error in: /pytorch/torch/csrc/distributed/c10d/NCCLUtils.cpp:133, unhandled cuda error (run with NCCL_DEBUG=INFO for details), NCCL version 2.21.5
-ncclUnhandledCudaError: Call to CUDA function failed.
-Last error:
-Cuda failure 'out of memory'.
-
-e2b29d3263f2:14759:16809 [0] init.cc:1962 NCCL WARN Cuda failure 'out of memory'
-e2b29d3263f2:14759:16809 [0] NCCL INFO group.cc:64 -> 1 [Async thread]
-e2b29d3263f2:14759:14759 [6] NCCL INFO group.cc:418 -> 1
-e2b29d3263f2:14759:14759 [6] NCCL INFO init.cc:2038 -> 1
-[WARNING|2025-08-16 02:29:45] llamafactory.train.tuner:91 >> Failed to destroy process group: NCCL error in: /pytorch/torch/csrc/distributed/c10d/NCCLUtils.cpp:133, unhandled cuda error (run with NCCL_DEBUG=INFO for details), NCCL version 2.21.5
-ncclUnhandledCudaError: Call to CUDA function failed.
-Last error:
-Cuda failure 'out of memory'.
-
-e2b29d3263f2:14757:16812 [0] init.cc:1962 NCCL WARN Cuda failure 'out of memory'
-e2b29d3263f2:14757:16812 [0] NCCL INFO group.cc:64 -> 1 [Async thread]
-e2b29d3263f2:14757:14757 [4] NCCL INFO group.cc:418 -> 1
-e2b29d3263f2:14757:14757 [4] NCCL INFO init.cc:2038 -> 1
-[WARNING|2025-08-16 02:29:45] llamafactory.train.tuner:91 >> Failed to destroy process group: NCCL error in: /pytorch/torch/csrc/distributed/c10d/NCCLUtils.cpp:133, unhandled cuda error (run with NCCL_DEBUG=INFO for details), NCCL version 2.21.5
-ncclUnhandledCudaError: Call to CUDA function failed.
-Last error:
-Cuda failure 'out of memory'.
-e2b29d3263f2:14753:14753 [0] NCCL INFO comm 0x7f4874069690 rank 8 nranks 16 cudaDev 0 busId e000 - Destroy COMPLETE
-
-e2b29d3263f2:14755:16810 [0] init.cc:1962 NCCL WARN Cuda failure 'CUDA-capable device(s) is/are busy or unavailable'
-e2b29d3263f2:14755:16810 [0] NCCL INFO group.cc:64 -> 1 [Async thread]
-e2b29d3263f2:14755:14755 [2] NCCL INFO group.cc:418 -> 1
-e2b29d3263f2:14755:14755 [2] NCCL INFO init.cc:2038 -> 1
-[WARNING|2025-08-16 02:29:46] llamafactory.train.tuner:91 >> Failed to destroy process group: NCCL error in: /pytorch/torch/csrc/distributed/c10d/NCCLUtils.cpp:133, unhandled cuda error (run with NCCL_DEBUG=INFO for details), NCCL version 2.21.5
-ncclUnhandledCudaError: Call to CUDA function failed.
-Last error:
-Cuda failure 'CUDA-capable device(s) is/are busy or unavailable'.
-e2b29d3263f2:14753:14753 [0] NCCL INFO comm 0x56119e4c7280 rank 8 nranks 16 cudaDev 0 busId e000 - Destroy COMPLETE
-
-e2b29d3263f2:14758:16808 [0] init.cc:1962 NCCL WARN Cuda failure 'CUDA-capable device(s) is/are busy or unavailable'
-e2b29d3263f2:14758:16808 [0] NCCL INFO group.cc:64 -> 1 [Async thread]
-e2b29d3263f2:14758:14758 [5] NCCL INFO group.cc:418 -> 1
-e2b29d3263f2:14758:14758 [5] NCCL INFO init.cc:2038 -> 1
-[WARNING|2025-08-16 02:29:46] llamafactory.train.tuner:91 >> Failed to destroy process group: NCCL error in: /pytorch/torch/csrc/distributed/c10d/NCCLUtils.cpp:133, unhandled cuda error (run with NCCL_DEBUG=INFO for details), NCCL version 2.21.5
-ncclUnhandledCudaError: Call to CUDA function failed.
-Last error:
-Cuda failure 'CUDA-capable device(s) is/are busy or unavailable'.
-
-e2b29d3263f2:14756:16814 [0] init.cc:1962 NCCL WARN Cuda failure 'out of memory'
-e2b29d3263f2:14756:16814 [0] NCCL INFO group.cc:64 -> 1 [Async thread]
-e2b29d3263f2:14756:14756 [3] NCCL INFO group.cc:418 -> 1
-e2b29d3263f2:14756:14756 [3] NCCL INFO init.cc:2038 -> 1
-[WARNING|2025-08-16 02:29:46] llamafactory.train.tuner:91 >> Failed to destroy process group: NCCL error in: /pytorch/torch/csrc/distributed/c10d/NCCLUtils.cpp:133, unhandled cuda error (run with NCCL_DEBUG=INFO for details), NCCL version 2.21.5
-ncclUnhandledCudaError: Call to CUDA function failed.
-Last error:
-Cuda failure 'out of memory'.
