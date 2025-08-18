@@ -1,0 +1,15 @@
+Running on node: g0004
+------------------------------------------------
+MASTER_ADDR: g0004
+GPUS_PER_NODE: 8
+WORLD_SIZE: 8
+SLURM_NNODES: 1
+SLURM_JOBID: 28114
+HOSTFILE: /tmp/llama3_lora_sft_nodes.txt
+g0004
+------------------------------------------------
+Node: g0004, GPUs: 8, Log: llama3_lora_sft_28114_g0004.log
+Executing command: srun -w g0004 -N 1 llamafactory-cli train ./sft-lora-rank8.yaml
+Waiting for the last node to finish...
+Starting training on node g0004 in foreground...
+Training completed on all nodes.
