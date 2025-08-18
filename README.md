@@ -21,3 +21,5 @@ Qwen2.5-32B-Instruct
 |NVL|sft|ds_zero3|OFF|N/A|N/A|3873GF|09:30:58|0.095|0.001|
 |NVL|PT|ds_zero3|ON|8|all|4716GF|00:08:55|0.084|0.006|
 |32E|PT|ds_zero3|ON|8|all|4716GF|03:08:22|0.004|0.0|
+|NVL|sft|ds_zero3|ON|8|all|88716GF|01:25:46|0.635|0.01|
+|32E|sft|ds_zero3|ON|8|all|88716GF|00:16:42|3.263|0.054|
