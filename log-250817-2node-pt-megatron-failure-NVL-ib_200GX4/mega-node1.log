@@ -1,0 +1,501 @@
+torchrun --nproc_per_node 8 --nnodes 2 --node_rank 1 --master_addr 192.168.0.200 --master_port 29500 /data/llamafactory/Pai-Megatron-Patch/examples/qwen2/pretrain_qwen2_moe.py --save /data/llamafactory/output_mcore_qwen2.5_pretrain/checkpoint/pretrain-mcore-qwen2.5-32B-lr-1e-7-minlr-1e-8-bs-1-gbs-1-seqlen-128-pr-bf16-tp-8-pp-2-cp-1-ac-false-do-true-sp-true-ti-78-wi-0 --lr 1e-7 --min-lr 1e-8 --lr-decay-style cosine --weight-decay 0.1 --adam-beta1 0.9 --adam-beta2 0.95 --clip-grad 1.0 --init-method-std 0.008 --attention-dropout 0.0 --hidden-dropout 0.0 --lr-decay-iters 78 --lr-warmup-iters 0 --train-iters 78 --micro-batch-size 1 --global-batch-size 1 --num-layers 64 --hidden-size 5120 --num-attention-heads 40 --ffn-hidden-size 27648 --seq-length 128 --max-position-embeddings 131072 --max-padding-length 128 --log-interval 1 --log-throughput --eval-interval 10000 --eval-iters 10 --save-interval 100000 --tensorboard-queue-size 1 --tensorboard-dir /data/llamafactory/output_mcore_qwen2.5_pretrain/tensorboard/pretrain-mcore-qwen2.5-32B-lr-1e-7-minlr-1e-8-bs-1-gbs-1-seqlen-128-pr-bf16-tp-8-pp-2-cp-1-ac-false-do-true-sp-true-ti-78-wi-0_2025.08.16-19.06.14 --log-timers-to-tensorboard --log-validation-ppl-to-tensorboard --tensor-model-parallel-size 8 --pipeline-model-parallel-size 2 --context-parallel-size 1 --no-load-optim --no-load-rng --num-workers 8 --extra-vocab-size 421 --patch-tokenizer-type Qwen2Tokenizer --swiglu --normalization RMSNorm --norm-epsilon 1e-5 --use-rotary-position-embeddings --position-embedding-type rope --disable-bias-linear --add-qkv-bias --rotary-percent 1.0 --rotary-base 1000000 --rotary-seq-len-interpolation-factor 1 --no-save-optim --data-path /data/qwen-datasets/wudao_qwenbpe_text_document --split 99,1,0 --dataset MMAP --bf16 --load /data/Qwen2.5-32B-Instruct-to-mcore --transformer-impl transformer_engine --use-distributed-optimizer --sequence-parallel --group-query-attention --num-query-groups 8 --tp-comm-overlap --overlap-grad-reduce --overlap-param-gather --train-mode pretrain --untie-embeddings-and-output-weights --attention-backend flash
+[rank9]:[W816 19:06:29.259145453 ProcessGroupNCCL.cpp:4751] [PG ID 0 PG GUID 0 Rank 9]  using GPU 1 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can pecify device_id in init_process_group() to force use of a particular device.
+[rank12]:[W816 19:06:29.271879634 ProcessGroupNCCL.cpp:4751] [PG ID 0 PG GUID 0 Rank 12]  using GPU 4 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can pecify device_id in init_process_group() to force use of a particular device.
+[rank10]:[W816 19:06:29.623196640 ProcessGroupNCCL.cpp:4751] [PG ID 0 PG GUID 0 Rank 10]  using GPU 2 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can pecify device_id in init_process_group() to force use of a particular device.
+[rank14]:[W816 19:06:29.624776093 ProcessGroupNCCL.cpp:4751] [PG ID 0 PG GUID 0 Rank 14]  using GPU 6 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can pecify device_id in init_process_group() to force use of a particular device.
+> setting tensorboard ...
+WARNING: one_logger package is required to enable e2e metrics tracking. please go to https://confluence.nvidia.com/display/MLWFO/Package+Repositories for details to install it
+[rank8]:[W816 19:06:30.707677502 ProcessGroupNCCL.cpp:4751] [PG ID 0 PG GUID 0 Rank 8]  using GPU 0 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can pecify device_id in init_process_group() to force use of a particular device.
+[rank13]:[W816 19:06:30.787105110 ProcessGroupNCCL.cpp:4751] [PG ID 0 PG GUID 0 Rank 13]  using GPU 5 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can pecify device_id in init_process_group() to force use of a particular device.
+[rank11]:[W816 19:06:30.787384454 ProcessGroupNCCL.cpp:4751] [PG ID 0 PG GUID 0 Rank 11]  using GPU 3 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can pecify device_id in init_process_group() to force use of a particular device.
+[rank15]:[W816 19:06:30.806011530 ProcessGroupNCCL.cpp:4751] [PG ID 0 PG GUID 0 Rank 15]  using GPU 7 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can pecify device_id in init_process_group() to force use of a particular device.
+!!! [UB] Global ranks on TP domain 1: [8, 9, 10, 11, 12, 13, 14, 15]
+NCCL version 2.26.3+cuda12.9
+ > number of parameters on (tensor, pipeline) model parallel rank (1, 1): 2047869952
+ > number of parameters on (tensor, pipeline) model parallel rank (7, 1): 2047869952
+ > number of parameters on (tensor, pipeline) model parallel rank (2, 1): 2047869952
+ > number of parameters on (tensor, pipeline) model parallel rank (6, 1): 2047869952
+ > number of parameters on (tensor, pipeline) model parallel rank (4, 1): 2047869952
+ > number of parameters on (tensor, pipeline) model parallel rank (0, 1): 2047869952
+ > number of parameters on (tensor, pipeline) model parallel rank (5, 1): 2047869952
+ > number of parameters on (tensor, pipeline) model parallel rank (3, 1): 2047869952
+INFO:megatron.core.distributed.param_and_grad_buffer:Number of buckets for gradient all-reduce / reduce-scatter: 1
+Params for bucket 1 (2047869952 elements, 2047869952 padded size):
+	module.decoder.layers.30.self_attention.linear_qkv.bias
+	module.decoder.layers.24.self_attention.linear_qkv.weight
+	module.decoder.layers.16.self_attention.linear_proj.weight
+	module.decoder.layers.11.mlp.linear_fc2.weight
+	module.decoder.layers.6.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.26.self_attention.linear_qkv.weight
+	module.decoder.layers.20.self_attention.linear_qkv.bias
+	module.decoder.layers.7.self_attention.linear_qkv.weight
+	module.decoder.layers.5.self_attention.linear_proj.weight
+	module.decoder.layers.27.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.24.self_attention.linear_proj.weight
+	module.decoder.layers.13.mlp.linear_fc2.weight
+	module.decoder.layers.12.mlp.linear_fc1.weight
+	module.decoder.layers.8.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.1.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.28.self_attention.linear_qkv.weight
+	module.decoder.layers.26.self_attention.linear_proj.weight
+	module.decoder.layers.22.self_attention.linear_qkv.weight
+	module.decoder.layers.9.self_attention.linear_qkv.weight
+	module.decoder.layers.7.self_attention.linear_proj.weight
+	module.decoder.layers.2.self_attention.linear_qkv.bias
+	module.decoder.layers.29.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.23.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.18.self_attention.linear_qkv.weight
+	module.decoder.layers.15.mlp.linear_fc2.weight
+	module.decoder.layers.14.mlp.linear_fc1.weight
+	module.decoder.layers.11.self_attention.linear_qkv.bias
+	module.decoder.layers.10.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.0.mlp.linear_fc1.weight
+	module.decoder.layers.0.self_attention.linear_proj.weight
+	module.decoder.layers.30.self_attention.linear_qkv.weight
+	module.decoder.layers.28.self_attention.linear_proj.weight
+	module.decoder.layers.22.self_attention.linear_proj.weight
+	module.decoder.layers.19.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.9.self_attention.linear_proj.weight
+	module.decoder.layers.4.mlp.linear_fc2.weight
+	module.decoder.layers.20.self_attention.linear_qkv.weight
+	module.decoder.layers.31.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.23.mlp.linear_fc2.weight
+	module.decoder.layers.18.self_attention.linear_proj.weight
+	module.decoder.layers.16.mlp.linear_fc1.weight
+	module.decoder.layers.13.self_attention.linear_qkv.bias
+	module.decoder.layers.30.self_attention.linear_proj.weight
+	module.decoder.layers.21.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.6.mlp.linear_fc2.weight
+	module.decoder.layers.5.mlp.linear_fc1.weight
+	module.decoder.layers.24.mlp.linear_fc1.weight
+	module.decoder.layers.20.self_attention.linear_proj.weight
+	module.decoder.layers.15.self_attention.linear_qkv.bias
+	module.decoder.layers.2.self_attention.linear_qkv.weight
+	module.decoder.layers.27.mlp.linear_fc2.weight
+	module.decoder.layers.26.mlp.linear_fc1.weight
+	module.decoder.layers.11.self_attention.linear_qkv.weight
+	module.decoder.layers.8.mlp.linear_fc2.weight
+	module.decoder.layers.7.mlp.linear_fc1.weight
+	module.decoder.layers.4.self_attention.linear_qkv.bias
+	module.decoder.layers.3.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.23.self_attention.linear_qkv.bias
+	module.decoder.layers.17.self_attention.linear_qkv.bias
+	module.decoder.layers.12.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.2.self_attention.linear_proj.weight
+	module.decoder.layers.29.mlp.linear_fc2.weight
+	module.decoder.layers.28.mlp.linear_fc1.weight
+	module.decoder.layers.22.mlp.linear_fc1.weight
+	module.decoder.layers.13.self_attention.linear_qkv.weight
+	module.decoder.layers.11.self_attention.linear_proj.weight
+	module.decoder.layers.9.mlp.linear_fc1.weight
+	module.decoder.layers.6.self_attention.linear_qkv.bias
+	module.decoder.layers.3.mlp.linear_fc1.weight
+	module.decoder.layers.25.mlp.linear_fc2.weight
+	module.decoder.layers.19.mlp.linear_fc2.weight
+	module.decoder.layers.18.mlp.linear_fc1.weight
+	module.decoder.layers.14.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.31.mlp.linear_fc2.weight
+	module.decoder.layers.30.mlp.linear_fc1.weight
+	module.decoder.layers.27.self_attention.linear_qkv.bias
+	module.decoder.layers.15.self_attention.linear_qkv.weight
+	module.decoder.layers.13.self_attention.linear_proj.weight
+	module.decoder.layers.8.self_attention.linear_qkv.bias
+	module.decoder.layers.1.self_attention.linear_qkv.bias
+	module.decoder.layers.21.mlp.linear_fc2.weight
+	module.decoder.layers.20.mlp.linear_fc1.weight
+	module.decoder.layers.16.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.4.self_attention.linear_qkv.weight
+	module.decoder.layers.29.self_attention.linear_qkv.bias
+	module.decoder.layers.23.self_attention.linear_qkv.weight
+	module.decoder.layers.17.self_attention.linear_qkv.weight
+	module.decoder.layers.15.self_attention.linear_proj.weight
+	module.decoder.layers.10.self_attention.linear_qkv.bias
+	module.decoder.layers.5.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.25.self_attention.linear_qkv.bias
+	module.decoder.layers.24.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.19.self_attention.linear_qkv.bias
+	module.decoder.layers.6.self_attention.linear_qkv.weight
+	module.decoder.layers.4.self_attention.linear_proj.weight
+	module.decoder.layers.2.mlp.linear_fc1.weight
+	module.decoder.layers.31.self_attention.linear_qkv.bias
+	module.decoder.layers.23.self_attention.linear_proj.weight
+	module.decoder.layers.17.self_attention.linear_proj.weight
+	module.decoder.layers.12.mlp.linear_fc2.weight
+	module.decoder.layers.11.mlp.linear_fc1.weight
+	module.decoder.layers.7.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.27.self_attention.linear_qkv.weight
+	module.decoder.layers.21.self_attention.linear_qkv.bias
+	module.decoder.layers.8.self_attention.linear_qkv.weight
+	module.decoder.layers.6.self_attention.linear_proj.weight
+	module.decoder.layers.1.self_attention.linear_qkv.weight
+	module.decoder.layers.28.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.14.mlp.linear_fc2.weight
+	module.decoder.layers.13.mlp.linear_fc1.weight
+	module.decoder.layers.9.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.1.mlp.linear_fc2.weight
+	module.decoder.layers.29.self_attention.linear_qkv.weight
+	module.decoder.layers.27.self_attention.linear_proj.weight
+	module.decoder.layers.18.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.10.self_attention.linear_qkv.weight
+	module.decoder.layers.8.self_attention.linear_proj.weight
+	module.decoder.layers.3.mlp.linear_fc2.weight
+	module.decoder.layers.3.self_attention.linear_qkv.bias
+	module.decoder.layers.1.self_attention.linear_proj.weight
+	module.decoder.final_layernorm.weight
+	module.decoder.layers.30.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.25.self_attention.linear_qkv.weight
+	module.decoder.layers.19.self_attention.linear_qkv.weight
+	module.decoder.layers.16.mlp.linear_fc2.weight
+	module.decoder.layers.15.mlp.linear_fc1.weight
+	module.decoder.layers.12.self_attention.linear_qkv.bias
+	module.decoder.layers.0.self_attention.linear_qkv.bias
+	module.decoder.layers.31.self_attention.linear_qkv.weight
+	module.decoder.layers.29.self_attention.linear_proj.weight
+	module.decoder.layers.26.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.20.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.10.self_attention.linear_proj.weight
+	module.decoder.layers.5.mlp.linear_fc2.weight
+	module.decoder.layers.4.mlp.linear_fc1.weight
+	module.decoder.layers.24.mlp.linear_fc2.weight
+	module.decoder.layers.23.mlp.linear_fc1.weight
+	module.decoder.layers.21.self_attention.linear_qkv.weight
+	module.decoder.layers.19.self_attention.linear_proj.weight
+	module.decoder.layers.17.mlp.linear_fc1.weight
+	module.decoder.layers.14.self_attention.linear_qkv.bias
+	module.decoder.layers.10.mlp.linear_fc1.weight
+	module.decoder.layers.0.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.31.self_attention.linear_proj.weight
+	module.decoder.layers.26.mlp.linear_fc2.weight
+	module.decoder.layers.22.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.7.mlp.linear_fc2.weight
+	module.decoder.layers.6.mlp.linear_fc1.weight
+	module.decoder.layers.21.self_attention.linear_proj.weight
+	module.decoder.layers.16.self_attention.linear_qkv.bias
+	module.decoder.layers.11.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.3.self_attention.linear_qkv.weight
+	module.output_layer.weight
+	module.decoder.layers.28.mlp.linear_fc2.weight
+	module.decoder.layers.27.mlp.linear_fc1.weight
+	module.decoder.layers.22.mlp.linear_fc2.weight
+	module.decoder.layers.12.self_attention.linear_qkv.weight
+	module.decoder.layers.9.mlp.linear_fc2.weight
+	module.decoder.layers.8.mlp.linear_fc1.weight
+	module.decoder.layers.5.self_attention.linear_qkv.bias
+	module.decoder.layers.1.mlp.linear_fc1.weight
+	module.decoder.layers.0.self_attention.linear_qkv.weight
+	module.decoder.layers.24.self_attention.linear_qkv.bias
+	module.decoder.layers.18.mlp.linear_fc2.weight
+	module.decoder.layers.13.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.3.self_attention.linear_proj.weight
+	module.decoder.layers.30.mlp.linear_fc2.weight
+	module.decoder.layers.29.mlp.linear_fc1.weight
+	module.decoder.layers.26.self_attention.linear_qkv.bias
+	module.decoder.layers.25.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.25.self_attention.linear_proj.weight
+	module.decoder.layers.17.mlp.linear_fc2.weight
+	module.decoder.layers.14.self_attention.linear_qkv.weight
+	module.decoder.layers.12.self_attention.linear_proj.weight
+	module.decoder.layers.10.mlp.linear_fc2.weight
+	module.decoder.layers.7.self_attention.linear_qkv.bias
+	module.decoder.layers.19.mlp.linear_fc1.weight
+	module.decoder.layers.25.mlp.linear_fc1.weight
+	module.decoder.layers.20.mlp.linear_fc2.weight
+	module.decoder.layers.15.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.2.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.0.mlp.linear_fc2.weight
+	module.decoder.layers.31.mlp.linear_fc1.weight
+	module.decoder.layers.28.self_attention.linear_qkv.bias
+	module.decoder.layers.22.self_attention.linear_qkv.bias
+	module.decoder.layers.16.self_attention.linear_qkv.weight
+	module.decoder.layers.14.self_attention.linear_proj.weight
+	module.decoder.layers.9.self_attention.linear_qkv.bias
+	module.decoder.layers.4.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.21.mlp.linear_fc1.weight
+	module.decoder.layers.18.self_attention.linear_qkv.bias
+	module.decoder.layers.17.self_attention.linear_qkv.layer_norm_weight
+	module.decoder.layers.5.self_attention.linear_qkv.weight
+	module.decoder.layers.2.mlp.linear_fc2.weight
+/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/transformer/transformer_layer.py:361: UserWarning: TransformerLayer._get_layer_offset is deprecated.Please use get_transformer_layer_offset instead.
+  warnings.warn(
+/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/transformer/transformer_layer.py:361: UserWarning: TransformerLayer._get_layer_offset is deprecated.Please use get_transformer_layer_offset instead.
+  warnings.warn(
+/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/transformer/transformer_layer.py:361: UserWarning: TransformerLayer._get_layer_offset is deprecated.Please use get_transformer_layer_offset instead.
+  warnings.warn(
+/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/transformer/transformer_layer.py:361: UserWarning: TransformerLayer._get_layer_offset is deprecated.Please use get_transformer_layer_offset instead.
+  warnings.warn(
+/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/transformer/transformer_layer.py:361: UserWarning: TransformerLayer._get_layer_offset is deprecated.Please use get_transformer_layer_offset instead.
+  warnings.warn(
+/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/transformer/transformer_layer.py:361: UserWarning: TransformerLayer._get_layer_offset is deprecated.Please use get_transformer_layer_offset instead.
+  warnings.warn(
+/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/transformer/transformer_layer.py:361: UserWarning: TransformerLayer._get_layer_offset is deprecated.Please use get_transformer_layer_offset instead.
+  warnings.warn(
+/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/transformer/transformer_layer.py:361: UserWarning: TransformerLayer._get_layer_offset is deprecated.Please use get_transformer_layer_offset instead.
+  warnings.warn(
+/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/dist_checkpointing/strategies/torch.py:847: FutureWarning: `load_state_dict` is deprecated and will be removed in future versions. Please use `load` instead.
+  checkpoint.load_state_dict(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/planner_helpers.py:406: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  device = getattr(value, "device", None)
+/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/dist_checkpointing/strategies/torch.py:847: FutureWarning: `load_state_dict` is deprecated and will be removed in future versions. Please use `load` instead.
+  checkpoint.load_state_dict(
+/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/dist_checkpointing/strategies/torch.py:847: FutureWarning: `load_state_dict` is deprecated and will be removed in future versions. Please use `load` instead.
+  checkpoint.load_state_dict(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/default_planner.py:454: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  and md.size != obj.size()
+/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/dist_checkpointing/strategies/torch.py:847: FutureWarning: `load_state_dict` is deprecated and will be removed in future versions. Please use `load` instead.
+  checkpoint.load_state_dict(
+/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/dist_checkpointing/strategies/torch.py:847: FutureWarning: `load_state_dict` is deprecated and will be removed in future versions. Please use `load` instead.
+  checkpoint.load_state_dict(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/planner_helpers.py:406: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  device = getattr(value, "device", None)
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/planner_helpers.py:406: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  device = getattr(value, "device", None)
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/planner_helpers.py:406: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  device = getattr(value, "device", None)
+/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/dist_checkpointing/strategies/torch.py:847: FutureWarning: `load_state_dict` is deprecated and will be removed in future versions. Please use `load` instead.
+  checkpoint.load_state_dict(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/default_planner.py:454: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  and md.size != obj.size()
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/default_planner.py:454: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  and md.size != obj.size()
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/default_planner.py:454: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  and md.size != obj.size()
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/planner_helpers.py:406: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  device = getattr(value, "device", None)
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/default_planner.py:454: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  and md.size != obj.size()
+/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/dist_checkpointing/strategies/torch.py:847: FutureWarning: `load_state_dict` is deprecated and will be removed in future versions. Please use `load` instead.
+  checkpoint.load_state_dict(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/planner_helpers.py:406: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  device = getattr(value, "device", None)
+/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/dist_checkpointing/strategies/torch.py:847: FutureWarning: `load_state_dict` is deprecated and will be removed in future versions. Please use `load` instead.
+  checkpoint.load_state_dict(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/default_planner.py:454: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  and md.size != obj.size()
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/planner_helpers.py:406: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  device = getattr(value, "device", None)
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/default_planner.py:454: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  and md.size != obj.size()
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/planner_helpers.py:406: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  device = getattr(value, "device", None)
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/default_planner.py:454: FutureWarning: Please use DTensor instead and we are deprecating ShardedTensor.
+  and md.size != obj.size()
+(min, max) time across ranks (ms):
+    load-checkpoint ................................: (18690.13, 18690.68)
+(min, max) time across ranks (ms):
+    model-and-optimizer-setup ......................: (19139.54, 19153.41)
+    train/valid/test-data-iterators-setup ..........: (17.91, 291.83)
+[rank9]: Traceback (most recent call last):
+[rank9]:   File "/data/llamafactory/Pai-Megatron-Patch/examples/qwen2/pretrain_qwen2_moe.py", line 99, in <module>
+[rank9]:     pretrain(
+[rank9]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 726, in pretrain
+[rank9]:     iteration, num_floating_point_operations_so_far = train(
+[rank9]:                                                       ^^^^^^
+[rank9]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 1909, in train
+[rank9]:     train_step(forward_step_func,
+[rank9]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 1172, in train_step
+[rank9]:     losses_reduced = forward_backward_func(
+[rank9]:                      ^^^^^^^^^^^^^^^^^^^^^^
+[rank9]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/pipeline_parallel/schedules.py", line 1873, in forward_backward_pipelining_without_interleaving
+[rank9]:     output_tensor, num_tokens = forward_step(
+[rank9]:                                 ^^^^^^^^^^^^^
+[rank9]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/pipeline_parallel/schedules.py", line 286, in forward_step
+[rank9]:     outputs = loss_func(output_tensor)
+[rank9]:               ^^^^^^^^^^^^^^^^^^^^^^^^
+[rank9]:   File "/data/llamafactory/Pai-Megatron-Patch/megatron_patch/template/helper.py", line 144, in loss_func
+[rank9]:     assert not loss.isnan().any(), (
+[rank9]:            ^^^^^^^^^^^^^^^^^^^^^^
+[rank9]: AssertionError: Rank 9: found NaN in local forward loss calculation. Device: 1, node: 0bd339bd0585
+[rank15]: Traceback (most recent call last):
+[rank15]:   File "/data/llamafactory/Pai-Megatron-Patch/examples/qwen2/pretrain_qwen2_moe.py", line 99, in <module>
+[rank15]:     pretrain(
+[rank15]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 726, in pretrain
+[rank15]:     iteration, num_floating_point_operations_so_far = train(
+[rank15]:                                                       ^^^^^^
+[rank15]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 1909, in train
+[rank15]:     train_step(forward_step_func,
+[rank15]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 1172, in train_step
+[rank15]:     losses_reduced = forward_backward_func(
+[rank15]:                      ^^^^^^^^^^^^^^^^^^^^^^
+[rank15]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/pipeline_parallel/schedules.py", line 1873, in forward_backward_pipelining_without_interleaving
+[rank15]:     output_tensor, num_tokens = forward_step(
+[rank15]:                                 ^^^^^^^^^^^^^
+[rank15]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/pipeline_parallel/schedules.py", line 286, in forward_step
+[rank15]:     outputs = loss_func(output_tensor)
+[rank15]:               ^^^^^^^^^^^^^^^^^^^^^^^^
+[rank15]:   File "/data/llamafactory/Pai-Megatron-Patch/megatron_patch/template/helper.py", line 144, in loss_func
+[rank15]:     assert not loss.isnan().any(), (
+[rank15]:            ^^^^^^^^^^^^^^^^^^^^^^
+[rank15]: AssertionError: Rank 15: found NaN in local forward loss calculation. Device: 7, node: 0bd339bd0585
+[rank10]: Traceback (most recent call last):
+[rank10]:   File "/data/llamafactory/Pai-Megatron-Patch/examples/qwen2/pretrain_qwen2_moe.py", line 99, in <module>
+[rank10]:     pretrain(
+[rank10]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 726, in pretrain
+[rank10]:     iteration, num_floating_point_operations_so_far = train(
+[rank10]:                                                       ^^^^^^
+[rank10]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 1909, in train
+[rank10]:     train_step(forward_step_func,
+[rank10]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 1172, in train_step
+[rank10]:     losses_reduced = forward_backward_func(
+[rank10]:                      ^^^^^^^^^^^^^^^^^^^^^^
+[rank10]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/pipeline_parallel/schedules.py", line 1873, in forward_backward_pipelining_without_interleaving
+[rank10]:     output_tensor, num_tokens = forward_step(
+[rank10]:                                 ^^^^^^^^^^^^^
+[rank10]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/pipeline_parallel/schedules.py", line 286, in forward_step
+[rank10]:     outputs = loss_func(output_tensor)
+[rank10]:               ^^^^^^^^^^^^^^^^^^^^^^^^
+[rank10]:   File "/data/llamafactory/Pai-Megatron-Patch/megatron_patch/template/helper.py", line 144, in loss_func
+[rank10]:     assert not loss.isnan().any(), (
+[rank10]:            ^^^^^^^^^^^^^^^^^^^^^^
+[rank10]: AssertionError: Rank 10: found NaN in local forward loss calculation. Device: 2, node: 0bd339bd0585
+[rank11]: Traceback (most recent call last):
+[rank11]:   File "/data/llamafactory/Pai-Megatron-Patch/examples/qwen2/pretrain_qwen2_moe.py", line 99, in <module>
+[rank11]:     pretrain(
+[rank11]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 726, in pretrain
+[rank11]:     iteration, num_floating_point_operations_so_far = train(
+[rank11]:                                                       ^^^^^^
+[rank11]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 1909, in train
+[rank11]:     train_step(forward_step_func,
+[rank11]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 1172, in train_step
+[rank11]:     losses_reduced = forward_backward_func(
+[rank11]:                      ^^^^^^^^^^^^^^^^^^^^^^
+[rank11]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/pipeline_parallel/schedules.py", line 1873, in forward_backward_pipelining_without_interleaving
+[rank11]:     output_tensor, num_tokens = forward_step(
+[rank11]:                                 ^^^^^^^^^^^^^
+[rank11]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/pipeline_parallel/schedules.py", line 286, in forward_step
+[rank11]:     outputs = loss_func(output_tensor)
+[rank11]:               ^^^^^^^^^^^^^^^^^^^^^^^^
+[rank11]:   File "/data/llamafactory/Pai-Megatron-Patch/megatron_patch/template/helper.py", line 144, in loss_func
+[rank11]:     assert not loss.isnan().any(), (
+[rank11]:            ^^^^^^^^^^^^^^^^^^^^^^
+[rank11]: AssertionError: Rank 11: found NaN in local forward loss calculation. Device: 3, node: 0bd339bd0585
+[rank13]: Traceback (most recent call last):
+[rank13]:   File "/data/llamafactory/Pai-Megatron-Patch/examples/qwen2/pretrain_qwen2_moe.py", line 99, in <module>
+[rank13]:     pretrain(
+[rank13]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 726, in pretrain
+[rank13]:     iteration, num_floating_point_operations_so_far = train(
+[rank13]:                                                       ^^^^^^
+[rank13]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 1909, in train
+[rank13]:     train_step(forward_step_func,
+[rank13]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 1172, in train_step
+[rank13]:     losses_reduced = forward_backward_func(
+[rank13]:                      ^^^^^^^^^^^^^^^^^^^^^^
+[rank13]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/pipeline_parallel/schedules.py", line 1873, in forward_backward_pipelining_without_interleaving
+[rank13]:     output_tensor, num_tokens = forward_step(
+[rank13]:                                 ^^^^^^^^^^^^^
+[rank13]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/pipeline_parallel/schedules.py", line 286, in forward_step
+[rank13]:     outputs = loss_func(output_tensor)
+[rank13]:               ^^^^^^^^^^^^^^^^^^^^^^^^
+[rank13]:   File "/data/llamafactory/Pai-Megatron-Patch/megatron_patch/template/helper.py", line 144, in loss_func
+[rank13]:     assert not loss.isnan().any(), (
+[rank13]:            ^^^^^^^^^^^^^^^^^^^^^^
+[rank13]: AssertionError: Rank 13: found NaN in local forward loss calculation. Device: 5, node: 0bd339bd0585
+[rank12]: Traceback (most recent call last):
+[rank12]:   File "/data/llamafactory/Pai-Megatron-Patch/examples/qwen2/pretrain_qwen2_moe.py", line 99, in <module>
+[rank12]:     pretrain(
+[rank12]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 726, in pretrain
+[rank12]:     iteration, num_floating_point_operations_so_far = train(
+[rank12]:                                                       ^^^^^^
+[rank12]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 1909, in train
+[rank12]:     train_step(forward_step_func,
+[rank12]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 1172, in train_step
+[rank12]:     losses_reduced = forward_backward_func(
+[rank12]:                      ^^^^^^^^^^^^^^^^^^^^^^
+[rank12]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/pipeline_parallel/schedules.py", line 1873, in forward_backward_pipelining_without_interleaving
+[rank12]:     output_tensor, num_tokens = forward_step(
+[rank12]:                                 ^^^^^^^^^^^^^
+[rank12]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/pipeline_parallel/schedules.py", line 286, in forward_step
+[rank12]:     outputs = loss_func(output_tensor)
+[rank12]:               ^^^^^^^^^^^^^^^^^^^^^^^^
+[rank12]:   File "/data/llamafactory/Pai-Megatron-Patch/megatron_patch/template/helper.py", line 144, in loss_func
+[rank12]:     assert not loss.isnan().any(), (
+[rank12]:            ^^^^^^^^^^^^^^^^^^^^^^
+[rank12]: AssertionError: Rank 12: found NaN in local forward loss calculation. Device: 4, node: 0bd339bd0585
+[rank14]: Traceback (most recent call last):
+[rank14]:   File "/data/llamafactory/Pai-Megatron-Patch/examples/qwen2/pretrain_qwen2_moe.py", line 99, in <module>
+[rank14]:     pretrain(
+[rank14]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 726, in pretrain
+[rank14]:     iteration, num_floating_point_operations_so_far = train(
+[rank14]:                                                       ^^^^^^
+[rank14]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 1909, in train
+[rank14]:     train_step(forward_step_func,
+[rank14]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 1172, in train_step
+[rank14]:     losses_reduced = forward_backward_func(
+[rank14]:                      ^^^^^^^^^^^^^^^^^^^^^^
+[rank14]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/pipeline_parallel/schedules.py", line 1873, in forward_backward_pipelining_without_interleaving
+[rank14]:     output_tensor, num_tokens = forward_step(
+[rank14]:                                 ^^^^^^^^^^^^^
+[rank14]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/pipeline_parallel/schedules.py", line 286, in forward_step
+[rank14]:     outputs = loss_func(output_tensor)
+[rank14]:               ^^^^^^^^^^^^^^^^^^^^^^^^
+[rank14]:   File "/data/llamafactory/Pai-Megatron-Patch/megatron_patch/template/helper.py", line 144, in loss_func
+[rank14]:     assert not loss.isnan().any(), (
+[rank14]:            ^^^^^^^^^^^^^^^^^^^^^^
+[rank14]: AssertionError: Rank 14: found NaN in local forward loss calculation. Device: 6, node: 0bd339bd0585
+[rank8]: Traceback (most recent call last):
+[rank8]:   File "/data/llamafactory/Pai-Megatron-Patch/examples/qwen2/pretrain_qwen2_moe.py", line 99, in <module>
+[rank8]:     pretrain(
+[rank8]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 726, in pretrain
+[rank8]:     iteration, num_floating_point_operations_so_far = train(
+[rank8]:                                                       ^^^^^^
+[rank8]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 1909, in train
+[rank8]:     train_step(forward_step_func,
+[rank8]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/training/training.py", line 1172, in train_step
+[rank8]:     losses_reduced = forward_backward_func(
+[rank8]:                      ^^^^^^^^^^^^^^^^^^^^^^
+[rank8]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/pipeline_parallel/schedules.py", line 1873, in forward_backward_pipelining_without_interleaving
+[rank8]:     output_tensor, num_tokens = forward_step(
+[rank8]:                                 ^^^^^^^^^^^^^
+[rank8]:   File "/data/llamafactory/Pai-Megatron-Patch/Megatron-LM-250328/megatron/core/pipeline_parallel/schedules.py", line 286, in forward_step
+[rank8]:     outputs = loss_func(output_tensor)
+[rank8]:               ^^^^^^^^^^^^^^^^^^^^^^^^
+[rank8]:   File "/data/llamafactory/Pai-Megatron-Patch/megatron_patch/template/helper.py", line 144, in loss_func
+[rank8]:     assert not loss.isnan().any(), (
+[rank8]:            ^^^^^^^^^^^^^^^^^^^^^^
+[rank8]: AssertionError: Rank 8: found NaN in local forward loss calculation. Device: 0, node: 0bd339bd0585
+[rank11]:[W816 19:07:00.669535265 ProcessGroupNCCL.cpp:1477] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank14]:[W816 19:07:01.705369703 ProcessGroupNCCL.cpp:1477] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank15]:[W816 19:07:01.737775974 ProcessGroupNCCL.cpp:1477] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank9]:[W816 19:07:01.754271988 ProcessGroupNCCL.cpp:1477] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank12]:[W816 19:07:01.772476659 ProcessGroupNCCL.cpp:1477] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank10]:[W816 19:07:01.789100207 ProcessGroupNCCL.cpp:1477] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank13]:[W816 19:07:01.865731796 ProcessGroupNCCL.cpp:1477] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+W0816 19:07:02.959000 31975 usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 31984 closing signal SIGTERM
+W0816 19:07:02.961000 31975 usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 31986 closing signal SIGTERM
+W0816 19:07:02.962000 31975 usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 31987 closing signal SIGTERM
+W0816 19:07:02.962000 31975 usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 31988 closing signal SIGTERM
+W0816 19:07:02.962000 31975 usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 31989 closing signal SIGTERM
+W0816 19:07:02.962000 31975 usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 31990 closing signal SIGTERM
+W0816 19:07:02.962000 31975 usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 31991 closing signal SIGTERM
+E0816 19:07:03.954000 31975 usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/api.py:874] failed (exitcode: 1) local_rank: 1 (pid: 31985) of binary: /usr/bin/python
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.7.0a0+79aa17489c.nv25.4', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 892, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 883, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 139, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 270, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/data/llamafactory/Pai-Megatron-Patch/examples/qwen2/pretrain_qwen2_moe.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-08-16_19:07:02
+  host      : 0bd339bd0585
+  rank      : 9 (local_rank: 1)
+  exitcode  : 1 (pid: 31985)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
