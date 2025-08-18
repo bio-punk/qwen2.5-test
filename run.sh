@@ -2,8 +2,8 @@
 
 # docker run -itd --runtime=nvidia --gpus all --device=/dev/infiniband --shm-size 1024G --ulimit memlock=-1  --network overlay01 --ip 192.168.0.100 -v /data:/data -v /root:/root -v /root/.ssh/:/root/.ssh/ 99a
 # ssh gpu72 "docker run -itd --runtime=nvidia --gpus all --device=/dev/infiniband --shm-size 1024G --ulimit memlock=-1  --network overlay01 --ip 192.168.0.101 -v /data:/data -v /root:/root -v /root/.ssh/:/root/.ssh/ 99a"
-# docker exec -it `docker ps -q` bash /data/llamafactory/run.sh 0 2>&1|tee run2node_gpu64.log
-# docker exec -it `docker ps -q` bash /data/llamafactory/run.sh 1 2>&1|tee run2node_gpu72.log
+# docker exec -it `docker ps -q` bash /data/llamafactory/run.sh 0 2>&1|tee pt_lorarank8_zero2ol_noderank0_gpu64.log
+# docker exec -it `docker ps -q` bash /data/llamafactory/run.sh 1 2>&1|tee pt_lorarank8_zero2ol_noderank1_gpu72.log
 
 cd /data/llamafactory
 

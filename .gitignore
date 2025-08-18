@@ -1,3 +1,5 @@
 saves/
 !log-20250616*/*.log
 *.log
+Pai-Megatron-Patch
+output_mcore*/
