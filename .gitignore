@@ -3,3 +3,4 @@ saves/
 *.log
 Pai-Megatron-Patch
 output_mcore*/
+tensorboard/
